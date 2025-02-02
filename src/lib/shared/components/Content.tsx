@@ -1,8 +1,8 @@
 import {ErrorBoundary, LocationProvider, Router} from "preact-iso";
-import {RootContent} from "../root/components/RootContent.tsx";
-import {ReelContent} from "../reel/ReelContent.tsx";
-import {BreakdownContent} from "../breakdown/BreakdownContent.tsx";
-import {ResearchContent} from "../research/ResearchContent.tsx";
+import {RootContent} from "../../feature-root/components/RootContent.tsx";
+import {ReelContent} from "../../feature-reel/ReelContent.tsx";
+import {BreakdownContent} from "../../feature-breakdown/BreakdownContent.tsx";
+import {ResearchContent} from "../../feature-research/ResearchContent.tsx";
 
 export function Content() {
     return (
@@ -11,16 +11,16 @@ export function Content() {
                 <LocationProvider>
                     <ErrorBoundary>
                         <Router>
-                            <div path="/">
+                            <div className="h-100" path="/">
                                 <RootContent></RootContent>
                             </div>
-                            <div path="/reel">
+                            <div className="h-100" path="/reel">
                                 <ReelContent></ReelContent>
                             </div>
-                            <div path="/breakdown">
+                            <div className="h-100" path="/breakdown">
                                 <BreakdownContent></BreakdownContent>
                             </div>
-                            <div path="/research">
+                            <div className="h-100" path="/research">
                                 <ResearchContent></ResearchContent>
                             </div>
                         </Router>
