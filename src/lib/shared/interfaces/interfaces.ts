@@ -1,4 +1,4 @@
-export interface NavigationData {
+export interface LeftNavigationProperties {
     top: {
         title: string,
         path: string
@@ -7,4 +7,10 @@ export interface NavigationData {
         title: string,
         path: string
     }[]
+}
+
+export interface MarqueeCardProperties {
+    title: string,
+    description: string,
+    footer: string
 }

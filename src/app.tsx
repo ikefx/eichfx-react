@@ -3,11 +3,11 @@ import {Header} from './lib/feature-root/components/Header';
 import {LeftNavigation} from "./lib/feature-root/components/LeftNavigation.tsx";
 import {Content} from './lib/shared/components/Content.tsx';
 import {useState} from "react";
-import {NavigationData} from "./lib/shared/interfaces/interfaces.ts";
+import {LeftNavigationProperties} from "./lib/shared/interfaces/interfaces.ts";
 
 export default function App() {
 
-    const struct: NavigationData[] = [
+    const struct: LeftNavigationProperties[] = [
         {
             top: {
                 title: 'Directory',
@@ -37,11 +37,9 @@ export default function App() {
                 <div className="sticky-top">
                     <Header></Header>
                 </div>
-                <div className="h-100">
-                    <div className="d-flex h-100">
-                        <LeftNavigation sections={nav}></LeftNavigation>
-                        <Content></Content>
-                    </div>
+                <div className="d-flex h-100 overflow-hidden">
+                    <LeftNavigation sections={nav}></LeftNavigation>
+                    <Content></Content>
                 </div>
             </div>
         </>

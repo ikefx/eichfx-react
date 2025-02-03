@@ -1,6 +1,6 @@
-import {NavigationData} from "../../shared/interfaces/interfaces.ts";
+import {LeftNavigationProperties} from "../../shared/interfaces/interfaces.ts";
 
-export function LeftNavigation({ sections }: { sections: NavigationData[] }) {
+export function LeftNavigation({ sections }: { sections: LeftNavigationProperties[] }) {
 
     return(
         <>

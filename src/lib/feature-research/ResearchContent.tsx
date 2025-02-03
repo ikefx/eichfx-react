@@ -1,78 +1,40 @@
 import {LeftNavigation} from "../feature-root/components/LeftNavigation.tsx";
-
-export function ResearchContent() {
-
-    const struct = [
-        {
-            top: {
-                title: 'Renderman',
-                path: '/',
-            },
-            items: [
-                {
-                    title: 'AOVs',
-                    path: '/research/aov',
-                },
-                {
-                    title: 'Point Clouds',
-                    path: '/research/pointclouds',
-                },
-                {
-                    title: 'Volumetrics I',
-                    path: '/research/volumetrics1',
-                },
-                {
-                    title: 'Volumetrics II',
-                    path: '/research/volumetrics2',
-                },
-                {
-                    title: 'Subsurface',
-                    path: '/research/Subsurface',
-                },
-                {
-                    title: 'Magic Lights',
-                    path: '/research/magiclights',
-                },
-            ]
-        },
-        {
-            top: {
-                title: 'Renderman',
-                path: '/',
-            },
-            items: [
-                {
-                    title: 'AOVs',
-                    path: '/research/aov',
-                },
-                {
-                    title: 'Point Clouds',
-                    path: '/research/pointclouds',
-                },
-                {
-                    title: 'Volumetrics I',
-                    path: '/research/volumetrics1',
-                },
-                {
-                    title: 'Volumetrics II',
-                    path: '/research/volumetrics2',
-                },
-                {
-                    title: 'Subsurface',
-                    path: '/research/Subsurface',
-                },
-                {
-                    title: 'Magic Lights',
-                    path: '/research/magiclights',
-                },
-            ]
-        }
-    ];
+import {researchNav} from "./definitions.ts"
+import {ResearchRoot} from "./components/ResearchRoot.tsx";
+import {ResearchPointClouds} from "./components/ResearchPointClouds.tsx";
+import {ResearchVolumetrics1} from "./components/ResearchVolumetrics1.tsx";
+import {ResearchVolumetrics2} from "./components/ResearchVolumetrics2.tsx";
+import {ResearchAov} from "./components/ResearchAov.tsx";
+export function ResearchContent({ view }: { view: string }) {
 
     return (
         <>
-            <div class="w-100 h-100">
-                <LeftNavigation sections={struct}></LeftNavigation>
+            <div className="d-flex h-100 bg-light">
+                <LeftNavigation sections={researchNav}></LeftNavigation>
+                <div className="container h-100 p-4 overflow-auto">
+                    {(() => {
+                        switch (view) {
+                            case 'aov':
+                                return ResearchAov();
+                            case 'pointclouds':
+                                return ResearchPointClouds();
+                            case 'volumetrics1':
+                                return ResearchVolumetrics1();
+                            case 'volumetrics2':
+                                return ResearchVolumetrics2();
+                            case 'subsurface':
+                            case 'magiclights':
+                            case 'fluidprimitives':
+                            case 'python1':
+                            case 'magnetforce':
+                            case 'zbrushexport':
+                            case 'matcaptext':
+                            default:
+                                return ResearchRoot();
+
+                        }
+                    })()}
+                </div>
             </div>
         </>
     )
