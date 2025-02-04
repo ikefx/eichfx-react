@@ -10,6 +10,9 @@ import {ResearchMagicLights} from "./components/ResearchMagicLights.tsx";
 import {ResearchFluidPrimitives} from "./components/ResearchFluidPrimitives.tsx";
 import {ResearchPython1} from "./components/ResearchPython1.tsx";
 import {ResearchMagnetForce} from "./components/ResearchMagnetForce.tsx";
+import {ResearchZBrushExport} from "./components/ResearchZBrushExport.tsx";
+import {ResearchMapCapTex} from "./components/ResearchMatCapTex.tsx";
+import {ResearchUSGSDems} from "./components/ResearchUSGSDems.tsx";
 export function Research({ view }: { view: string }) {
 
     return (
@@ -38,7 +41,11 @@ export function Research({ view }: { view: string }) {
                             case 'magnetforce':
                                 return ResearchMagnetForce();
                             case 'zbrushexport':
+                                return ResearchZBrushExport();
                             case 'matcaptext':
+                                return ResearchMapCapTex();
+                            case 'usgs':
+                                return ResearchUSGSDems();
                             default:
                                 return Default();
                         }

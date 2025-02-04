@@ -1,5 +1,5 @@
 import {ErrorBoundary, LocationProvider, Route, Router} from "preact-iso";
-import {RootContent} from "../../feature-root/components/RootContent.tsx";
+import {Root} from "../../feature-root/components/Root.tsx";
 import {Reel} from "../../feature-reel/Reel.tsx";
 import {Breakdown} from "../../feature-breakdown/Breakdown.tsx";
 import {Research} from "../../feature-research/Research.tsx";
@@ -10,7 +10,7 @@ export function Content() {
                 <LocationProvider>
                     <ErrorBoundary>
                         <Router>
-                            <Route default component={RootContent}></Route>
+                            <Route default component={Root}></Route>
 
                             <Route path="/reel" component={Reel}></Route>
 
