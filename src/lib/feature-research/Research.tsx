@@ -1,11 +1,16 @@
 import {LeftNavigation} from "../feature-root/components/LeftNavigation.tsx";
 import {researchNav} from "./definitions.ts"
-import {ResearchRoot} from "./components/ResearchRoot.tsx";
+import {Default} from "./components/Default.tsx";
 import {ResearchPointClouds} from "./components/ResearchPointClouds.tsx";
 import {ResearchVolumetrics1} from "./components/ResearchVolumetrics1.tsx";
 import {ResearchVolumetrics2} from "./components/ResearchVolumetrics2.tsx";
 import {ResearchAov} from "./components/ResearchAov.tsx";
-export function ResearchContent({ view }: { view: string }) {
+import {ResearchSubsurface1} from "./components/ResearchSubsurface1.tsx";
+import {ResearchMagicLights} from "./components/ResearchMagicLights.tsx";
+import {ResearchFluidPrimitives} from "./components/ResearchFluidPrimitives.tsx";
+import {ResearchPython1} from "./components/ResearchPython1.tsx";
+import {ResearchMagnetForce} from "./components/ResearchMagnetForce.tsx";
+export function Research({ view }: { view: string }) {
 
     return (
         <>
@@ -23,15 +28,19 @@ export function ResearchContent({ view }: { view: string }) {
                             case 'volumetrics2':
                                 return ResearchVolumetrics2();
                             case 'subsurface':
+                                return ResearchSubsurface1();
                             case 'magiclights':
+                                return ResearchMagicLights();
                             case 'fluidprimitives':
+                                return ResearchFluidPrimitives();
                             case 'python1':
+                                return ResearchPython1();
                             case 'magnetforce':
+                                return ResearchMagnetForce();
                             case 'zbrushexport':
                             case 'matcaptext':
                             default:
-                                return ResearchRoot();
-
+                                return Default();
                         }
                     })()}
                 </div>

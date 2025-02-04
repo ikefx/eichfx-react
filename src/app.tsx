@@ -10,7 +10,7 @@ export default function App() {
     const struct: LeftNavigationProperties[] = [
         {
             top: {
-                title: 'Directory',
+                title: '3D Studies',
                 path: '/',
             },
             items: [

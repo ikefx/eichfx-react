@@ -68,6 +68,18 @@ export const researchNav: LeftNavigationProperties[] = [
                 path: '/research/matcaptext',
             },
         ]
+    },
+    {
+        top: {
+            title: 'e-on Vue',
+            path: '/research',
+        },
+        items: [
+            {
+                title: 'USGS DEMS',
+                path: '/research/usgs'
+            }
+        ]
     }
 ];
 

@@ -8,7 +8,7 @@ export function MarqueeCard(properties: MarqueeCardProperties) {
                     <div className="col">
                         <div className="d-flex flex-column">
                             <h3>{properties.title}</h3>
-                            <p>{properties.description}</p>
+                            <p className="pe-5">{properties.description}</p>
                         </div>
                     </div>
                     <div className="col bg-danger">
@@ -16,7 +16,7 @@ export function MarqueeCard(properties: MarqueeCardProperties) {
                     </div>
                 </div>
                 <div className="m-auto py-2">
-                    <span className="small">{properties.footer}</span>
+                    <span className="small text-secondary">{properties.footer}</span>
                 </div>
             </div>
         </>

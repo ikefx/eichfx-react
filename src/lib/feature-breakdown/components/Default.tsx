@@ -1,7 +1,7 @@
 import {MarqueeCard} from "../../shared/components/MarqueeCard.tsx";
 import {HachimanCard, PointStarCluster, RubiksCard, TerracottaCard, TornadoCard} from "../definitions.ts";
 
-export function BreakdownRoot() {
+export function Default() {
     return (
         <>
             <div class="d-flex flex-column">

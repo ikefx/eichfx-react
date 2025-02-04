@@ -5,8 +5,8 @@ import {BreakdownHachiman} from "./components/BreakdownHachiman.tsx";
 import {BreakdownPythonRubiks} from "./components/BreakdownPythonRubiks.tsx";
 import {BreakdownTornado} from "./components/BreakdownTornado.tsx";
 import {BreakdownPointStars} from "./components/BreakdownPointStars.tsx";
-import {BreakdownRoot} from "./components/BreakdownRoot.tsx";
-export function BreakdownContent({ view }: { view: string }) {
+import {Default} from "./components/Default.tsx";
+export function Breakdown({ view }: { view: string }) {
 
     return(
         <>
@@ -26,7 +26,7 @@ export function BreakdownContent({ view }: { view: string }) {
                             case 'pointstars':
                                 return BreakdownPointStars();
                             default:
-                                return BreakdownRoot();
+                                return Default();
                         }
                     })()}
                 </div>
