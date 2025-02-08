@@ -12,7 +12,7 @@ export function Breakdown({ view }: { view: string }) {
         <>
             <div className="d-flex h-100 bg-light">
                 <LeftNavigation sections={breakdownNav}></LeftNavigation>
-                <div className="container h-100 p-5 mt-3 overflow-auto">
+                <div className="container h-100 p-5 overflow-auto">
                     {(() => {
                         switch (view) {
                             case 'terracotta':

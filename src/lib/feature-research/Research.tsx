@@ -19,7 +19,7 @@ export function Research({ view }: { view: string }) {
         <>
             <div className="d-flex h-100 bg-light">
                 <LeftNavigation sections={researchNav}></LeftNavigation>
-                <div className="container h-100 p-5 mt-3 overflow-auto">
+                <div className="container h-100 p-5 overflow-auto">
                     {(() => {
                         switch (view) {
                             case 'aov':
