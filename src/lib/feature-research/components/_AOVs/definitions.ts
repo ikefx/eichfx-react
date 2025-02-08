@@ -9,15 +9,15 @@ import displ2 from "../../../../assets/_display_research/_rman/_aovs/display02.j
 const slot01: InformationCardProperties = {
     paragraphs: [
         {
-            text: 'Animation and Visual Effect pipelines commonly use renderpasses to output elements of imagery in seperate files. This allows post-render modification (compositing).',
+            text: 'Animation and Visual Effect pipelines commonly use renderpasses to output elements of imagery in separate files. This allows post-render modification (compositing).',
             format: ''
         },
         {
-            text: 'Where Renderman stands out is with _AOVs. Renderman allows the user to declare specific data output (AOV) in shader language. Knowledge of RSL and RiSpec can see this done.',
+            text: 'Where Renderman stands out is with AOVs. Renderman allows the user to declare specific data output (AOV) in shader language. Knowledge of RSL and RiSpec can see this done.',
             format: ''
         },
         {
-            text: 'To output an AOV, two things must be done.  1. The .rib file must declare the new channel. This tells Renderman to create a new ouput.  2. The new channel must be declared in RSL in the shader. This tells Renderman what information to put in that channel.',
+            text: 'To output an AOV, two things must be done.  1. The .rib file must declare the new channel. This tells Renderman to create a new output.  2. The new channel must be declared in RSL in the shader. This tells Renderman what information to put in that channel.',
             format: ''
         },
     ],
