@@ -11,7 +11,7 @@ import {ResearchFluidPrimitives} from "./components/_FluidPrimitive/ResearchFlui
 import {ResearchPython1} from "./components/_Python01/ResearchPython1.tsx";
 import {ResearchMagnetForce} from "./components/_MagnetForce/ResearchMagnetForce.tsx";
 import {ResearchZBrushExport} from "./components/_ZBrushExport01/ResearchZBrushExport.tsx";
-import {ResearchMapCapTex} from "./components/ResearchMatCapTex.tsx";
+import {ResearchMapCapTex} from "./components/_MatCapTex/ResearchMatCapTex.tsx";
 import {ResearchUSGSDems} from "./components/ResearchUSGSDems.tsx";
 export function Research({ view }: { view: string }) {
 
