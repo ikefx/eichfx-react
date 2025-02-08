@@ -12,6 +12,7 @@ export interface LeftNavigationProperties {
 export interface MarqueeCardProperties {
     title: string,
     description: string,
-    imgUri: string,
+    imgUri?: string,
+    vidUri?: string,
     footer: string
 }

@@ -1,8 +1,8 @@
 export function Root() {
     return (
         <>
-            <div class="container h-100 overflow-auto p-2 p-xl-5">
-                <h3>Welcome</h3>
+            <div className="container-sm h-100 overflow-auto p-2 p-xl-5">
+                <h3 className={'text-dark'}>Welcome</h3>
                 <p>
                     Use the navigation bar buttons on left to browse contents. The Demo Reel link provides
                     additional resolutions and methods for reel playback. The Breakdown page provides

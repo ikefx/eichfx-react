@@ -6,7 +6,7 @@ export function Default() {
         <>
             <div class="d-flex flex-column">
                 <div className="text-center mt-5 mb-2">
-                    <h3 className="mb-0">DEMO BREAKDOWN SHEET</h3>
+                    <h3 className="text-dark mb-0">DEMO BREAKDOWN SHEET</h3>
                     <span className="lead text-secondary">Click links in the navigation bar or project images to browse extended breakdowns per project.</span>
                 </div>
                 <hr/>
@@ -14,31 +14,36 @@ export function Default() {
                     <MarqueeCard
                         title={TerracottaCard.title}
                         description={TerracottaCard.description}
-                        footer={TerracottaCard.footer}>
+                        footer={TerracottaCard.footer}
+                        imgUri={TerracottaCard.imgUri}>
                     </MarqueeCard>
                     <div className="my-4"></div>
                     <MarqueeCard
                         title={HachimanCard.title}
                         description={HachimanCard.description}
-                        footer={HachimanCard.footer}>
+                        footer={HachimanCard.footer}
+                        imgUri={HachimanCard.imgUri}>
                     </MarqueeCard>
                     <div className="my-4"></div>
                     <MarqueeCard
                         title={RubiksCard.title}
                         description={RubiksCard.description}
-                        footer={RubiksCard.footer}>
+                        footer={RubiksCard.footer}
+                        imgUri={RubiksCard.imgUri}>
                     </MarqueeCard>
                     <div className="my-4"></div>
                     <MarqueeCard
                         title={TornadoCard.title}
                         description={TornadoCard.description}
-                        footer={TornadoCard.footer}>
+                        footer={TornadoCard.footer}
+                        imgUri={TornadoCard.imgUri}>
                     </MarqueeCard>
                     <div className="my-4"></div>
                     <MarqueeCard
                         title={PointStarCluster.title}
                         description={PointStarCluster.description}
-                        footer={PointStarCluster.footer}>
+                        footer={PointStarCluster.footer}
+                        imgUri={PointStarCluster.imgUri}>
                     </MarqueeCard>
                 </div>
             </div>

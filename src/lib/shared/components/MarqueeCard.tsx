@@ -11,12 +11,22 @@ export function MarqueeCard(properties: MarqueeCardProperties) {
                             <p className="pe-5">{properties.description}</p>
                         </div>
                     </div>
-                    <div className="col bg-danger">
-                        <img src={properties.imgUri} alt="img" className={'d-flex w-100 shadow-sm'}/>
-                    </div>
+                    {properties.imgUri && (
+                        <div className="col rounded shadow" style={'height: fit-content'}>
+                            <img src={properties.imgUri} alt="img" className={'d-flex w-100 rounded'}/>
+                        </div>
+                    )}
+                    {properties.vidUri && (
+                        <div className="col shadow">
+                            <video controls width="100%">
+                                <source src={properties.vidUri}/>
+                                Your browser does not support this video
+                            </video>
+                        </div>
+                    )}
                 </div>
                 <div className="m-auto py-2">
-                    <span className="small text-secondary">{properties.footer}</span>
+                <span className="small text-secondary">{properties.footer}</span>
                 </div>
             </div>
         </>

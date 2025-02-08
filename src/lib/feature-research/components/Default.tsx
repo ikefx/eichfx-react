@@ -6,7 +6,7 @@ export function Default() {
         <>
             <div class="d-flex flex-column">
                 <div className="text-center mt-5 mb-2">
-                    <h3 className="mb-0">RESEARCH DOCUMENTATION</h3>
+                    <h3 className="text-dark mb-0">RESEARCH DOCUMENTATION</h3>
                     <span className="lead text-secondary">Click links in the navigation bar or project images to browse research studies.</span>
                 </div>
                 <hr/>

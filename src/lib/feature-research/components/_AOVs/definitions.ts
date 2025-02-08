@@ -1,4 +1,10 @@
 import {InformationCardProperties} from "../../../shared/components/InformationCard.tsx";
+import beauty from "../../../../assets/_display_research/_rman/_aovs/01_beauty.mp4";
+import zDepth from "../../../../assets/_display_research/_rman/_aovs/01_zdep.mp4";
+import compos from "../../../../assets/_display_research/_rman/_aovs/01_composite.mp4";
+import occlus from "../../../../assets/_display_research/_rman/_aovs/01_occl.mp4";
+import displ1 from "../../../../assets/_display_research/_rman/_aovs/display01.jpg";
+import displ2 from "../../../../assets/_display_research/_rman/_aovs/display02.jpg";
 
 const slot01: InformationCardProperties = {
     paragraphs: [
@@ -15,7 +21,7 @@ const slot01: InformationCardProperties = {
             format: ''
         },
     ],
-    imgSrc: 'PIC HERE',
+    vidSrc: beauty,
     imgFooter: 'Figure 01: Default Pass'
 }
 
@@ -34,7 +40,8 @@ const slot02: InformationCardProperties = {
             format: ''
         },
     ],
-    imgSrc: 'PIC HERE',
+    imgSrc: displ1,
+    vidSrc: null,
     imgFooter: 'Figure 02: Surface Shader zdepth Channel Declared'
 }
 
@@ -57,7 +64,7 @@ const slot03: InformationCardProperties = {
             format: ''
         },
     ],
-    imgSrc: 'PIC HERE',
+    imgSrc: displ2,
     imgFooter: 'Figure 03: .rib Header Declaring new Channel'
 }
 
@@ -80,7 +87,8 @@ const slot04: InformationCardProperties = {
             format: ''
         },
     ],
-    imgSrc: 'PIC HERE',
+    imgSrc: '',
+    vidSrc: zDepth,
     imgFooter: 'Figure 04: Depth Channel Sequence'
 }
 
@@ -95,13 +103,15 @@ const slot05: InformationCardProperties = {
             format: ''
         },
     ],
-    imgSrc: 'PIC HERE',
+    imgSrc: '',
+    vidSrc: occlus,
     imgFooter: 'Figure 05: Occlusion Channel Sequence'
 }
 
 const slot06: InformationCardProperties = {
     paragraphs: [],
-    imgSrc: 'PIC HERE',
+    imgSrc: '',
+    vidSrc: compos,
     imgFooter: 'Figure 06: Composited Sequence (surface * occlusion * depth)'
 }
 

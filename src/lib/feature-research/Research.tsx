@@ -1,7 +1,7 @@
 import {LeftNavigation} from "../feature-root/components/LeftNavigation.tsx";
 import {researchNav} from "./definitions.ts"
 import {Default} from "./components/Default.tsx";
-import {ResearchPointClouds} from "./components/ResearchPointClouds.tsx";
+import {ResearchPointClouds} from "./components/_PointClouds/ResearchPointClouds.tsx";
 import {ResearchVolumetrics1} from "./components/ResearchVolumetrics1.tsx";
 import {ResearchVolumetrics2} from "./components/ResearchVolumetrics2.tsx";
 import {ResearchAov} from "./components/_AOVs/ResearchAov.tsx";
@@ -19,7 +19,7 @@ export function Research({ view }: { view: string }) {
         <>
             <div className="d-flex h-100 bg-light">
                 <LeftNavigation sections={researchNav}></LeftNavigation>
-                <div className="container h-100 p-4 overflow-auto">
+                <div className="container h-100 p-5 overflow-auto">
                     {(() => {
                         switch (view) {
                             case 'aov':
