@@ -7,10 +7,10 @@ import {ResearchVolumetrics2} from "./components/_Volumetrics02/ResearchVolumetr
 import {ResearchAov} from "./components/_AOVs/ResearchAov.tsx";
 import {ResearchSubsurface01} from "./components/_Subsurface/ResearchSubsurface01.tsx";
 import {ResearchMagicLights} from "./components/_MagicLights/ResearchMagicLights.tsx";
-import {ResearchFluidPrimitives} from "./components/ResearchFluidPrimitives.tsx";
-import {ResearchPython1} from "./components/ResearchPython1.tsx";
-import {ResearchMagnetForce} from "./components/ResearchMagnetForce.tsx";
-import {ResearchZBrushExport} from "./components/ResearchZBrushExport.tsx";
+import {ResearchFluidPrimitives} from "./components/_FluidPrimitive/ResearchFluidPrimitives.tsx";
+import {ResearchPython1} from "./components/_Python01/ResearchPython1.tsx";
+import {ResearchMagnetForce} from "./components/_MagnetForce/ResearchMagnetForce.tsx";
+import {ResearchZBrushExport} from "./components/_ZBrushExport01/ResearchZBrushExport.tsx";
 import {ResearchMapCapTex} from "./components/ResearchMatCapTex.tsx";
 import {ResearchUSGSDems} from "./components/ResearchUSGSDems.tsx";
 export function Research({ view }: { view: string }) {

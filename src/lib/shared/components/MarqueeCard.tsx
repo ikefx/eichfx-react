@@ -5,14 +5,14 @@ export function MarqueeCard(properties: MarqueeCardProperties) {
         <>
             <div class="mb-5">
                 <div className="d-flex justify-content-between">
-                    <div className="col">
+                    <div className="col col-xl-8">
                         <div className="d-flex flex-column">
                             {properties.title && (<h3>{properties.title}</h3>)}
                             <p className="pe-5">{properties.description}</p>
                         </div>
                     </div>
                     {properties.imgUri && (
-                        <div className="col rounded shadow" style={'height: fit-content'}>
+                        <div className="col col-xl-4 rounded shadow" style={'height: fit-content'}>
                             <img src={properties.imgUri} alt="img" className={'d-flex w-100 rounded'}/>
                         </div>
                     )}
