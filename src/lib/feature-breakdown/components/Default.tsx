@@ -5,12 +5,12 @@ export function Default() {
     return (
         <>
             <div class="d-flex flex-column">
-                <div className="text-center my-5">
-                    <h2 className="mb-0">DEMO BREAKDOWN SHEET</h2>
+                <div className="text-center mt-5 mb-2">
+                    <h3 className="mb-0">DEMO BREAKDOWN SHEET</h3>
                     <span className="lead text-secondary">Click links in the navigation bar or project images to browse extended breakdowns per project.</span>
                 </div>
                 <hr/>
-                <div className="mt-4">
+                <div className="mt-5">
                     <MarqueeCard
                         title={TerracottaCard.title}
                         description={TerracottaCard.description}

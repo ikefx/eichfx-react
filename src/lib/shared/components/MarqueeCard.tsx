@@ -7,12 +7,12 @@ export function MarqueeCard(properties: MarqueeCardProperties) {
                 <div className="d-flex justify-content-between">
                     <div className="col">
                         <div className="d-flex flex-column">
-                            <h3>{properties.title}</h3>
+                            {properties.title && (<h3>{properties.title}</h3>)}
                             <p className="pe-5">{properties.description}</p>
                         </div>
                     </div>
                     <div className="col bg-danger">
-                        HERE PIC
+                        <img src={properties.imgUri} alt="img" className={'d-flex w-100 shadow-sm'}/>
                     </div>
                 </div>
                 <div className="m-auto py-2">

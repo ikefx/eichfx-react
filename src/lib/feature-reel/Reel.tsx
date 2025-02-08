@@ -5,9 +5,9 @@ export function Reel() {
                 <h2 className="text-center lead text-secondary">Demo Reel Updated 02.2014</h2>
                 <p className="fs-5 mb-0">Reel Playback Options</p>
                 <span className="small text-secondary fw-light">Right click and Save 'Direct Download' links to download video file to your hard drive.</span>
-                <ul>
-                    <li className="btn btn-link">.mov</li>
-                    <li className="btn btn-link">.mov</li>
+                <ul className="mb-0">
+                    <li className="btn btn-link">Direct Download 1280x720</li>
+                    <li className="btn btn-link">Direct Download 640x360</li>
                 </ul>
                 <p className="mb-0">
                     A Quicktime compliant browser will be necessary for .mov format video sequences.

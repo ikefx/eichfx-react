@@ -4,7 +4,7 @@ import {Default} from "./components/Default.tsx";
 import {ResearchPointClouds} from "./components/ResearchPointClouds.tsx";
 import {ResearchVolumetrics1} from "./components/ResearchVolumetrics1.tsx";
 import {ResearchVolumetrics2} from "./components/ResearchVolumetrics2.tsx";
-import {ResearchAov} from "./components/ResearchAov.tsx";
+import {ResearchAov} from "./components/_AOVs/ResearchAov.tsx";
 import {ResearchSubsurface1} from "./components/ResearchSubsurface1.tsx";
 import {ResearchMagicLights} from "./components/ResearchMagicLights.tsx";
 import {ResearchFluidPrimitives} from "./components/ResearchFluidPrimitives.tsx";
