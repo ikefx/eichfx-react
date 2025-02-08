@@ -2,11 +2,11 @@ import {LeftNavigation} from "../feature-root/components/LeftNavigation.tsx";
 import {researchNav} from "./definitions.ts"
 import {Default} from "./components/Default.tsx";
 import {ResearchPointClouds} from "./components/_PointClouds/ResearchPointClouds.tsx";
-import {ResearchVolumetrics1} from "./components/ResearchVolumetrics1.tsx";
-import {ResearchVolumetrics2} from "./components/ResearchVolumetrics2.tsx";
+import {ResearchVolumetrics1} from "./components/_Volumetrics01/ResearchVolumetrics1.tsx";
+import {ResearchVolumetrics2} from "./components/_Volumetrics02/ResearchVolumetrics2.tsx";
 import {ResearchAov} from "./components/_AOVs/ResearchAov.tsx";
-import {ResearchSubsurface1} from "./components/ResearchSubsurface1.tsx";
-import {ResearchMagicLights} from "./components/ResearchMagicLights.tsx";
+import {ResearchSubsurface01} from "./components/_Subsurface/ResearchSubsurface01.tsx";
+import {ResearchMagicLights} from "./components/_MagicLights/ResearchMagicLights.tsx";
 import {ResearchFluidPrimitives} from "./components/ResearchFluidPrimitives.tsx";
 import {ResearchPython1} from "./components/ResearchPython1.tsx";
 import {ResearchMagnetForce} from "./components/ResearchMagnetForce.tsx";
@@ -19,7 +19,7 @@ export function Research({ view }: { view: string }) {
         <>
             <div className="d-flex h-100 bg-light">
                 <LeftNavigation sections={researchNav}></LeftNavigation>
-                <div className="container h-100 p-5 overflow-auto">
+                <div className="container h-100 p-5 mt-3 overflow-auto">
                     {(() => {
                         switch (view) {
                             case 'aov':
@@ -31,7 +31,7 @@ export function Research({ view }: { view: string }) {
                             case 'volumetrics2':
                                 return ResearchVolumetrics2();
                             case 'subsurface':
-                                return ResearchSubsurface1();
+                                return ResearchSubsurface01();
                             case 'magiclights':
                                 return ResearchMagicLights();
                             case 'fluidprimitives':

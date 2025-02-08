@@ -187,7 +187,11 @@ const slot07: InformationCardProperties = {
 const slot08: InformationCardProperties = {
     paragraphs: [
         {
-            text: 'Note:  Sequences rendered through Cutter execute with performance on par with rendering from the command line. This also attributes to render time.',
+            text: 'Note:',
+            format: ''
+        },
+        {
+            text: 'Sequences rendered through Cutter execute with performance on par with rendering from the command line. This also attributes to render time.',
             format: ''
         },
         {

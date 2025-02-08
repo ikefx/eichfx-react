@@ -95,7 +95,11 @@ const slot04: InformationCardProperties = {
 const slot05: InformationCardProperties = {
     paragraphs: [
         {
-            text: 'Note: The purpose of this write-up is to explore the development of Display Channels and outputting _AOVs.',
+            text: 'Note:',
+            format: ''
+        },
+        {
+            text: 'The purpose of this write-up is to explore the development of Display Channels and outputting _AOVs.',
             format: ''
         },
         {

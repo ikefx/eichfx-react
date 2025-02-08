@@ -1,4 +1,9 @@
 import {LeftNavigationProperties, MarqueeCardProperties} from "../shared/interfaces/interfaces.ts";
+import d1 from "../../assets/_display_breakdown/terra_img001.jpg";
+import d2 from "../../assets/_display_breakdown/hachi_img001.png";
+import d3 from "../../assets/_display_breakdown/rubik.jpg";
+import d4 from "../../assets/_display_breakdown/tornado_img001.jpg";
+import d5 from "../../assets/_display_breakdown/vortex_img001.jpg";
 
 export const breakdownNav: LeftNavigationProperties[] = [
     {
@@ -41,7 +46,7 @@ export const TerracottaCard: MarqueeCardProperties = {
         '\n' +
         '720p frame render time: Approx 80 seconds. Imagery inspired by the terracotta statues in Xi\'an China.',
     footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | RSL | Apple Shake',
-    imgUri: '',
+    imgUri: d1,
 }
 
 export const HachimanCard: MarqueeCardProperties = {
@@ -54,7 +59,7 @@ export const HachimanCard: MarqueeCardProperties = {
         '\n' +
         'Imagery inspired by Koshun\'s Shinto deity Hachiman - depicted as a buddhist monk.',
     footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | Adobe Photoshop | Apple Shake',
-    imgUri: '',
+    imgUri: d2,
 }
 
 export const RubiksCard: MarqueeCardProperties = {
@@ -67,7 +72,7 @@ export const RubiksCard: MarqueeCardProperties = {
         '\n' +
         'On-Delete and On-Update events run Python scripts that delete all networks within the HDA (this prevents baking networks to the asset).',
     footer: 'Tools Used: SideFX Houdini | Python | Rendered with Houdini\'s PBR Renderer',
-    imgUri: '',
+    imgUri: d3,
 }
 
 export const TornadoCard: MarqueeCardProperties = {
@@ -80,7 +85,7 @@ export const TornadoCard: MarqueeCardProperties = {
         '\n' +
         'On-Delete and On-Update events run Python scripts that delete all networks within the HDA (this prevents baking networks to the asset).',
     footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra | Adobe Photoshop',
-    imgUri: '',
+    imgUri: d4,
 }
 
 export const PointStarCluster: MarqueeCardProperties = {
@@ -93,5 +98,5 @@ export const PointStarCluster: MarqueeCardProperties = {
         '\n' +
         'These elements are brought into a Composite Operator Network. Here they are layered, colorized, and manipulated to create the final render.',
     footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra',
-    imgUri: '',
+    imgUri: d5,
 }
