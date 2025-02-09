@@ -155,15 +155,15 @@ const slot07: InformationCardProperties = {
     paragraphs: [
         {
             text: 'Note:',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'Sequences involve high noise and jittering.',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'This is due to low sampling of the occlusion function. These effects can be remedied with a higher samples value for occlusion.',
-            format: ''
+            format: 'secondary'
         },
     ],
     imgSrc: '',

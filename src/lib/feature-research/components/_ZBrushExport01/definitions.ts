@@ -1,11 +1,12 @@
 import {InformationCardProperties} from "../../../shared/components/InformationCard.tsx";
-import displ01 from "../../../../assets/_display_research/_rman/_vol02/display_figure01.jpg";
-import displ02 from "../../../../assets/_display_research/_rman/_vol02/display_figure02.jpg";
-import displ03 from "../../../../assets/_display_research/_rman/_vol02/display_figure03.jpg";
-import displ04 from "../../../../assets/_display_research/_rman/_vol02/display_figure04.jpg";
-import displ05 from "../../../../assets/_display_research/_rman/_vol02/display_figure05.jpg";
-import displ06 from "../../../../assets/_display_research/_rman/_vol02/display_figure06.jpg";
-import displ07 from "../../../../assets/_display_research/_rman/_vol02/display_figure07.jpg";
+import displ01 from "../../../../assets/_display_research/_rman/_zbrushexport01/display_zb01.jpg";
+import displ02 from "../../../../assets/_display_research/_rman/_zbrushexport01/display_zb02.jpg";
+import displ03 from "../../../../assets/_display_research/_rman/_zbrushexport01/display_zb03.jpg";
+import displ04 from "../../../../assets/_display_research/_rman/_zbrushexport01/display_zb04.jpg";
+import displ05 from "../../../../assets/_display_research/_rman/_zbrushexport01/display_zb05.jpg";
+import displ06 from "../../../../assets/_display_research/_rman/_zbrushexport01/display_zb06.jpg";
+import displ07 from "../../../../assets/_display_research/_rman/_zbrushexport01/display_zb07.jpg";
+import displ08 from "../../../../assets/_display_research/_rman/_zbrushexport01/display_ztool01.mp4";
 
 const slot01: InformationCardProperties = {
     paragraphs: [
@@ -18,7 +19,7 @@ const slot01: InformationCardProperties = {
             format: ''
         },
         {
-            text: 'The following documents prefered methods for the sculpting package to renderer workflow.',
+            text: 'The following documents preferred methods for the sculpting package to renderer workflow.',
             format: ''
         },
         {
@@ -189,17 +190,21 @@ const slot08: InformationCardProperties = {
             format: '',
         },
         {
-            text: 'Note:',
-            format: ''
+            text: '',
+            format: '',
         },
         {
-            text: 'To achieve results with additional resemblence to the ztool within the ZBrush environment, render global and camera settings such as Global Illumination lighting and focal length must be implemented and adjusted.',
-            format: ''
+            text: 'Note:',
+            format: 'secondary'
+        },
+        {
+            text: 'To achieve results with additional resemblance to the ztool within the ZBrush environment, render global and camera settings such as Global Illumination lighting and focal length must be implemented and adjusted.',
+            format: 'secondary'
         },
     ],
-    imgSrc: displ07,
-    vidSrc: null,
-    imgFooter: 'Figure 07: Smoke.sl with Volume Noise Light Color'
+    imgSrc: null,
+    vidSrc: displ08,
+    imgFooter: 'Figure 08: ZBrush Mesh & Displacement Rendered with RfM'
 }
 
 export const data: InformationCardProperties[] = [

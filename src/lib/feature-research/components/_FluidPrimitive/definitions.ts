@@ -100,25 +100,26 @@ const slot05: InformationCardProperties = {
             text: 'The second node that was dropped is the actual fluid sim desired for render. It contains the surfacing and volume properties of the fluid solver. This network imports the dopnet and behaves accordingly (Figure 05).',
             format: ''
         },
-        {
-            text: 'Note:',
-            format: ''
-        },
-        {
-            text: 'In the sequence there is excess particles that pass primitive B to collide with a ground plane. Since this write-up explores only primitive point to point simulation it was excluded.',
-            format: ''
-        },
-        {
-            text: 'However briefly: a random group of particles from the simulation can be copied from the dopnet and simmed in a new popnet using gravity as force. From there the process of referencing for a flip fluid is done again.',
-            format: ''
-        },
     ],
     vidSrc: null,
     imgSrc: disO06,
     imgFooter: 'Figure 05: The FlipFluid Solver\'s Fluid Sim'
 }
 const slot06: InformationCardProperties = {
-    paragraphs: [],
+    paragraphs: [
+        {
+            text: 'Note:',
+            format: 'secondary'
+        },
+        {
+            text: 'In the sequence there is excess particles that pass primitive B to collide with a ground plane. Since this write-up explores only primitive point to point simulation it was excluded.',
+            format: 'secondary'
+        },
+        {
+            text: 'However briefly: a random group of particles from the simulation can be copied from the dopnet and simmed in a new popnet using gravity as force. From there the process of referencing for a flip fluid is done again.',
+            format: 'secondary'
+        },
+    ],
     vidSrc: disO05,
     imgSrc: null,
     imgFooter: 'Figure 06: The FlipFluid Solver\'s Fluid Sim'

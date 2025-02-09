@@ -188,15 +188,15 @@ const slot08: InformationCardProperties = {
     paragraphs: [
         {
             text: 'Note:',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'Sequences rendered through Cutter execute with performance on par with rendering from the command line. This also attributes to render time.',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'It is recommended that users with 3D packages render from the command line, as more CPU is available when not having to launch 3D software.',
-            format: ''
+            format: 'secondary'
         },
     ],
     imgSrc: null,

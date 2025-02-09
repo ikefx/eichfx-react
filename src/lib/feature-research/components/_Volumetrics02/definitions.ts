@@ -138,15 +138,15 @@ const slot07: InformationCardProperties = {
     paragraphs: [
         {
             text: 'Note:',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'Volume shaders are expensive in render time. For this reason and the ease of tweaking in 2d, atmosphere effects should be a separate pass from the beauty and composited.',
-            format: '',
+            format: 'secondary'
         },
         {
             text: 'Having a zdepth pass as a matte provides even more adjustment in post.',
-            format: ''
+            format: 'secondary'
         },
     ],
     imgSrc: displ07,

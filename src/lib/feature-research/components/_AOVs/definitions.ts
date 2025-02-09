@@ -96,15 +96,11 @@ const slot05: InformationCardProperties = {
     paragraphs: [
         {
             text: 'Note:',
-            format: ''
+            format: 'secondary'
         },
         {
-            text: 'The purpose of this write-up is to explore the development of Display Channels and outputting _AOVs.',
-            format: ''
-        },
-        {
-            text: 'When compositing a shot, the depth pass is not usually implemented with a multiply function.',
-            format: ''
+            text: 'The purpose of this write-up is to explore the development of Display Channels and outputting _AOVs.  When compositing a shot, the depth pass is not usually implemented with a multiply function.',
+            format: 'secondary'
         },
     ],
     imgSrc: '',

@@ -106,15 +106,7 @@ const slot04: InformationCardProperties = {
 const slot05: InformationCardProperties = {
     paragraphs: [
         {
-            text: 'Ambient lights illuminate from all directions.',
-            format: ''
-        },
-        {
-            text: 'Point lights illuminate from a X Y Z coordinate.',
-            format: ''
-        },
-        {
-            text: 'Spot lights illuminate from a X Y Z coordinate into a specific direction.',
+            text: 'Ambient lights illuminate from all directions.  Point lights illuminate from a X Y Z coordinate.  Spot lights illuminate from a X Y Z coordinate into a specific direction.',
             format: ''
         },
         {
@@ -138,15 +130,15 @@ const slot06: InformationCardProperties = {
     paragraphs: [
         {
             text: 'Note:',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'The possibilities with light shaders are limitless. For more zany light shader effects, I recommend Moritz Moeller\'s Going Mad with Magic Lights.',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'Siggraph 2006\'s Renderman for Everyone, Course 25 p62.',
-            format: ''
+            format: 'secondary'
         },
     ],
     vidSrc: null,

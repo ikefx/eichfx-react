@@ -1,5 +1,5 @@
 import {InformationCardProperties} from "../../../shared/components/InformationCard.tsx";
-import disO01 from "../../../../assets/_display_research/_rman/_python01/display_rubik01.mov";
+import disO01 from "../../../../assets/_display_research/_rman/_python01/display_rubik01.mp4";
 import disO02 from "../../../../assets/_display_research/_rman/_python01/display_rubik02.jpg";
 import disO03 from "../../../../assets/_display_research/_rman/_python01/display_rubik03.jpg";
 import disO04 from "../../../../assets/_display_research/_rman/_python01/display_rubik04.jpg";
@@ -128,11 +128,11 @@ const slot06: InformationCardProperties = {
     paragraphs: [
         {
             text: 'Note:',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'The scripts can be improved. In the onCreated() function a new material is made for each geometry node. An improvement would be to loop instead only six materials and assign them to the geometry. Other improvements would be switch node implementation, so that the primitive boxes can be replaced with modeled, higher poly-count polygons.',
-            format: ''
+            format: 'secondary'
         },
     ],
     vidSrc: null,

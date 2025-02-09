@@ -172,11 +172,11 @@ const slot07: InformationCardProperties = {
     paragraphs: [
         {
             text: 'Note:',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'When developing ssdiffusion, it\'s best to use the surface shader\'s parameters - not PTfilter. The ssdiffusion parameters provide more avenue for modification.',
-            format: ''
+            format: 'secondary'
         },
     ],
     vidSrc: null,

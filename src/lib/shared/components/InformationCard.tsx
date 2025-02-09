@@ -20,7 +20,11 @@ export function InformationCard(properties: InformationCardProperties) {
                     <div className="col-12 col-xxl-8 px-0">
                         {properties.paragraphs.map(paragraph => {
                             return (
-                                <><p className="pe-5">{paragraph.text}</p></>
+                                <>
+                                    <p className={"pe-5 " + (paragraph.format === "secondary" ? "text-secondary fw-light" : "")}>
+                                        {paragraph.text ? paragraph.text : <br/> }
+                                    </p>
+                                </>
                             )
                         })}
                     </div>

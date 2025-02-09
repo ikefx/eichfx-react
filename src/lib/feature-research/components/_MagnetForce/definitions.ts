@@ -1,4 +1,10 @@
 import {InformationCardProperties} from "../../../shared/components/InformationCard.tsx";
+import disO01 from "../../../../assets/_display_research/_rman/_magnetforce01/display_metaball1_01full.mp4";
+import disO02 from "../../../../assets/_display_research/_rman/_magnetforce01/display_metaball1_02.jpg";
+import disO03 from "../../../../assets/_display_research/_rman/_magnetforce01/display_metaball1_03.jpg";
+import disO04 from "../../../../assets/_display_research/_rman/_magnetforce01/display_metaball1_04.jpg";
+import disO05 from "../../../../assets/_display_research/_rman/_magnetforce01/display_metaball1_05.jpg";
+import disO06 from "../../../../assets/_display_research/_rman/_magnetforce01/display_metaball1_06.jpg";
 const slot01: InformationCardProperties = {
     paragraphs: [
         {
@@ -26,7 +32,7 @@ const slot01: InformationCardProperties = {
             format: ''
         },
     ],
-    vidSrc: null,
+    vidSrc: disO01,
     imgSrc: null,
     imgFooter: 'Figure 01: Magnet Force Cue Ball Simulation'
 }
@@ -50,7 +56,7 @@ const slot02: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO02,
     imgFooter: 'Figure 02: Primitive to Copy and Target Points for RDB Point Object Tool'
 }
 const slot03: InformationCardProperties = {
@@ -77,7 +83,7 @@ const slot03: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO03,
     imgFooter: 'Figure 03: RDB Tool Geometry Copy Result'
 }
 const slot04: InformationCardProperties = {
@@ -104,7 +110,7 @@ const slot04: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO04,
     imgFooter: 'Figure 04: Motion View of Metaball xForm Motion Effects Noise'
 }
 const slot05: InformationCardProperties = {
@@ -131,7 +137,7 @@ const slot05: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO05,
     imgFooter: 'Figure 05: Channel Editor Pane of MagnetForce Force Scale Parameter'
 }
 const slot06: InformationCardProperties = {
@@ -158,23 +164,23 @@ const slot06: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO06,
     imgFooter: 'Figure 06: Example Texture File for Material SOP'
 }
 const slot07: InformationCardProperties = {
     paragraphs: [
         {
             text: 'Note:',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'Another element that will really sell the motion of this simulation is motion blur. Adding velocity and object motion blur will really sell the movement of the spheres when combined with texture patterns (as this example demonstrates with cue ball textures).',
-            format: ''
+            format: 'secondary'
         },
     ],
     vidSrc: null,
     imgSrc: null,
-    imgFooter: 'Figure 05: Channel Editor Pane of MagnetForce Force Scale Parameter'
+    imgFooter: null
 }
 export const data: InformationCardProperties[] = [
     slot01,
