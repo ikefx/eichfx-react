@@ -16,7 +16,7 @@ const slot01: InformationCardProperties = {
     ],
     vidSrc: null,
     imgSrc: null,
-    imgFooter: ''
+    imgFooter: 'Figure 01: Image Plane PolyMesh with Material Texture'
 }
 const slot02: InformationCardProperties = {
     paragraphs: [
@@ -39,7 +39,7 @@ const slot02: InformationCardProperties = {
     ],
     vidSrc: null,
     imgSrc: null,
-    imgFooter: ''
+    imgFooter: 'Figure 02: Cloning 3D \'Colorize\' Texture to Texture Tab'
 }
 const slot03: InformationCardProperties = {
     paragraphs: [
@@ -58,7 +58,7 @@ const slot03: InformationCardProperties = {
     ],
     vidSrc: null,
     imgSrc: null,
-    imgFooter: ''
+    imgFooter: 'Figure 03: Loading Mesh Displacement as Alpha'
 }
 const slot04: InformationCardProperties = {
     paragraphs: [
@@ -81,7 +81,7 @@ const slot04: InformationCardProperties = {
     ],
     vidSrc: null,
     imgSrc: null,
-    imgFooter: ''
+    imgFooter: 'Figure 04: Using Image Plane to Drop a PolyMesh Plane'
 }
 const slot05: InformationCardProperties = {
     paragraphs: [
@@ -104,7 +104,7 @@ const slot05: InformationCardProperties = {
     ],
     vidSrc: null,
     imgSrc: null,
-    imgFooter: ''
+    imgFooter: 'Figure 05: Increasing Intensity Increases Material Cap Values'
 }
 const slot06: InformationCardProperties = {
     paragraphs: [
@@ -127,7 +127,7 @@ const slot06: InformationCardProperties = {
     ],
     vidSrc: null,
     imgSrc: null,
-    imgFooter: ''
+    imgFooter: 'Figure 06: ZBrush Environment RedWax MatCap Snapshot'
 }
 const slot07: InformationCardProperties = {
     paragraphs: [
@@ -154,7 +154,7 @@ const slot07: InformationCardProperties = {
     ],
     vidSrc: null,
     imgSrc: null,
-    imgFooter: ''
+    imgFooter: 'Figure 07: RfM Render with Baked RedWax Matcap Texture'
 }
 export const data: InformationCardProperties[] = [
     slot01,
