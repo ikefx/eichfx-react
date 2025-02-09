@@ -1,4 +1,17 @@
 import {InformationCardProperties} from "../../../shared/components/InformationCard.tsx";
+import disO01 from "../../../../assets/_display_research/_rman/_usgsdems/display_usgs01.png";
+import disO02 from "../../../../assets/_display_research/_rman/_usgsdems/display_usgs02.jpg";
+import disO03 from "../../../../assets/_display_research/_rman/_usgsdems/display_usgs03.jpg";
+import disO04 from "../../../../assets/_display_research/_rman/_usgsdems/display_usgs04.jpg";
+import disO05 from "../../../../assets/_display_research/_rman/_usgsdems/display_usgs05.jpg";
+import disO06 from "../../../../assets/_display_research/_rman/_usgsdems/display_usgs06.jpg";
+import disO07 from "../../../../assets/_display_research/_rman/_usgsdems/display_usgs07.jpg";
+import disO08 from "../../../../assets/_display_research/_rman/_usgsdems/display_usgs08.jpg";
+import disO09 from "../../../../assets/_display_research/_rman/_usgsdems/display_usgs09.jpg";
+import disO10 from "../../../../assets/_display_research/_rman/_usgsdems/display_usgs10.jpg";
+import disO11 from "../../../../assets/_display_research/_rman/_usgsdems/display_usgs11.jpg";
+import disO12 from "../../../../assets/_display_research/_rman/_usgsdems/display_usgs12.jpg";
+
 const slot01: InformationCardProperties = {
     paragraphs: [
         {
@@ -11,7 +24,7 @@ const slot01: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO01,
     imgFooter: 'Figure 01: United States Geological Survey'
 }
 const slot02: InformationCardProperties = {
@@ -42,7 +55,7 @@ const slot02: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO02,
     imgFooter: 'Figure 02: USGS\'s Link to National Map Viewer'
 }
 const slot03: InformationCardProperties = {
@@ -65,7 +78,7 @@ const slot03: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO03,
     imgFooter: 'Figure 03: Click for The National Map Viewer & Download Platform'
 }
 const slot04: InformationCardProperties = {
@@ -80,7 +93,7 @@ const slot04: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO04,
     imgFooter: 'Figure 04: The Colorado River (Grand Canyon)'
 }
 const slot05: InformationCardProperties = {
@@ -99,7 +112,7 @@ const slot05: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO05,
     imgFooter: 'Figure 05: Download Data Tool'
 }
 const slot06: InformationCardProperties = {
@@ -114,7 +127,7 @@ const slot06: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO06,
     imgFooter: 'Figure 06: Data Type Selection for Download'
 }
 const slot07: InformationCardProperties = {
@@ -133,7 +146,7 @@ const slot07: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO07,
     imgFooter: 'Figure 07: Available File Format Selection (Can Choose Multiple)'
 }
 const slot08: InformationCardProperties = {
@@ -156,7 +169,7 @@ const slot08: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO08,
     imgFooter: 'Figure 08: E-mail Receipt of USGS Data Order'
 }
 const slot09: InformationCardProperties = {
@@ -177,7 +190,7 @@ const slot10: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO09,
     imgFooter: 'Figure 10: Control Center Displays List of Data Inside DEM'
 }
 const slot11: InformationCardProperties = {
@@ -192,7 +205,7 @@ const slot11: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO10,
     imgFooter: 'Figure 11: Export Elevation Grid | Global Mapper\'s USGS DEM File Format'
 }
 const slot12: InformationCardProperties = {
@@ -211,7 +224,7 @@ const slot12: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO11,
     imgFooter: 'Figure 12: Global Mappers Output DEM Opened in 3DEM'
 }
 const slot13: InformationCardProperties = {
@@ -225,20 +238,24 @@ const slot13: InformationCardProperties = {
             format: ''
         },
         {
+            text: '',
+            format: 'secondary'
+        },
+        {
             text: 'Note:',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'Documentation on Vue can be found at e-on Vue website: http://www.e-onsoftware.com/',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'Vue11 Reference Manual here.',
-            format: ''
+            format: 'secondary'
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO12,
     imgFooter: 'Figure 13: Accurate Elevation Map Vue Terrain Model'
 }
 export const data: InformationCardProperties[] = [

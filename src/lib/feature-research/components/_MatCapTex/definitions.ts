@@ -1,4 +1,11 @@
 import {InformationCardProperties} from "../../../shared/components/InformationCard.tsx";
+import disO01 from "../../../../assets/_display_research/_rman/_matcaptex/display_matcaptex01.png";
+import disO02 from "../../../../assets/_display_research/_rman/_matcaptex/display_matcaptex02.png";
+import disO03 from "../../../../assets/_display_research/_rman/_matcaptex/display_matcaptex03.png";
+import disO04 from "../../../../assets/_display_research/_rman/_matcaptex/display_matcaptex04.png";
+import disO05 from "../../../../assets/_display_research/_rman/_matcaptex/display_matcaptex05.png";
+import disO06 from "../../../../assets/_display_research/_rman/_matcaptex/display_matcaptex06.png";
+import disO07 from "../../../../assets/_display_research/_rman/_matcaptex/display_matcaptex07.png";
 const slot01: InformationCardProperties = {
     paragraphs: [
         {
@@ -15,7 +22,7 @@ const slot01: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO01,
     imgFooter: 'Figure 01: Image Plane PolyMesh with Material Texture'
 }
 const slot02: InformationCardProperties = {
@@ -38,7 +45,7 @@ const slot02: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO02,
     imgFooter: 'Figure 02: Cloning 3D \'Colorize\' Texture to Texture Tab'
 }
 const slot03: InformationCardProperties = {
@@ -57,7 +64,7 @@ const slot03: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO03,
     imgFooter: 'Figure 03: Loading Mesh Displacement as Alpha'
 }
 const slot04: InformationCardProperties = {
@@ -80,7 +87,7 @@ const slot04: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO04,
     imgFooter: 'Figure 04: Using Image Plane to Drop a PolyMesh Plane'
 }
 const slot05: InformationCardProperties = {
@@ -103,7 +110,7 @@ const slot05: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO05,
     imgFooter: 'Figure 05: Increasing Intensity Increases Material Cap Values'
 }
 const slot06: InformationCardProperties = {
@@ -126,34 +133,34 @@ const slot06: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO07,
     imgFooter: 'Figure 06: ZBrush Environment RedWax MatCap Snapshot'
 }
 const slot07: InformationCardProperties = {
     paragraphs: [
         {
             text: 'Note:',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'Limitations were mentioned earlier. From testing, I\'ve concluded that this texture generation process is incredibly UV wrap sensitive. UV maps are especially sensitive regarding tiling and edges.',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'This is because matcaps provide illumination as well as coloration. Consider as well, the illumination is baked into the texture. This will make surfacing and lighting method complications, as you\'ll have to make the lighting match the baked lighting in the texture.',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'The ZBrush Material palette allows manipulation of light tolerance as well as the ability to completely remove lighting aesthetics. However, as a trade-off detail and variation in the matcap will dilute.',
-            format: ''
+            format: 'secondary'
         },
         {
             text: 'As written above, this method is a purely circumstance approach, and is not ideal for all 3D scenes.',
-            format: ''
+            format: 'secondary'
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO06,
     imgFooter: 'Figure 07: RfM Render with Baked RedWax Matcap Texture'
 }
 export const data: InformationCardProperties[] = [

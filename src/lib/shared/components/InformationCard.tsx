@@ -9,7 +9,7 @@ export interface InformationCardProperties {
     paragraphs: InformationParagraph[],
     imgSrc?: string,
     vidSrc?: string,
-    imgFooter: string
+    imgFooter: string,
 }
 
 export function InformationCard(properties: InformationCardProperties) {
