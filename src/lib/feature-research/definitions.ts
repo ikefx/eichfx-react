@@ -1,4 +1,8 @@
 import {LeftNavigationProperties, MarqueeCardProperties} from "../shared/interfaces/interfaces.ts";
+import imgRMAN from './../../assets/_display_research/rman_display.png';
+import imgHOUD from './../../assets/_display_research/hou_display.jpg';
+import imgZBRU from './../../assets/_display_research/zbr_display.jpg';
+import imgEONV from './../../assets/_display_research/vue_display.png';
 
 export const researchNav: LeftNavigationProperties[] = [
     {
@@ -68,65 +72,72 @@ export const researchNav: LeftNavigationProperties[] = [
                 path: '/research/matcaptext',
             },
         ]
+    },
+    {
+        top: {
+            title: 'e-on Vue',
+            path: '/research',
+        },
+        items: [
+            {
+                title: 'USGS DEMS',
+                path: '/research/usgs'
+            }
+        ]
     }
 ];
 
-export const TerracottaCard: MarqueeCardProperties = {
-    title: 'Terracotta',
-    description: 'Independent study developing shader components and a pipeline emphasis for render-optimized high resolution imagery with Renderman Studios.\n' +
+export const Renderman: MarqueeCardProperties = {
+    title: null,
+    description: 'Listed directories illustrate functionality and back-end processing of the Prman Renderer that required additional documentation not covered in project breakdowns.\n' +
         '\n' +
-        'Z Brush assets consisting of 9 million polygons each are extracted to Renderman for Maya as SubD proxies with 32 bit Displacement maps.\n' +
+        'Documentation written from research, development, and trial and error of the Renderman projects I\'ve completed (and sometimes not completed). Consider the following R&D and Proof of Concept for my Renderman related work.\n' +
         '\n' +
-        'Shaders written in SLIM extract AOVs for post-rendering modification, layer displacement maps with procedural patterns, and direct inferred passes to bake and reuse raytraced, subsurface, and deep shadow information.\n' +
+        'Syntax written in Malcom Kesson\'s Cutter©\n' +
+        '- all rights reserved. www.fundza.com\n' +
         '\n' +
-        '720p frame render time: Approx 80 seconds. Imagery inspired by the terracotta statues in Xi\'an China.',
-    footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | RSL | Apple Shake'
+        'Renderman© is a product of Pixar Animation\n' +
+        '- all rights reserved. www.pixar.com',
+    imgUri: imgRMAN,
+    footer: null
 }
 
-export const HachimanCard: MarqueeCardProperties = {
-    title: 'Hachiman',
-    description: 'RMS study implementing additional elements of ZBrush asset integration, texture utilization, lighting, and compositing.\n' +
+export const Houdini: MarqueeCardProperties = {
+    title: null,
+    description: 'SideFX Software\'s Houdini provides a robust library of tools and resources for visual effects. These documents review various methods that exhibit procedural and script operations.\n' +
         '\n' +
-        'ZBrush GoZ workflow to preserve UV information across software allows additional texturing methods.\n' +
+        'These listings cover analysis of project-driven UI, rendering, and exploration of Houdini\'s scripting possibilities. Houdini includes a powerful python language integration, as well as it\'s own Hscript and VEX languages.\n' +
         '\n' +
-        'In addition to photoshop image sources, workflows with ZBrush extract 3D painted textures, projections, and baked material and lighting assets that conform to Maya render layer and light linking processes.\n' +
+        'The following will explore workflows utilizing these elements. Consider the following R&D and proof of concept for FX animation work.\n' +
         '\n' +
-        'Imagery inspired by Koshun\'s Shinto deity Hachiman - depicted as a buddhist monk.',
-    footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | Adobe Photoshop | Apple Shake'
+        'Houdini© is a product of SideFX Software\n' +
+        '- all rights reserved. www.sidefx.com',
+    imgUri: imgHOUD,
+    footer: null
 }
 
-export const RubiksCard: MarqueeCardProperties = {
-    title: 'Python Rubik\'s Cube',
-    description: 'This HDA utilizes the Type Operator\'s Event Handling system to create a fully-functional Rubik\'s Cube - built and manipulated entirely with Python.\n' +
+export const ZBrush: MarqueeCardProperties = {
+    title: null,
+    description: 'Reoccuring use of Pixologic Z Brush for creating project assets resulted with insight of numerous methods to creating sculpts for 3d environments.\n' +
         '\n' +
-        'The On-Created event runs a Python script that generates the SOP and SHOP networks each time the asset is dropped to scene. This guarantees flawless integration with any Houdini project.\n' +
+        'The following documentation reviews various methods implemented in project work.\n' +
         '\n' +
-        'A second module consist of conditional functions that permit geometry rotation without breaking transformations at the global level.\n' +
+        'These methods range from essential workflow operations such as UV map utilization and asset outputing to miscellaneous tricks that can satisfy and improve project goals.\n' +
         '\n' +
-        'On-Delete and On-Update events run Python scripts that delete all networks within the HDA (this prevents baking networks to the asset).',
-    footer: 'Tools Used: SideFX Houdini | Python | Rendered with Houdini\'s PBR Renderer'
+        'Z Brush© is the property of Pixologic Inc.\n' +
+        '- all rights reserved. www.pixologic.com',
+    imgUri: imgZBRU,
+    footer: null
 }
 
-export const TornadoCard: MarqueeCardProperties = {
-    title: 'Tornado Funnel FX',
-    description: 'This HDA utilizes the Type Operator\'s Event Handling system to create a fully-functional Rubik\'s Cube - built and manipulated entirely with Python.\n' +
+export const eonVue: MarqueeCardProperties = {
+    title: null,
+    description: 'Experience with e-on Softwares Vue application resulted in strategies beneficial to matte painting and set-extension workflows.\n' +
         '\n' +
-        'The On-Created event runs a Python script that generates the SOP and SHOP networks each time the asset is dropped to scene. This guarantees flawless integration with any Houdini project.\n' +
+        'The following documents pipelines and methods that resulted in technical and aesthetically pleasing 3D environments.\n' +
         '\n' +
-        'A second module consist of conditional functions that permit geometry rotation without breaking transformations at the global level.\n' +
-        '\n' +
-        'On-Delete and On-Update events run Python scripts that delete all networks within the HDA (this prevents baking networks to the asset).',
-    footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra | Adobe Photoshop'
-}
-
-export const PointStarCluster: MarqueeCardProperties = {
-    title: 'Particle Point Cluster',
-    description: 'A study with the objective to create outer space imagery using only Houdini procedural networks. No photography or textures are used in this particle-based star system render.\n' +
-        '\n' +
-        'VOP networks illuminate points and contrast PSCALE with noise to add variety and depth. The central star cluster uses tangent operations to create a spiral animation.\n' +
-        '\n' +
-        'This point system is also used in a volume-from-points network to create a volumetric gas simulation.\n' +
-        '\n' +
-        'These elements are brought into a Composite Operator Network. Here they are layered, colorized, and manipulated to create the final render.',
-    footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra'
+        'Vue xStream© is the property of e-on Software\n' +
+        '- all rights reserved. www.e-onsoftware.com/',
+    imgUri: imgEONV,
+    footer: null
 }

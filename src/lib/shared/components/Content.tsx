@@ -1,9 +1,8 @@
 import {ErrorBoundary, LocationProvider, Route, Router} from "preact-iso";
-import {RootContent} from "../../feature-root/components/RootContent.tsx";
-import {ReelContent} from "../../feature-reel/ReelContent.tsx";
-import {BreakdownContent} from "../../feature-breakdown/BreakdownContent.tsx";
-import {ResearchContent} from "../../feature-research/ResearchContent.tsx";
-
+import {Root} from "../../feature-root/components/Root.tsx";
+import {Reel} from "../../feature-reel/Reel.tsx";
+import {Breakdown} from "../../feature-breakdown/Breakdown.tsx";
+import {Research} from "../../feature-research/Research.tsx";
 export function Content() {
     return (
         <>
@@ -11,31 +10,27 @@ export function Content() {
                 <LocationProvider>
                     <ErrorBoundary>
                         <Router>
-                            <Route default component={RootContent}></Route>
-
-                            <Route path="/reel" component={ReelContent}></Route>
-
-                            <Route path="/breakdown" component={BreakdownContent}></Route>
-                            <Route path="/breakdown/terracotta" component={ () => (<BreakdownContent view="terracotta"></BreakdownContent>)}></Route>
-                            <Route path="/breakdown/hachiman" component={ () => (<BreakdownContent view="hachiman"></BreakdownContent>)}></Route>
-                            <Route path="/breakdown/rubiks" component={ () => (<BreakdownContent view="rubiks"></BreakdownContent>)}></Route>
-                            <Route path="/breakdown/tornado" component={ () => (<BreakdownContent view="tornado"></BreakdownContent>)}></Route>
-                            <Route path="/breakdown/pointstars" component={ () => (<BreakdownContent view="pointstars"></BreakdownContent>)}></Route>
-
-                            <Route path="/research" component={ResearchContent}></Route>
-                            <Route path="/research/aov" component={ () => (<ResearchContent view="aov"></ResearchContent>) }></Route>
-                            <Route path="/research/pointclouds" component={ () => (<ResearchContent view="pointclouds"></ResearchContent>) }></Route>
-                            <Route path="/research/volumetrics1" component={ () => (<ResearchContent view="volumetrics1"></ResearchContent>) }></Route>
-                            <Route path="/research/volumetrics2" component={ () => (<ResearchContent view="volumetrics2"></ResearchContent>) }></Route>
-                            <Route path="/research/subsurface" component={ () => (<ResearchContent view="subsurface"></ResearchContent>) }></Route>
-                            <Route path="/research/magiclights" component={ () => (<ResearchContent view="magiclights"></ResearchContent>) }></Route>
-
-                            <Route path="/research/fluidprimitives" component={ () => (<ResearchContent view="fluidprimitives"></ResearchContent>) }></Route>
-                            <Route path="/research/python1" component={ () => (<ResearchContent view="python1"></ResearchContent>) }></Route>
-                            <Route path="/research/magnetforce" component={ () => (<ResearchContent view="magnetforce"></ResearchContent>) }></Route>
-                            <Route path="/research/zbrushexport" component={ () => (<ResearchContent view="zbrushexport"></ResearchContent>) }></Route>
-                            <Route path="/research/matcaptext" component={ () => (<ResearchContent view="matcaptext"></ResearchContent>) }></Route>
-
+                            <Route default component={Root}></Route>
+                            <Route path="/reel" component={Reel}></Route>
+                            <Route path="/breakdown" component={Breakdown}></Route>
+                            <Route path="/breakdown/terracotta" component={ () => (<Breakdown view="terracotta"></Breakdown>)}></Route>
+                            <Route path="/breakdown/hachiman" component={ () => (<Breakdown view="hachiman"></Breakdown>)}></Route>
+                            <Route path="/breakdown/rubiks" component={ () => (<Breakdown view="rubiks"></Breakdown>)}></Route>
+                            <Route path="/breakdown/tornado" component={ () => (<Breakdown view="tornado"></Breakdown>)}></Route>
+                            <Route path="/breakdown/pointstars" component={ () => (<Breakdown view="pointstars"></Breakdown>)}></Route>
+                            <Route path="/research" component={Research}></Route>
+                            <Route path="/research/aov" component={ () => (<Research view="aov"></Research>) }></Route>
+                            <Route path="/research/pointclouds" component={ () => (<Research view="pointclouds"></Research>) }></Route>
+                            <Route path="/research/volumetrics1" component={ () => (<Research view="volumetrics1"></Research>) }></Route>
+                            <Route path="/research/volumetrics2" component={ () => (<Research view="volumetrics2"></Research>) }></Route>
+                            <Route path="/research/subsurface" component={ () => (<Research view="subsurface"></Research>) }></Route>
+                            <Route path="/research/magiclights" component={ () => (<Research view="magiclights"></Research>) }></Route>
+                            <Route path="/research/fluidprimitives" component={ () => (<Research view="fluidprimitives"></Research>) }></Route>
+                            <Route path="/research/python1" component={ () => (<Research view="python1"></Research>) }></Route>
+                            <Route path="/research/magnetforce" component={ () => (<Research view="magnetforce"></Research>) }></Route>
+                            <Route path="/research/zbrushexport" component={ () => (<Research view="zbrushexport"></Research>) }></Route>
+                            <Route path="/research/matcaptext" component={ () => (<Research view="matcaptext"></Research>) }></Route>
+                            <Route path="/research/usgs" component={ () => (<Research view="usgs"></Research>) }></Route>
                         </Router>
                     </ErrorBoundary>
                 </LocationProvider>

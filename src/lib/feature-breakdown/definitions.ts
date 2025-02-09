@@ -1,4 +1,9 @@
 import {LeftNavigationProperties, MarqueeCardProperties} from "../shared/interfaces/interfaces.ts";
+import d1 from "../../assets/_display_breakdown/terra_img001.jpg";
+import d2 from "../../assets/_display_breakdown/hachi_img001.png";
+import d3 from "../../assets/_display_breakdown/rubik.jpg";
+import d4 from "../../assets/_display_breakdown/tornado_img001.jpg";
+import d5 from "../../assets/_display_breakdown/vortex_img001.jpg";
 
 export const breakdownNav: LeftNavigationProperties[] = [
     {
@@ -37,10 +42,11 @@ export const TerracottaCard: MarqueeCardProperties = {
         '\n' +
         'Z Brush assets consisting of 9 million polygons each are extracted to Renderman for Maya as SubD proxies with 32 bit Displacement maps.\n' +
         '\n' +
-        'Shaders written in SLIM extract AOVs for post-rendering modification, layer displacement maps with procedural patterns, and direct inferred passes to bake and reuse raytraced, subsurface, and deep shadow information.\n' +
+        'Shaders written in SLIM extract _AOVs for post-rendering modification, layer displacement maps with procedural patterns, and direct inferred passes to bake and reuse raytraced, subsurface, and deep shadow information.\n' +
         '\n' +
         '720p frame render time: Approx 80 seconds. Imagery inspired by the terracotta statues in Xi\'an China.',
-    footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | RSL | Apple Shake'
+    footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | RSL | Apple Shake',
+    imgUri: d1,
 }
 
 export const HachimanCard: MarqueeCardProperties = {
@@ -52,7 +58,8 @@ export const HachimanCard: MarqueeCardProperties = {
         'In addition to photoshop image sources, workflows with ZBrush extract 3D painted textures, projections, and baked material and lighting assets that conform to Maya render layer and light linking processes.\n' +
         '\n' +
         'Imagery inspired by Koshun\'s Shinto deity Hachiman - depicted as a buddhist monk.',
-    footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | Adobe Photoshop | Apple Shake'
+    footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | Adobe Photoshop | Apple Shake',
+    imgUri: d2,
 }
 
 export const RubiksCard: MarqueeCardProperties = {
@@ -64,7 +71,8 @@ export const RubiksCard: MarqueeCardProperties = {
         'A second module consist of conditional functions that permit geometry rotation without breaking transformations at the global level.\n' +
         '\n' +
         'On-Delete and On-Update events run Python scripts that delete all networks within the HDA (this prevents baking networks to the asset).',
-    footer: 'Tools Used: SideFX Houdini | Python | Rendered with Houdini\'s PBR Renderer'
+    footer: 'Tools Used: SideFX Houdini | Python | Rendered with Houdini\'s PBR Renderer',
+    imgUri: d3,
 }
 
 export const TornadoCard: MarqueeCardProperties = {
@@ -76,7 +84,8 @@ export const TornadoCard: MarqueeCardProperties = {
         'A second module consist of conditional functions that permit geometry rotation without breaking transformations at the global level.\n' +
         '\n' +
         'On-Delete and On-Update events run Python scripts that delete all networks within the HDA (this prevents baking networks to the asset).',
-    footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra | Adobe Photoshop'
+    footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra | Adobe Photoshop',
+    imgUri: d4,
 }
 
 export const PointStarCluster: MarqueeCardProperties = {
@@ -88,5 +97,6 @@ export const PointStarCluster: MarqueeCardProperties = {
         'This point system is also used in a volume-from-points network to create a volumetric gas simulation.\n' +
         '\n' +
         'These elements are brought into a Composite Operator Network. Here they are layered, colorized, and manipulated to create the final render.',
-    footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra'
+    footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra',
+    imgUri: d5,
 }
