@@ -9,19 +9,15 @@ import display08 from "../../../../assets/_display_research/_rman/_subsurface01/
 const slot01: InformationCardProperties = {
     paragraphs: [
         {
-            text: 'A phenomena occurs when light strikes a surface.',
-            format: ''
-        },
-        {
-            text: 'Depending on the material, light can bounce back - creating specular and color bleed.',
-            format: ''
-        },
-        {
-            text: 'Light is also absorbed by the material and scattered throughout.',
+            text: 'A phenomena occurs when light strikes a surface.  Depending on the material, light can bounce back - creating specular and color bleed.  Light is also absorbed by the material and scattered throughout.',
             format: ''
         },
         {
             text: 'Subsurface Scattering is the procedure for creating this effect. This write-up explores the methods for which RfM generates data to calculate subsurface effects.',
+            format: ''
+        },
+        {
+            text: 'Renderman\'s SubSurface procedure can be executed with knowledge of RSL, RiSpec, and an understanding of point clouds and brickmaps.',
             format: ''
         },
     ],
@@ -31,20 +27,9 @@ const slot01: InformationCardProperties = {
 }
 const slot02: InformationCardProperties = {
     paragraphs: [
+
         {
-            text: 'Renderman\'s SubSurface procedure can be executed with knowledge of RSL, RiSpec, and an understanding of point clouds and brickmaps.',
-            format: ''
-        },
-        {
-            text: 'In previous write-ups point cloud generating bake passes were used to store occlusion data.',
-            format: ''
-        },
-        {
-            text: 'A similar process is used with Subsurface Diffusion.',
-            format: ''
-        },
-        {
-            text: 'The objective is to create a SSDiffuse channel for the scene.',
+            text: 'In previous write-ups point cloud generating bake passes were used to store occlusion data.  A similar process is used with Subsurface Diffusion.  The objective is to create a SSDiffuse channel for the scene.',
             format: ''
         },
         {
@@ -52,11 +37,7 @@ const slot02: InformationCardProperties = {
             format: ''
         },
         {
-            text: 'In the point occlusion write-up a shader was used to read baked occlusion data.',
-            format: ''
-        },
-        {
-            text: 'In this case, a shader that reads radiance data from a baked brickmap is needed.',
+            text: 'In the point occlusion write-up a shader was used to read baked occlusion data.  In this case, a shader that reads radiance data from a baked brickmap is needed.',
             format: ''
         },
         {

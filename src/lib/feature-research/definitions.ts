@@ -118,7 +118,7 @@ export const Houdini: MarqueeCardProperties = {
 
 export const ZBrush: MarqueeCardProperties = {
     title: null,
-    description: 'Reoccuring use of Pixologic Z Brush for creating project assets resulted with insight of numerous methods to creating sculpts for 3d environments.\n' +
+    description: 'Reoccurring use of Pixologic Z Brush for creating project assets resulted with insight of numerous methods to creating sculpts for 3d environments.\n' +
         '\n' +
         'The following documentation reviews various methods implemented in project work.\n' +
         '\n' +
@@ -132,7 +132,7 @@ export const ZBrush: MarqueeCardProperties = {
 
 export const eonVue: MarqueeCardProperties = {
     title: null,
-    description: 'Experience with e-on Softwares Vue application resulted in strategies beneficial to matte painting and set-extension workflows.\n' +
+    description: 'Experience with e-on Software\'s Vue application resulted in strategies beneficial to matte painting and set-extension workflows.\n' +
         '\n' +
         'The following documents pipelines and methods that resulted in technical and aesthetically pleasing 3D environments.\n' +
         '\n' +
