@@ -1,4 +1,10 @@
 import {InformationCardProperties} from "../../../shared/components/InformationCard.tsx";
+import disO01 from "../../../../assets/_display_research/_rman/_python01/display_rubik01.mov";
+import disO02 from "../../../../assets/_display_research/_rman/_python01/display_rubik02.jpg";
+import disO03 from "../../../../assets/_display_research/_rman/_python01/display_rubik03.jpg";
+import disO04 from "../../../../assets/_display_research/_rman/_python01/display_rubik04.jpg";
+import disO05 from "../../../../assets/_display_research/_rman/_python01/display_rubik05.jpg";
+import disO06 from "../../../../assets/_display_research/_rman/_python01/display_rubik06.jpg";
 const slot01: InformationCardProperties = {
     paragraphs: [
         {
@@ -10,7 +16,7 @@ const slot01: InformationCardProperties = {
             format: ''
         },
         {
-            text: 'In this workflow, two seperate python modules are written.',
+            text: 'In this workflow, two separate python modules are written.',
             format: ''
         },
         {
@@ -22,7 +28,7 @@ const slot01: InformationCardProperties = {
             format: ''
         },
     ],
-    vidSrc: null,
+    vidSrc: disO01,
     imgSrc: null,
     imgFooter: 'Figure 01: Animated Rubik\'s Scramble Sequence'
 }
@@ -46,7 +52,7 @@ const slot02: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO02,
     imgFooter: 'Figure 02: HDA Custom Parameter Tab Snapshot'
 }
 const slot03: InformationCardProperties = {
@@ -69,7 +75,7 @@ const slot03: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO03,
     imgFooter: 'Figure 03: HDA Python setUp Function in onCreated Module Thumbnail'
 }
 const slot04: InformationCardProperties = {
@@ -88,7 +94,7 @@ const slot04: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO04,
     imgFooter: 'Figure 04: HDA onCreated Script Result'
 }
 const slot05: InformationCardProperties = {
@@ -115,7 +121,7 @@ const slot05: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO05,
     imgFooter: 'Figure 05: HDA Python Module Rotation Function Thumbnail'
 }
 const slot06: InformationCardProperties = {
@@ -130,7 +136,7 @@ const slot06: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO06,
     imgFooter: 'Figure 06: Scene Lit for Rotation Animated Sequence'
 }
 export const data: InformationCardProperties[] = [

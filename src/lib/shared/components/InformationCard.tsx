@@ -16,15 +16,15 @@ export function InformationCard(properties: InformationCardProperties) {
     return (
         <>
             <div class="mb-5">
-                <div className="d-flex justify-content-between">
-                    <div className="col col-xl-8">
+                <div className="row d-flex justify-content-between">
+                    <div className="col-12 col-xxl-8 px-0">
                         {properties.paragraphs.map(paragraph => {
                             return (
                                 <><p className="pe-5">{paragraph.text}</p></>
                             )
                         })}
                     </div>
-                    <div className="col col-xl-4 text-center" style={'height: fit-content'}>
+                    <div className="col-12 col-xxl-4 px-0 text-center" style={'height: fit-content'}>
                         {properties.imgSrc && (
                             <img src={properties.imgSrc} alt="img" className={'d-flex w-100 rounded shadow-sm'}/>
                         )}

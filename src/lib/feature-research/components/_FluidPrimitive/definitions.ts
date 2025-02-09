@@ -1,4 +1,11 @@
 import {InformationCardProperties} from "../../../shared/components/InformationCard.tsx";
+import disO01 from "../../../../assets/_display_research/_rman/_fluidprimitives/display_fluidprim.mp4";
+import disO02 from "../../../../assets/_display_research/_rman/_fluidprimitives/display_flusim01.jpg";
+import disO03 from "../../../../assets/_display_research/_rman/_fluidprimitives/display_flusim02.jpg";
+import disO04 from "../../../../assets/_display_research/_rman/_fluidprimitives/display_flusim03.jpg";
+import disO05 from "../../../../assets/_display_research/_rman/_fluidprimitives/hfx_display1.mp4";
+import disO06 from "../../../../assets/_display_research/_rman/_fluidprimitives/display_flusim04.jpg";
+
 const slot01: InformationCardProperties = {
     paragraphs: [
         {
@@ -18,7 +25,7 @@ const slot01: InformationCardProperties = {
             format: ''
         }
     ],
-    vidSrc: null,
+    vidSrc: disO01,
     imgSrc: null,
     imgFooter: 'Figure 01: Fluid Primitive Simulation'
 }
@@ -42,7 +49,7 @@ const slot02: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO02,
     imgFooter: 'Figure 02: Font Primitives Geometry ( Source and Target )'
 }
 const slot03: InformationCardProperties = {
@@ -61,7 +68,7 @@ const slot03: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO03,
     imgFooter: 'Figure 03: Points from Primitive Viewport Image'
 }
 const slot04: InformationCardProperties = {
@@ -80,7 +87,7 @@ const slot04: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO04,
     imgFooter: 'Figure 04: The autoDopNetwork Particle Simulation'
 }
 const slot05: InformationCardProperties = {
@@ -107,8 +114,14 @@ const slot05: InformationCardProperties = {
         },
     ],
     vidSrc: null,
-    imgSrc: null,
+    imgSrc: disO06,
     imgFooter: 'Figure 05: The FlipFluid Solver\'s Fluid Sim'
+}
+const slot06: InformationCardProperties = {
+    paragraphs: [],
+    vidSrc: disO05,
+    imgSrc: null,
+    imgFooter: 'Figure 06: The FlipFluid Solver\'s Fluid Sim'
 }
 export const data: InformationCardProperties[] = [
     slot01,
@@ -116,4 +129,5 @@ export const data: InformationCardProperties[] = [
     slot03,
     slot04,
     slot05,
+    slot06
 ];
