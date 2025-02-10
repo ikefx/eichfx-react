@@ -6,7 +6,7 @@ import {Research} from "../../feature-research/Research.tsx";
 export function Content() {
     return (
         <>
-            <div className="col h-100 bg-white">
+            <div className="col h-100">
                 <LocationProvider>
                     <ErrorBoundary>
                         <Router>

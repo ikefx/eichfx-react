@@ -17,7 +17,7 @@ export function Research({ view }: { view: string }) {
 
     return (
         <>
-            <div className="d-flex h-100 bg-light">
+            <div className="d-flex h-100">
                 <LeftNavigation sections={researchNav}></LeftNavigation>
                 <div className="container h-100 p-5 overflow-auto">
                     {(() => {

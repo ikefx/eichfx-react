@@ -10,7 +10,7 @@ export function Breakdown({ view }: { view: string }) {
 
     return(
         <>
-            <div className="d-flex h-100 bg-light">
+            <div className="d-flex h-100">
                 <LeftNavigation sections={breakdownNav}></LeftNavigation>
                 <div className="container h-100 p-5 overflow-auto">
                     {(() => {
