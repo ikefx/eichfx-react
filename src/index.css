@@ -4,6 +4,43 @@
   left: 0;
   right: 0;
   bottom: 0;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #dddddd;
+    background-color: #424242;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #5f5f5f;
+  }
+  .text-secondary {
+    color: #c5c5c5 !important;
+  }
+  .text-dark {
+    color: #ededed !important;
+  }
+  body {
+    color: white!important;
+  }
 }
 
 .video-wrapper {
