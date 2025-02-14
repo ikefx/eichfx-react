@@ -14,5 +14,20 @@ export interface MarqueeCardProperties {
     description: string,
     imgUri?: string,
     vidUri?: string,
+    linkUri?:string,
     footer: string
+}
+
+export interface DetailCardProperties {
+    title: string,
+    paragraphs: { text: string, format: string }[],
+    imgUri?: string,
+    vidUri?: string,
+    footer: string
+}
+
+export interface BreakdownGraphicProperties {
+    imgUri: string,
+    vidUri: string,
+    label: string
 }

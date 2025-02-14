@@ -15,35 +15,40 @@ export function Default() {
                         title={TerracottaCard.title}
                         description={TerracottaCard.description}
                         footer={TerracottaCard.footer}
-                        imgUri={TerracottaCard.imgUri}>
+                        imgUri={TerracottaCard.imgUri}
+                        linkUri={TerracottaCard.linkUri}>
                     </MarqueeCard>
                     <div className="my-4"></div>
                     <MarqueeCard
                         title={HachimanCard.title}
                         description={HachimanCard.description}
                         footer={HachimanCard.footer}
-                        imgUri={HachimanCard.imgUri}>
+                        imgUri={HachimanCard.imgUri}
+                        linkUri={HachimanCard.linkUri}>
                     </MarqueeCard>
                     <div className="my-4"></div>
                     <MarqueeCard
                         title={RubiksCard.title}
                         description={RubiksCard.description}
                         footer={RubiksCard.footer}
-                        imgUri={RubiksCard.imgUri}>
+                        imgUri={RubiksCard.imgUri}
+                        linkUri={RubiksCard.linkUri}>
                     </MarqueeCard>
                     <div className="my-4"></div>
                     <MarqueeCard
                         title={TornadoCard.title}
                         description={TornadoCard.description}
                         footer={TornadoCard.footer}
-                        imgUri={TornadoCard.imgUri}>
+                        imgUri={TornadoCard.imgUri}
+                        linkUri={TornadoCard.linkUri}>
                     </MarqueeCard>
                     <div className="my-4"></div>
                     <MarqueeCard
                         title={PointStarCluster.title}
                         description={PointStarCluster.description}
                         footer={PointStarCluster.footer}
-                        imgUri={PointStarCluster.imgUri}>
+                        imgUri={PointStarCluster.imgUri}
+                        linkUri={PointStarCluster.linkUri}>
                     </MarqueeCard>
                 </div>
             </div>

@@ -47,6 +47,7 @@ export const TerracottaCard: MarqueeCardProperties = {
         '720p frame render time: Approx 80 seconds. Imagery inspired by the terracotta statues in Xi\'an China.',
     footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | RSL | Apple Shake',
     imgUri: d1,
+    linkUri: 'breakdown/terracotta',
 }
 
 export const HachimanCard: MarqueeCardProperties = {
@@ -60,6 +61,8 @@ export const HachimanCard: MarqueeCardProperties = {
         'Imagery inspired by Koshun\'s Shinto deity Hachiman - depicted as a buddhist monk.',
     footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | Adobe Photoshop | Apple Shake',
     imgUri: d2,
+    linkUri: 'breakdown/hachiman',
+
 }
 
 export const RubiksCard: MarqueeCardProperties = {
@@ -73,6 +76,7 @@ export const RubiksCard: MarqueeCardProperties = {
         'On-Delete and On-Update events run Python scripts that delete all networks within the HDA (this prevents baking networks to the asset).',
     footer: 'Tools Used: SideFX Houdini | Python | Rendered with Houdini\'s PBR Renderer',
     imgUri: d3,
+    linkUri: 'breakdown/rubiks',
 }
 
 export const TornadoCard: MarqueeCardProperties = {
@@ -86,6 +90,7 @@ export const TornadoCard: MarqueeCardProperties = {
         'On-Delete and On-Update events run Python scripts that delete all networks within the HDA (this prevents baking networks to the asset).',
     footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra | Adobe Photoshop',
     imgUri: d4,
+    linkUri: 'breakdown/tornado',
 }
 
 export const PointStarCluster: MarqueeCardProperties = {
@@ -99,4 +104,5 @@ export const PointStarCluster: MarqueeCardProperties = {
         'These elements are brought into a Composite Operator Network. Here they are layered, colorized, and manipulated to create the final render.',
     footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra',
     imgUri: d5,
+    linkUri: 'breakdown/pointstars',
 }

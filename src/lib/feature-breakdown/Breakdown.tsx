@@ -1,6 +1,6 @@
 import {LeftNavigation} from "../feature-root/components/LeftNavigation.tsx";
 import {breakdownNav} from "./definitions.ts";
-import {BreakdownTerracotta} from "./components/BreakdownTerracotta.tsx";
+import {BreakdownTerracotta} from "./components/_Terracotta/BreakdownTerracotta.tsx";
 import {BreakdownHachiman} from "./components/BreakdownHachiman.tsx";
 import {BreakdownPythonRubiks} from "./components/BreakdownPythonRubiks.tsx";
 import {BreakdownTornado} from "./components/BreakdownTornado.tsx";
