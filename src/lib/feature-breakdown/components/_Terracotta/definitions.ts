@@ -1,4 +1,8 @@
-import {BreakdownGraphicProperties, DetailCardProperties} from "../../../shared/interfaces/interfaces.ts";
+import {
+    BreakdownGraphicDuoProperties,
+    BreakdownGraphicProperties,
+    DetailCardProperties
+} from "../../../shared/interfaces/interfaces.ts";
 import dis01 from "../../../../assets/_display_breakdown/_terracotta/terra_img001.jpg";
 import dis02 from "../../../../assets/_display_breakdown/_terracotta/terra_img002.png";
 import dis03 from "../../../../assets/_display_breakdown/_terracotta/terra_img010.png";
@@ -7,6 +11,8 @@ import dis05 from "../../../../assets/_display_breakdown/_terracotta/terra_img00
 import dis06 from "../../../../assets/_display_breakdown/_terracotta/terra_img008.png";
 import dis07 from "../../../../assets/_display_breakdown/_terracotta/terra_img006.png";
 import dis08 from "../../../../assets/_display_breakdown/_terracotta/terra_display.mp4";
+import dis09 from "../../../../assets/_display_breakdown/_terracotta/terra_img005.png";
+import dis10 from "../../../../assets/_display_breakdown/_terracotta/terra_img003.png";
 
 const slot01: DetailCardProperties = {
     title: 'Terracotta',
@@ -116,12 +122,20 @@ const slot07: BreakdownGraphicProperties = {
     vidUri: null,
     label: 'WiP Subsurface Diffusion Render'
 }
+const slot08: BreakdownGraphicDuoProperties = {
+    imgUri1: dis09,
+    imgUri2: dis10,
+    label: 'WiP Sculpt & Shader Renders'
+}
 export const data = {
     top: slot01,
     hero: dis08,
     slotsDescription: [
         slot04,
         slot06
+    ],
+    slotsGraphicDuo: [
+        slot08
     ],
     slotsGraphic: [
         slot02,

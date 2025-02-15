@@ -1,11 +1,8 @@
 import {BreakdownDescription} from "../../../shared/components/BreakdownDescription.tsx";
 import {BreakdownGraphic} from "../../../shared/components/BreakdownGraphic.tsx";
 import { data } from "./definitions.ts";
-import dis01 from "../../../../assets/_display_breakdown/_terracotta/terra_img005.png";
-import dis02 from "../../../../assets/_display_breakdown/_terracotta/terra_img003.png"
-
+import {BreakdownGraphicDuo} from "../../../shared/components/BreakdownGraphicDuo.tsx";
 export function BreakdownTerracotta() {
-
     return (
         <>
             <div className="d-flex flex-column">
@@ -57,18 +54,11 @@ export function BreakdownTerracotta() {
                 vidUri={data.slotsGraphic[3].vidUri}
                 label={data.slotsGraphic[3].label}
             ></BreakdownGraphic>
-            <div className="mt-4">
-                <div className="d-inline-block w-50" style={'height: fit-content'}>
-                    <img src={dis01} alt="img" className={'d-flex w-100 rounded-0 rounded-start shadow'}/>
-                </div>
-                <div className="d-inline-block w-50" style={'height: fit-content'}>
-                    <img src={dis02} alt="img" className={'d-flex w-100 rounded-0 rounded-end shadow'}/>
-                </div>
-                <div class="w-100 text-center">
-                    <span class="text-secondary small">WiP Sculpt & Shader Renders</span>
-                </div>
-            </div>
+            <BreakdownGraphicDuo
+                imgUri1={data.slotsGraphicDuo[0].imgUri1}
+                imgUri2={data.slotsGraphicDuo[0].imgUri2}
+                label={data.slotsGraphicDuo[0].label}>
+            </BreakdownGraphicDuo>
         </>
     )
-
 }

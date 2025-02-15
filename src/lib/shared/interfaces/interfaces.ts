@@ -31,3 +31,9 @@ export interface BreakdownGraphicProperties {
     vidUri: string,
     label: string
 }
+
+export interface BreakdownGraphicDuoProperties {
+    imgUri1: string,
+    imgUri2: string,
+    label: string
+}
