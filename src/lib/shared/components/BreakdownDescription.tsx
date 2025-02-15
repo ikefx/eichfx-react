@@ -38,7 +38,7 @@ export function BreakdownDescription(properties: DetailCardProperties) {
                     )}
                 </div>
                 <div className="row d-flex justify-content-between">
-                    <div className="col-12 text-left    ">
+                    <div className="col-12 text-center">
                         <span className="small text-secondary">{properties.footer}</span>
                     </div>
                 </div>
