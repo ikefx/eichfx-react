@@ -3,7 +3,7 @@ import {breakdownNav} from "./definitions.ts";
 import {BreakdownTerracotta} from "./components/_Terracotta/BreakdownTerracotta.tsx";
 import {BreakdownHachiman} from "./components/_Hachiman/BreakdownHachiman.tsx";
 import {BreakdownPythonRubiks} from "./components/_PythonRubiks/BreakdownPythonRubiks.tsx";
-import {BreakdownTornado} from "./components/BreakdownTornado.tsx";
+import {BreakdownTornado} from "./components/_Tornado/BreakdownTornado.tsx";
 import {BreakdownPointStars} from "./components/BreakdownPointStars.tsx";
 import {Default} from "./components/Default.tsx";
 export function Breakdown({ view }: { view: string }) {

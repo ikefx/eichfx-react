@@ -1,7 +1,7 @@
 import {BreakdownDescription} from "../../../shared/components/BreakdownDescription.tsx";
 import {BreakdownGraphic} from "../../../shared/components/BreakdownGraphic.tsx";
-import { data } from "./definitions.ts";
 import {BreakdownGraphicDuo} from "../../../shared/components/BreakdownGraphicDuo.tsx";
+import {data} from "./definitions.ts";
 export function BreakdownHachiman() {
     return (
         <>

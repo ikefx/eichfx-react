@@ -1,15 +1,14 @@
 import {BreakdownDescription} from "../../../shared/components/BreakdownDescription.tsx";
 import {BreakdownGraphic} from "../../../shared/components/BreakdownGraphic.tsx";
-import {data} from "./definitions.ts"
+import {data} from "./definitions.ts";
 
-export function BreakdownPythonRubiks() {
-
+export function BreakdownTornado() {
     return (
         <>
             <div className="d-flex flex-column">
                 <div className="text-center mt-5 mb-2">
                     <h4 className="lead text-secondary mb-0">Houdini Visual Effects</h4>
-                    <h3 className="text-dark font-weight-bolder">Python Scripting Rubik's Cube HDA</h3>
+                    <h3 className="text-dark font-weight-bolder">Tornado Effect Animation Breakdown</h3>
                 </div>
             </div>
             <BreakdownDescription
@@ -34,12 +33,6 @@ export function BreakdownPythonRubiks() {
                 vidUri={data.slotsGraphic[1].vidUri}
                 label={data.slotsGraphic[1].label}
             ></BreakdownGraphic>
-            <BreakdownDescription
-                title={data.slotsDescription[2].title}
-                imgUri={data.slotsDescription[2].imgUri}
-                paragraphs={data.slotsDescription[2].paragraphs}
-                footer={data.slotsDescription[2].footer}>
-            </BreakdownDescription>
             <BreakdownGraphic
                 imgUri={data.slotsGraphic[2].imgUri}
                 vidUri={data.slotsGraphic[2].vidUri}
@@ -49,6 +42,21 @@ export function BreakdownPythonRubiks() {
                 imgUri={data.slotsGraphic[3].imgUri}
                 vidUri={data.slotsGraphic[3].vidUri}
                 label={data.slotsGraphic[3].label}
+            ></BreakdownGraphic>
+            <BreakdownGraphic
+                imgUri={data.slotsGraphic[4].imgUri}
+                vidUri={data.slotsGraphic[4].vidUri}
+                label={data.slotsGraphic[4].label}
+            ></BreakdownGraphic>
+            <BreakdownGraphic
+                imgUri={data.slotsGraphic[5].imgUri}
+                vidUri={data.slotsGraphic[5].vidUri}
+                label={data.slotsGraphic[5].label}
+            ></BreakdownGraphic>
+            <BreakdownGraphic
+                imgUri={data.slotsGraphic[6].imgUri}
+                vidUri={data.slotsGraphic[6].vidUri}
+                label={data.slotsGraphic[6].label}
             ></BreakdownGraphic>
         </>
     )
