@@ -2,7 +2,7 @@ import {LeftNavigation} from "../feature-root/components/LeftNavigation.tsx";
 import {breakdownNav} from "./definitions.ts";
 import {BreakdownTerracotta} from "./components/_Terracotta/BreakdownTerracotta.tsx";
 import {BreakdownHachiman} from "./components/_Hachiman/BreakdownHachiman.tsx";
-import {BreakdownPythonRubiks} from "./components/BreakdownPythonRubiks.tsx";
+import {BreakdownPythonRubiks} from "./components/_PythonRubiks/BreakdownPythonRubiks.tsx";
 import {BreakdownTornado} from "./components/BreakdownTornado.tsx";
 import {BreakdownPointStars} from "./components/BreakdownPointStars.tsx";
 import {Default} from "./components/Default.tsx";
