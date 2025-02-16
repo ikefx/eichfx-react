@@ -37,7 +37,7 @@ export default function App() {
                 <div className="sticky-top">
                     <Header></Header>
                 </div>
-                <div className="d-flex h-100 overflow-hidden">
+                <div className="d-flex h-100 position-relative overflow-hidden">
                     <LeftNavigation sections={nav}></LeftNavigation>
                     <Content></Content>
                 </div>

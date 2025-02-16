@@ -1,8 +1,8 @@
 import {LeftNavigation} from "../feature-root/components/LeftNavigation.tsx";
 import {breakdownNav} from "./definitions.ts";
-import {BreakdownTerracotta} from "./components/BreakdownTerracotta.tsx";
-import {BreakdownHachiman} from "./components/BreakdownHachiman.tsx";
-import {BreakdownPythonRubiks} from "./components/BreakdownPythonRubiks.tsx";
+import {BreakdownTerracotta} from "./components/_Terracotta/BreakdownTerracotta.tsx";
+import {BreakdownHachiman} from "./components/_Hachiman/BreakdownHachiman.tsx";
+import {BreakdownPythonRubiks} from "./components/_PythonRubiks/BreakdownPythonRubiks.tsx";
 import {BreakdownTornado} from "./components/BreakdownTornado.tsx";
 import {BreakdownPointStars} from "./components/BreakdownPointStars.tsx";
 import {Default} from "./components/Default.tsx";
@@ -10,7 +10,7 @@ export function Breakdown({ view }: { view: string }) {
 
     return(
         <>
-            <div className="d-flex h-100 bg-light">
+            <div className="d-flex h-100">
                 <LeftNavigation sections={breakdownNav}></LeftNavigation>
                 <div className="container h-100 p-5 overflow-auto">
                     {(() => {
