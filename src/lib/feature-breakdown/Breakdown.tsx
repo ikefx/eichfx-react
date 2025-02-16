@@ -4,7 +4,7 @@ import {BreakdownTerracotta} from "./components/_Terracotta/BreakdownTerracotta.
 import {BreakdownHachiman} from "./components/_Hachiman/BreakdownHachiman.tsx";
 import {BreakdownPythonRubiks} from "./components/_PythonRubiks/BreakdownPythonRubiks.tsx";
 import {BreakdownTornado} from "./components/_Tornado/BreakdownTornado.tsx";
-import {BreakdownPointStars} from "./components/BreakdownPointStars.tsx";
+import {BreakdownPointStars} from "./components/_PointStars/BreakdownPointStars.tsx";
 import {Default} from "./components/Default.tsx";
 export function Breakdown({ view }: { view: string }) {
 
