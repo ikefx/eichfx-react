@@ -1,7 +1,8 @@
 import {
     BreakdownGraphicDuoProperties,
     BreakdownGraphicProperties,
-    DetailCardProperties
+    DetailCardProperties,
+    Card,
 } from "../../../shared/interfaces/interfaces.ts";
 import dis01 from "../../../../assets/_display_breakdown/_terracotta/terra_img001.jpg";
 import dis02 from "../../../../assets/_display_breakdown/_terracotta/terra_img002.png";
@@ -36,17 +37,27 @@ const slot01: DetailCardProperties = {
     ],
     imgUri: dis01,
     vidUri: '',
-    footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | RSL | Apple Shake'
+    footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | RSL | Apple Shake',
+    type: 'detail'
+};
+const hero01: BreakdownGraphicProperties = {
+    imgUri: null,
+    vidUri: dis08,
+    label: null,
+    type: 'graphic'
+
 };
 const slot02: BreakdownGraphicProperties = {
     imgUri: dis02,
     vidUri: null,
-    label: 'Sample Composite'
+    label: 'Sample Composite',
+    type: 'graphic'
 }
 const slot03: BreakdownGraphicProperties = {
     imgUri: dis03,
     vidUri: null,
-    label: 'Passes Rendered for Composite'
+    label: 'Passes Rendered for Composite',
+    type: 'graphic'
 }
 const slot04: DetailCardProperties = {
     title: 'Renderman Displacement',
@@ -78,12 +89,14 @@ const slot04: DetailCardProperties = {
     ],
     imgUri: dis04,
     vidUri: '',
-    footer: 'Z Brush 32bit TIFF Displacement Maps Rendered in RMS'
+    footer: 'Z Brush 32bit TIFF Displacement Maps Rendered in RMS',
+    type: 'detail'
 };
 const slot05: BreakdownGraphicProperties = {
     imgUri: dis05,
     vidUri: null,
-    label: 'SLIM Ensemble Shader Network for Statue Shading Group - Surface & Displacement'
+    label: 'SLIM Ensemble Shader Network for Statue Shading Group - Surface & Displacement',
+    type: 'graphic'
 }
 const slot06: DetailCardProperties = {
     title: 'Color to Displacement',
@@ -115,32 +128,29 @@ const slot06: DetailCardProperties = {
     ],
     imgUri: dis06,
     vidUri: '',
-    footer: 'Color Texture to Grey-Scale for Displacement'
+    footer: 'Color Texture to Grey-Scale for Displacement',
+    type: 'detail'
 };
 const slot07: BreakdownGraphicProperties = {
     imgUri: dis07,
     vidUri: null,
-    label: 'WiP Subsurface Diffusion Render'
+    label: 'WiP Subsurface Diffusion Render',
+    type: 'graphic'
 }
 const slot08: BreakdownGraphicDuoProperties = {
     imgUri1: dis09,
     imgUri2: dis10,
-    label: 'WiP Sculpt & Shader Renders'
+    label: 'WiP Sculpt & Shader Renders',
+    type: 'graphic_duo'
 }
-export const data = {
-    top: slot01,
-    hero: dis08,
-    slotsDescription: [
-        slot04,
-        slot06
-    ],
-    slotsGraphicDuo: [
-        slot08
-    ],
-    slotsGraphic: [
-        slot02,
-        slot03,
-        slot05,
-        slot07,
-    ]
-};
+export const data: Card[] = [
+    slot01,
+    hero01,
+    slot02,
+    slot03,
+    slot04,
+    slot05,
+    slot06,
+    slot07,
+    slot08
+];
