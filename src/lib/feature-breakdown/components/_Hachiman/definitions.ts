@@ -1,7 +1,8 @@
 import {
     BreakdownGraphicDuoProperties,
     BreakdownGraphicProperties,
-    DetailCardProperties
+    DetailCardProperties,
+    Card
 } from "../../../shared/interfaces/interfaces.ts";
 import dis01 from "../../../../assets/_display_breakdown/_hachiman/hachi_img001.png";
 import dis02 from "../../../../assets/_display_breakdown/_hachiman/hachi_img002.png";
@@ -17,7 +18,6 @@ import dis12 from "../../../../assets/_display_breakdown/_hachiman/hachi_img005.
 import dis13 from "../../../../assets/_display_breakdown/_hachiman/hachi_img003.png";
 import dis14 from "../../../../assets/_display_breakdown/_hachiman/hachi_img012.jpg";
 import dis15 from "../../../../assets/_display_breakdown/_hachiman/hachi_img011.jpg";
-
 const slot01: DetailCardProperties = {
     title: 'Hachiman',
     paragraphs: [
@@ -44,37 +44,44 @@ const slot01: DetailCardProperties = {
     ],
     imgUri: dis01,
     vidUri: '',
-    footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | Adobe Photoshop | Apple Shake'
+    footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | Adobe Photoshop | Apple Shake',
+    type: 'detail'
 };
 const slot02: BreakdownGraphicProperties = {
     imgUri: null,
     vidUri: dis08,
-    label: ''
+    label: 'Animated Sequence',
+    type: 'graphic'
 }
 const slot03: BreakdownGraphicProperties = {
     imgUri: dis09,
     vidUri: null,
-    label: 'Master Layer Beauty Pass Render'
+    label: 'Master Layer Beauty Pass Render',
+    type: 'graphic'
 }
 const slot04: BreakdownGraphicProperties = {
     imgUri: dis10,
     vidUri: null,
-    label: 'Maya Scene Environment: SubD and Polygon Meshes'
+    label: 'Maya Scene Environment: SubD and Polygon Meshes',
+    type: 'graphic'
 }
 const slot05: BreakdownGraphicProperties = {
     imgUri: dis11,
     vidUri: null,
-    label: 'Passes Rendered for Compositing'
+    label: 'Passes Rendered for Compositing',
+    type: 'graphic'
 }
 const slot06: BreakdownGraphicProperties = {
     imgUri: dis12,
     vidUri: null,
-    label: 'Silk Screen Texture Source Image: Endo Morito\'s Penance, Yoshitoshi - 1860'
+    label: 'Silk Screen Texture Source Image: Endo Morito\'s Penance, Yoshitoshi - 1860',
+    type: 'graphic'
 }
 const slot07: BreakdownGraphicProperties = {
     imgUri: dis04,
     vidUri: null,
-    label: 'ZBrush \'Image Plane\' Plugin and MatCap Texture Modification'
+    label: 'ZBrush \'Image Plane\' Plugin and MatCap Texture Modification',
+    type: 'graphic'
 }
 const slot08: DetailCardProperties = {
     title: 'ZMaterial to Texture',
@@ -106,17 +113,20 @@ const slot08: DetailCardProperties = {
     ],
     imgUri: dis06,
     vidUri: '',
-    footer: 'ZBrush MatCap to Maya: Texture * Occlusion * Incandescence'
+    footer: 'ZBrush MatCap to Maya: Texture * Occlusion * Incandescence',
+    type: 'detail'
 };
 const slot09: BreakdownGraphicProperties = {
     imgUri: dis03,
     vidUri: null,
-    label: 'RMS Render with ZBrush MatCap Red Wax as Texture'
+    label: 'RMS Render with ZBrush MatCap Red Wax as Texture',
+    type: 'graphic'
 }
 const slot10: BreakdownGraphicDuoProperties = {
     imgUri1: dis13,
     imgUri2: dis02,
-    label: 'WiP Sculpt & Shader Renders'
+    label: 'WiP Sculpt & Shader Renders',
+    type: 'graphic_duo'
 }
 const slot11: DetailCardProperties = {
     title: 'Renderman Atmosphere',
@@ -148,37 +158,33 @@ const slot11: DetailCardProperties = {
     ],
     imgUri: dis14,
     vidUri: '',
-    footer: 'Renderman Smoke Atmosphere Shader Render'
+    footer: 'Renderman Smoke Atmosphere Shader Render',
+    type: 'detail'
 };
 const slot12: BreakdownGraphicProperties = {
     imgUri: dis15,
     vidUri: null,
-    label: 'WiP Atmosphere Shader with Noise - Beauty Pass Render'
+    label: 'WiP Atmosphere Shader with Noise - Beauty Pass Render',
+    type: 'graphic'
 }
 const slot13: BreakdownGraphicProperties = {
     imgUri: dis05,
     vidUri: null,
-    label: 'Maya Environment: Distance Measurements from Camera'
+    label: 'Maya Environment: Distance Measurements from Camera',
+    type: 'graphic'
 }
-export const data = {
-    top: slot01,
-    hero: dis08,
-    slotsDescription: [
-        slot08,
-        slot11
-    ],
-    slotGraphicDuo: [
-        slot10,
-    ],
-    slotsGraphic: [
-        slot02,
-        slot03,
-        slot04,
-        slot05,
-        slot06,
-        slot07,
-        slot09,
-        slot12,
-        slot13
-    ]
-};
+export const data: Card[] = [
+    slot01,
+    slot02,
+    slot03,
+    slot04,
+    slot05,
+    slot06,
+    slot07,
+    slot08,
+    slot09,
+    slot10,
+    slot11,
+    slot12,
+    slot13,
+];
