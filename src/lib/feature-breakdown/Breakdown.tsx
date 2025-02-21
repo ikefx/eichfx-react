@@ -12,23 +12,25 @@ export function Breakdown({ view }: { view: string }) {
         <>
             <div className="d-flex h-100">
                 <LeftNavigation sections={breakdownNav}></LeftNavigation>
-                <div className="container h-100 p-5 overflow-auto">
-                    {(() => {
-                        switch (view) {
-                            case 'terracotta':
-                                return BreakdownTerracotta();
-                            case 'hachiman':
-                                return BreakdownHachiman();
-                            case 'rubiks':
-                                return BreakdownPythonRubiks();
-                            case 'tornado':
-                                return BreakdownTornado();
-                            case 'pointstars':
-                                return BreakdownPointStars();
-                            default:
-                                return Default();
-                        }
-                    })()}
+                <div className="w-100 h-100 p-5 overflow-auto">
+                    <div class="container">
+                        {(() => {
+                            switch (view) {
+                                case 'terracotta':
+                                    return BreakdownTerracotta();
+                                case 'hachiman':
+                                    return BreakdownHachiman();
+                                case 'rubiks':
+                                    return BreakdownPythonRubiks();
+                                case 'tornado':
+                                    return BreakdownTornado();
+                                case 'pointstars':
+                                    return BreakdownPointStars();
+                                default:
+                                    return Default();
+                            }
+                        })()}
+                    </div>
                 </div>
             </div>
         </>
