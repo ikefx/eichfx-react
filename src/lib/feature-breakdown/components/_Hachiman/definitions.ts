@@ -45,6 +45,7 @@ const slot01: DetailCardProperties = {
     imgUri: dis01,
     vidUri: '',
     footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | Adobe Photoshop | Apple Shake',
+    footerClass: 'justify-content-start',
     type: 'detail'
 };
 const slot02: BreakdownGraphicProperties = {

@@ -33,6 +33,7 @@ const slot01: DetailCardProperties = {
     imgUri: dis01,
     vidUri: '',
     footer: 'Tools Used: SideFX Houdini | Python | Rendered with Houdini\'s PBR Renderer',
+    footerClass: 'justify-content-start',
     type: 'detail'
 };
 const slot02: BreakdownGraphicProperties = {

@@ -1,5 +1,5 @@
 import {BreakdownGraphicDuoProperties} from "../interfaces/interfaces.ts";
-export function BreakdownGraphicDuo(properties: BreakdownGraphicDuoProperties) {
+export function CardElementGraphicDuo(properties: BreakdownGraphicDuoProperties) {
     return (
         <>
             <div className="row mt-4 mx-1">

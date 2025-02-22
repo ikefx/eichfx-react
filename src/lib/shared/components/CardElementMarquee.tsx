@@ -1,13 +1,25 @@
 import {MarqueeCardProperties} from "../interfaces/interfaces.ts";
 
-export function MarqueeCard(properties: MarqueeCardProperties) {
+export function CardElementMarquee(properties: MarqueeCardProperties) {
     return (
         <>
+            <div className="row mt-2 justify-content-start">
+                <div className="col-12 px-0">
+                    {properties.title && (<h3>{properties.title}</h3>)}
+                </div>
+            </div>
             <div className="row d-flex justify-content-between">
-                <div className="col-12 col-xxl-7 px-0">
+                <div className="col-12 col-xxl-6 px-0">
                     <div className="d-flex flex-column">
-                        {properties.title && (<h3>{properties.title}</h3>)}
-                        <p className="pe-5">{properties.description}</p>
+                        {properties.description.map(paragraph => {
+                            return (
+                                <>
+                                    <p className={"pe-5 " + (paragraph.format === "secondary" ? "text-secondary fw-light" : "")}>
+                                        {paragraph.text ? paragraph.text : <br/>}
+                                    </p>
+                                </>
+                            )
+                        })}
                     </div>
                 </div>
                 {properties.imgUri && (

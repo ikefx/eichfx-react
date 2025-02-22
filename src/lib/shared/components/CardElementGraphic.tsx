@@ -1,5 +1,5 @@
 import {BreakdownGraphicProperties} from "../interfaces/interfaces.ts";
-export function BreakdownGraphic(properties: BreakdownGraphicProperties) {
+export function CardElementGraphic(properties: BreakdownGraphicProperties) {
     return (
         <>
             <div className="row mt-4">

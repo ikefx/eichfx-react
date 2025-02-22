@@ -35,6 +35,7 @@ const slot01: DetailCardProperties = {
     imgUri: dis01,
     vidUri: '',
     footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra | Adobe Photoshop',
+    footerClass: 'justify-content-start',
     type: 'detail'
 };
 const slot02: BreakdownGraphicProperties = {

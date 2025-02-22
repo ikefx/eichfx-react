@@ -15,7 +15,7 @@ export interface Card {
 
 export interface MarqueeCardProperties extends Card {
     title: string,
-    description: string,
+    description: { text: string, format: string }[],
     imgUri?: string,
     vidUri?: string,
     linkUri?:string,
@@ -27,7 +27,9 @@ export interface DetailCardProperties extends Card {
     paragraphs: { text: string, format: string }[],
     imgUri?: string,
     vidUri?: string,
-    footer: string
+    linkUri?: string,
+    footer: string,
+    footerClass?: string
 }
 
 export interface BreakdownGraphicProperties extends Card {

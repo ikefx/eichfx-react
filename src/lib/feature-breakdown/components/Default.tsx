@@ -1,55 +1,17 @@
-import {MarqueeCard} from "../../shared/components/MarqueeCard.tsx";
-import {HachimanCard, PointStarCluster, RubiksCard, TerracottaCard, TornadoCard} from "../definitions.ts";
+import {data} from "../definitions.ts";
+import {CardElement} from "../../shared/components/CardElement.tsx";
 
 export function Default() {
     return (
         <>
             <div class="d-flex flex-column">
                 <div className="text-center mt-5 mb-2">
-                    <h4 className="text-dark mb-0">DEMO BREAKDOWN SHEET</h4>
-                    <h3 className="lead text-secondary">Click links in the navigation bar or project images to browse extended breakdowns per project.</h3>
+                    <h3 className="text-dark mb-0">DEMO BREAKDOWN SHEET</h3>
+                    <h4 className="lead text-secondary">Click links in the navigation bar or project images to browse extended breakdowns per project.</h4>
                 </div>
             </div>
             <div className="mt-5">
-                <MarqueeCard
-                    title={TerracottaCard.title}
-                    description={TerracottaCard.description}
-                    footer={TerracottaCard.footer}
-                    imgUri={TerracottaCard.imgUri}
-                    linkUri={TerracottaCard.linkUri}>
-                </MarqueeCard>
-                <div className="my-4"></div>
-                <MarqueeCard
-                    title={HachimanCard.title}
-                    description={HachimanCard.description}
-                    footer={HachimanCard.footer}
-                    imgUri={HachimanCard.imgUri}
-                    linkUri={HachimanCard.linkUri}>
-                </MarqueeCard>
-                <div className="my-4"></div>
-                <MarqueeCard
-                    title={RubiksCard.title}
-                    description={RubiksCard.description}
-                    footer={RubiksCard.footer}
-                    imgUri={RubiksCard.imgUri}
-                    linkUri={RubiksCard.linkUri}>
-                </MarqueeCard>
-                <div className="my-4"></div>
-                <MarqueeCard
-                    title={TornadoCard.title}
-                    description={TornadoCard.description}
-                    footer={TornadoCard.footer}
-                    imgUri={TornadoCard.imgUri}
-                    linkUri={TornadoCard.linkUri}>
-                </MarqueeCard>
-                <div className="my-4"></div>
-                <MarqueeCard
-                    title={PointStarCluster.title}
-                    description={PointStarCluster.description}
-                    footer={PointStarCluster.footer}
-                    imgUri={PointStarCluster.imgUri}
-                    linkUri={PointStarCluster.linkUri}>
-                </MarqueeCard>
+                {data.map(card => (<><CardElement {...card}></CardElement><br/></>))}
             </div>
         </>
     )

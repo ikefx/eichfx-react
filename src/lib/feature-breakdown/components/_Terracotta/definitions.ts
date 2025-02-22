@@ -19,7 +19,7 @@ const slot01: DetailCardProperties = {
     title: 'Terracotta',
     paragraphs: [
         {
-            text: 'Independent study developing shader components and a pipeline emphasis for render-optimized high resolution imagery.',
+            text: 'Independent study developing shader components and a pipeline emphasis for render-optimized high resolution imagery with Renderman Studios.',
             format: ''
         },
         {
@@ -38,6 +38,7 @@ const slot01: DetailCardProperties = {
     imgUri: dis01,
     vidUri: '',
     footer: 'Tools Used: Pixologic Z Brush | Autodesk Maya | Pixar Renderman Studios | RSL | Apple Shake',
+    footerClass: 'justify-content-start',
     type: 'detail'
 };
 const hero01: BreakdownGraphicProperties = {
