@@ -1,5 +1,5 @@
 import {
-    BreakdownGraphicProperties,
+    BreakdownGraphicProperties, Card,
     DetailCardProperties
 } from "../../../shared/interfaces/interfaces.ts";
 import dis01 from "../../../../assets/_display_breakdown/_rubiks/rubik.jpg";
@@ -32,12 +32,15 @@ const slot01: DetailCardProperties = {
     ],
     imgUri: dis01,
     vidUri: '',
-    footer: 'Tools Used: SideFX Houdini | Python | Rendered with Houdini\'s PBR Renderer'
+    footer: 'Tools Used: SideFX Houdini | Python | Rendered with Houdini\'s PBR Renderer',
+    footerClass: 'justify-content-start',
+    type: 'detail'
 };
 const slot02: BreakdownGraphicProperties = {
     imgUri: null,
     vidUri: dis02,
-    label: 'Sample Animation'
+    label: 'Sample Animation',
+    type: 'graphic'
 }
 const slot04: DetailCardProperties = {
     title: 'On-Created Python Script',
@@ -69,12 +72,14 @@ const slot04: DetailCardProperties = {
     ],
     imgUri: dis04,
     vidUri: '',
-    footer: 'Python Generated Cube (1 of 27)'
+    footer: 'Python Generated Cube (1 of 27)',
+    type: 'detail'
 };
 const slot05: BreakdownGraphicProperties = {
     imgUri: dis08,
     vidUri: null,
-    label: 'Rubik\'s Cube HDA On-Created SOP and SHOP Result'
+    label: 'Rubik\'s Cube HDA On-Created SOP and SHOP Result',
+    type: 'graphic'
 }
 const slot06: DetailCardProperties = {
     title: 'Promoted UI Parameters',
@@ -106,30 +111,27 @@ const slot06: DetailCardProperties = {
     ],
     imgUri: dis07,
     vidUri: '',
-    footer: 'Rubik\'s Cube Digital Assets Promoted Parameters'
+    footer: 'Rubik\'s Cube Digital Assets Promoted Parameters',
+    type: 'detail'
 };
 const slot07: BreakdownGraphicProperties = {
     imgUri: dis09,
     vidUri: null,
-    label: 'Scrambled Rubik\'s Cube with Visible Center Cube Locator'
+    label: 'Scrambled Rubik\'s Cube with Visible Center Cube Locator',
+    type: 'graphic'
 }
 const slot08: BreakdownGraphicProperties = {
     imgUri: dis05,
     vidUri: null,
-    label: 'Center Cube Null Object, Conditional Rotations Measured From This Locator'
+    label: 'Center Cube Null Object, Conditional Rotations Measured From This Locator',
+    type: 'graphic'
 }
-export const data = {
-    top: slot01,
-    hero: dis08,
-    slotsDescription: [
-        slot01,
-        slot04,
-        slot06
-    ],
-    slotsGraphic: [
-        slot02,
-        slot05,
-        slot07,
-        slot08,
-    ]
-};
+export const data: Card[] = [
+    slot01,
+    slot02,
+    slot04,
+    slot05,
+    slot06,
+    slot07,
+    slot08
+];

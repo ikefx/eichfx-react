@@ -88,56 +88,104 @@ export const researchNav: LeftNavigationProperties[] = [
 ];
 
 export const Renderman: MarqueeCardProperties = {
-    title: null,
-    description: 'Listed directories illustrate functionality and back-end processing of the Prman Renderer that required additional documentation not covered in project breakdowns.\n' +
-        '\n' +
-        'Documentation written from research, development, and trial and error of the Renderman projects I\'ve completed (and sometimes not completed). Consider the following R&D and Proof of Concept for my Renderman related work.\n' +
-        '\n' +
-        'Syntax written in Malcom Kesson\'s Cutter©\n' +
-        '- all rights reserved. www.fundza.com\n' +
-        '\n' +
-        'Renderman© is a product of Pixar Animation\n' +
-        '- all rights reserved. www.pixar.com',
+    title: 'Renderman User Documentation',
+    description: [
+        {
+            text: 'Listed directories illustrate functionality and back-end processing of the Prman Renderer that required additional documentation not covered in project breakdowns.',
+            format: ''
+        },
+        {
+            text: 'Documentation written from research, development, and trial and error of the Renderman projects I\'ve completed (and sometimes not completed). Consider the following R&D and Proof of Concept for my Renderman related work.',
+            format: ''
+        },
+        {
+            text: 'Syntax written in Malcom Kesson\'s Cutter© - all rights reserved. www.fundza.com',
+            format: 'secondary'
+        },
+        {
+            text: 'Renderman© is a product of Pixar Animation - all rights reserved. www.pixar.com',
+            format: 'secondary'
+        }
+    ],
     imgUri: imgRMAN,
-    footer: null
+    footer: null,
+    type: 'marquee'
 }
 
 export const Houdini: MarqueeCardProperties = {
-    title: null,
-    description: 'SideFX Software\'s Houdini provides a robust library of tools and resources for visual effects. These documents review various methods that exhibit procedural and script operations.\n' +
-        '\n' +
-        'These listings cover analysis of project-driven UI, rendering, and exploration of Houdini\'s scripting possibilities. Houdini includes a powerful python language integration, as well as it\'s own Hscript and VEX languages.\n' +
-        '\n' +
-        'The following will explore workflows utilizing these elements. Consider the following R&D and proof of concept for FX animation work.\n' +
-        '\n' +
-        'Houdini© is a product of SideFX Software\n' +
-        '- all rights reserved. www.sidefx.com',
+    title: 'Houdini Operation and Effects Resource',
+    description: [
+        {
+            text: 'SideFX Software\'s Houdini provides a robust library of tools and resources for visual effects. These documents review various methods that exhibit procedural and script operations.',
+            format: ''
+        },
+        {
+            text: 'These listings cover analysis of project-driven UI, rendering, and exploration of Houdini\'s scripting possibilities. Houdini includes a powerful python language integration, as well as it\'s own Hscript and VEX languages.',
+            format: ''
+        },
+        {
+            text: 'The following will explore workflows utilizing these elements. Consider the following R&D and proof of concept for FX animation work.',
+            format: ''
+        },
+        {
+            text: 'Houdini© is a product of SideFX Software - all rights reserved. www.sidefx.com',
+            format: 'secondary'
+        }
+    ],
     imgUri: imgHOUD,
-    footer: null
+    footer: null,
+    type: 'marquee'
 }
 
 export const ZBrush: MarqueeCardProperties = {
-    title: null,
-    description: 'Reoccurring use of Pixologic Z Brush for creating project assets resulted with insight of numerous methods to creating sculpts for 3d environments.\n' +
-        '\n' +
-        'The following documentation reviews various methods implemented in project work.\n' +
-        '\n' +
-        'These methods range from essential workflow operations such as UV map utilization and asset outputing to miscellaneous tricks that can satisfy and improve project goals.\n' +
-        '\n' +
-        'Z Brush© is the property of Pixologic Inc.\n' +
-        '- all rights reserved. www.pixologic.com',
+    title: 'Z Brush Guides, Methods, and Tricks',
+    description: [
+        {
+            text: 'Reoccurring use of Pixologic Z Brush for creating project assets resulted with insight of numerous methods to creating sculpts for 3d environments.',
+            format: ''
+        },
+        {
+            text: 'The following documentation reviews various methods implemented in project work.',
+            format: ''
+        },
+        {
+            text: 'These methods range from essential workflow operations such as UV map utilization and asset outputting to miscellaneous tricks that can satisfy and improve project goals.',
+            format: ''
+        },
+        {
+            text: 'Z Brush© is the property of Pixologic Inc. - all rights reserved. www.pixologic.com',
+            format: 'secondary'
+        }
+    ],
     imgUri: imgZBRU,
-    footer: null
+    footer: null,
+    type: 'marquee'
 }
 
 export const eonVue: MarqueeCardProperties = {
-    title: null,
-    description: 'Experience with e-on Software\'s Vue application resulted in strategies beneficial to matte painting and set-extension workflows.\n' +
-        '\n' +
-        'The following documents pipelines and methods that resulted in technical and aesthetically pleasing 3D environments.\n' +
-        '\n' +
-        'Vue xStream© is the property of e-on Software\n' +
-        '- all rights reserved. www.e-onsoftware.com/',
+    title: 'e-on Vue User Documentation',
+    description: [
+        {
+            text: 'Experience with e-on Software\'s Vue application resulted in strategies beneficial to matte painting and set-extension workflows.',
+            format: ''
+        },
+        {
+            text: 'The following documents pipelines and methods that resulted in technical and aesthetically pleasing 3D environments.',
+            format: ''
+        },
+        {
+            text: 'Vue xStream© is the property of e-on Software - all rights reserved. www.e-onsoftware.com/',
+            format: 'secondary'
+        },
+    ],
     imgUri: imgEONV,
-    footer: null
+    footer: null,
+    type: 'marquee'
 }
+
+export const data: MarqueeCardProperties[] = [
+    Renderman,
+    Houdini,
+    ZBrush,
+    eonVue
+];
