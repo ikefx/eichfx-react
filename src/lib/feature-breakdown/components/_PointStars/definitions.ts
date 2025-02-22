@@ -34,17 +34,20 @@ const slot01: DetailCardProperties = {
     ],
     imgUri: dis01,
     vidUri: '',
-    footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra'
+    footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra',
+    type: 'detail'
 };
 const slot02: BreakdownGraphicProperties = {
     imgUri: null,
     vidUri: dis02,
-    label: 'Sample Animation'
+    label: 'Sample Animation',
+    type: "graphic"
 }
 const slot03: BreakdownGraphicProperties = {
     imgUri: dis04,
     vidUri: null,
-    label: 'Houdini Scene View Pane Screenshot of Point Star Project'
+    label: 'Houdini Scene View Pane Screenshot of Point Star Project',
+    type: "graphic"
 }
 const slot04: DetailCardProperties = {
     title: 'Points as Stars with VOP',
@@ -76,12 +79,14 @@ const slot04: DetailCardProperties = {
     ],
     imgUri: dis03,
     vidUri: '',
-    footer: 'Scattered Points from Sphere with Position Altered Via VOP'
+    footer: 'Scattered Points from Sphere with Position Altered Via VOP',
+    type: 'detail'
 };
 const slot05: BreakdownGraphicProperties = {
     imgUri: dis05,
     vidUri: null,
-    label: 'Scattered Points from Sphere II'
+    label: 'Scattered Points from Sphere II',
+    type: "graphic"
 }
 const slot06: DetailCardProperties = {
     title: 'Vortex Points and Volume',
@@ -113,37 +118,35 @@ const slot06: DetailCardProperties = {
     ],
     imgUri: dis06,
     vidUri: '',
-    footer: 'Center Points with Orbital Velocity for Foreground Stars'
+    footer: 'Center Points with Orbital Velocity for Foreground Stars',
+    type: 'detail'
 };
 const slot07: BreakdownGraphicProperties = {
     imgUri: dis07,
     vidUri: null,
-    label: 'Foreground Volume from Center Points (Orbital Velocity Persist)'
+    label: 'Foreground Volume from Center Points (Orbital Velocity Persist)',
+    type: "graphic"
 }
 const slot08: BreakdownGraphicProperties = {
     imgUri: dis08,
     vidUri: null,
-    label: 'Composite Network Pane Example Screenshot'
+    label: 'Composite Network Pane Example Screenshot',
+    type: "graphic"
 }
 const slot09: BreakdownGraphicProperties = {
     imgUri: null,
     vidUri: dis09,
-    label: 'Orbital Velocity Demonstration with Foreground Stars'
+    label: 'Orbital Velocity Demonstration with Foreground Stars',
+    type: "graphic"
 }
-export const data = {
-    top: slot01,
-    hero: dis02,
-    slotsDescription: [
-        slot01,
-        slot04,
-        slot06,
-    ],
-    slotsGraphic: [
-        slot02,
-        slot03,
-        slot05,
-        slot07,
-        slot08,
-        slot09,
-    ]
-};
+export const data = [
+    slot01,
+    slot02,
+    slot03,
+    slot04,
+    slot05,
+    slot06,
+    slot07,
+    slot08,
+    slot09
+];

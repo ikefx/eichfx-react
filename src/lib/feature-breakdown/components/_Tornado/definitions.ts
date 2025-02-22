@@ -1,5 +1,5 @@
 import {
-    BreakdownGraphicProperties,
+    BreakdownGraphicProperties, Card,
     DetailCardProperties
 } from "../../../shared/interfaces/interfaces.ts";
 import dis01 from "../../../../assets/_display_breakdown/_tornado/tornado_img001.jpg";
@@ -34,12 +34,14 @@ const slot01: DetailCardProperties = {
     ],
     imgUri: dis01,
     vidUri: '',
-    footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra | Adobe Photoshop'
+    footer: 'Tools Used: SideFX Houdini | HScript | Rendered with Mantra | Adobe Photoshop',
+    type: 'detail'
 };
 const slot02: BreakdownGraphicProperties = {
     imgUri: null,
     vidUri: dis02,
-    label: 'Sample Animation'
+    label: 'Sample Animation',
+    type: 'graphic'
 }
 const slot04: DetailCardProperties = {
     title: 'Point Normals as Velocity',
@@ -79,52 +81,53 @@ const slot04: DetailCardProperties = {
     ],
     imgUri: dis03,
     vidUri: '',
-    footer: 'Funnel Polygon Object with Visible Point Normals Added, Point Operator \'Add Normal\' Hscript Demo'
+    footer: 'Funnel Polygon Object with Visible Point Normals Added, Point Operator \'Add Normal\' Hscript Demo',
+    type: 'detail'
 };
 const slot05: BreakdownGraphicProperties = {
     imgUri: dis06,
     vidUri: null,
-    label: 'Points Scattered from SOP Grid for Ground Volume'
+    label: 'Points Scattered from SOP Grid for Ground Volume',
+    type: 'graphic'
 }
 const slot06: BreakdownGraphicProperties = {
     imgUri: dis07,
     vidUri: null,
-    label: 'Ground Points with VOP Manipulated Point Normals Converging {x,z} to Origin'
+    label: 'Ground Points with VOP Manipulated Point Normals Converging {x,z} to Origin',
+    type: 'graphic'
 }
 const slot07: BreakdownGraphicProperties = {
     imgUri: dis04,
     vidUri: null,
-    label: 'Funnel and Ground Points Merged, Normals Persist as Custom Attribute'
+    label: 'Funnel and Ground Points Merged, Normals Persist as Custom Attribute',
+    type: 'graphic'
 }
 const slot08: BreakdownGraphicProperties = {
     imgUri: dis05,
     vidUri: null,
-    label: 'Dynamic Operator Network | Pyro Solver with Scattered Points as Source'
+    label: 'Dynamic Operator Network | Pyro Solver with Scattered Points as Source',
+    type: 'graphic'
 }
 const slot09: BreakdownGraphicProperties = {
     imgUri: dis08,
     vidUri: null,
-    label: 'Debris Field Point Operator Network, Funnel Velocity Offsets Noise Velocity'
+    label: 'Debris Field Point Operator Network, Funnel Velocity Offsets Noise Velocity',
+    type: 'graphic'
 }
 const slot10: BreakdownGraphicProperties = {
     imgUri: dis09,
     vidUri: null,
-    label: 'Scene Viewport Pane Screenshot'
+    label: 'Scene Viewport Pane Screenshot',
+    type: 'graphic'
 }
-export const data = {
-    top: slot01,
-    hero: dis02,
-    slotsDescription: [
-        slot01,
-        slot04,
-    ],
-    slotsGraphic: [
-        slot02,
-        slot05,
-        slot06,
-        slot07,
-        slot08,
-        slot09,
-        slot10
-    ]
-};
+export const data: Card[] = [
+    slot01,
+    slot02,
+    slot04,
+    slot05,
+    slot06,
+    slot07,
+    slot08,
+    slot09,
+    slot10
+];
