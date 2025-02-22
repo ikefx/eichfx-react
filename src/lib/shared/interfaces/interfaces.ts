@@ -10,7 +10,7 @@ export interface LeftNavigationProperties {
 }
 
 export interface Card {
-    type?: 'marquee' | 'detail' | 'graphic' | 'graphic_duo';
+    type: 'marquee' | 'detail' | 'graphic' | 'graphic_duo';
 }
 
 export interface MarqueeCardProperties extends Card {
