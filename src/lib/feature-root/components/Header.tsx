@@ -35,13 +35,13 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
             <header className="d-block bg-dark">
                 <nav className="navbar navbar-dark w-100">
                     <div className="container-fluid">
-                        {sections.map(nav => {
+                        {sections.map(_ => {
                             return (
-                                <button className="navbar-toggler col p-2" type="button" data-bs-toggle="collapse"
+                                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#navbarToggleExternalContent"
                                         aria-controls="navbarToggleExternalContent" aria-expanded="false"
                                         aria-label="Toggle navigation">
-                                    {nav.top.title}
+                                    <span className="navbar-toggler-icon"></span>
                                 </button>
                             );
                         })}
