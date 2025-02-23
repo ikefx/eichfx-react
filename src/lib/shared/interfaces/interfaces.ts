@@ -1,4 +1,4 @@
-export interface LeftNavigationProperties {
+export interface NavigationProperties {
     top: {
         title: string,
         path: string

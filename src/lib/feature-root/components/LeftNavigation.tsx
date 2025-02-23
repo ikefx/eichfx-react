@@ -1,15 +1,13 @@
-import {LeftNavigationProperties} from "../../shared/interfaces/interfaces.ts";
-
-export function LeftNavigation({ sections }: { sections: LeftNavigationProperties[] }) {
-
+import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
+export function LeftNavigation({ sections }: { sections: NavigationProperties[] }) {
     return(
         <>
-            <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark h-100" style="width: 280px;">
+            <div className={"d-flex flex-column flex-shrink-0 p-3 text-white bg-dark h-100"} style="width: 280px;">
                 {sections.map((section, i: number) => {
                     return (
                         <>
                             <a href={section.top.path}
-                               className={ i
+                               className={i
                                    ? "d-flex align-items-center mb-0 me-md-auto text-white text-decoration-none mt-4"
                                    : "d-flex align-items-center mb-0 me-md-auto text-white text-decoration-none"}>
                                 <span className="fs-4">{section.top.title}</span>
