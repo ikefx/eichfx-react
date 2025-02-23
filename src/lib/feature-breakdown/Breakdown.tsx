@@ -6,7 +6,7 @@ import {BreakdownPythonRubiks} from "./components/_PythonRubiks/BreakdownPythonR
 import {BreakdownTornado} from "./components/_Tornado/BreakdownTornado.tsx";
 import {BreakdownPointStars} from "./components/_PointStars/BreakdownPointStars.tsx";
 import {Default} from "./components/Default.tsx";
-import {Header} from "../feature-root/components/Header.tsx";
+//import {Header} from "../feature-root/components/Header.tsx";
 export function Breakdown({ view }: { view: string }) {
     return(
         <>
