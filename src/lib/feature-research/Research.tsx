@@ -14,42 +14,45 @@ import {ResearchZBrushExport} from "./components/_ZBrushExport01/ResearchZBrushE
 import {ResearchMapCapTex} from "./components/_MatCapTex/ResearchMatCapTex.tsx";
 import {ResearchUSGSDems} from "./components/_USGSDEMs/ResearchUSGSDems.tsx";
 export function Research({ view }: { view: string }) {
-
     return (
         <>
             <div className="d-flex h-100">
-                <LeftNavigation sections={researchNav}></LeftNavigation>
-                <div className="container h-100 p-5 overflow-auto">
-                    {(() => {
-                        switch (view) {
-                            case 'aov':
-                                return ResearchAov();
-                            case 'pointclouds':
-                                return ResearchPointClouds();
-                            case 'volumetrics1':
-                                return ResearchVolumetrics1();
-                            case 'volumetrics2':
-                                return ResearchVolumetrics2();
-                            case 'subsurface':
-                                return ResearchSubsurface01();
-                            case 'magiclights':
-                                return ResearchMagicLights();
-                            case 'fluidprimitives':
-                                return ResearchFluidPrimitives();
-                            case 'python1':
-                                return ResearchPython1();
-                            case 'magnetforce':
-                                return ResearchMagnetForce();
-                            case 'zbrushexport':
-                                return ResearchZBrushExport();
-                            case 'matcaptext':
-                                return ResearchMapCapTex();
-                            case 'usgs':
-                                return ResearchUSGSDems();
-                            default:
-                                return Default();
-                        }
-                    })()}
+                <div className={'d-none d-md-flex'}>
+                    <LeftNavigation sections={researchNav}></LeftNavigation>
+                </div>
+                <div className="w-100 h-100 p-lg-3 p-xxl-5 overflow-auto">
+                    <div className="container">
+                        {(() => {
+                            switch (view) {
+                                case 'aov':
+                                    return ResearchAov();
+                                case 'pointclouds':
+                                    return ResearchPointClouds();
+                                case 'volumetrics1':
+                                    return ResearchVolumetrics1();
+                                case 'volumetrics2':
+                                    return ResearchVolumetrics2();
+                                case 'subsurface':
+                                    return ResearchSubsurface01();
+                                case 'magiclights':
+                                    return ResearchMagicLights();
+                                case 'fluidprimitives':
+                                    return ResearchFluidPrimitives();
+                                case 'python1':
+                                    return ResearchPython1();
+                                case 'magnetforce':
+                                    return ResearchMagnetForce();
+                                case 'zbrushexport':
+                                    return ResearchZBrushExport();
+                                case 'matcaptext':
+                                    return ResearchMapCapTex();
+                                case 'usgs':
+                                    return ResearchUSGSDems();
+                                default:
+                                    return Default();
+                            }
+                        })()}
+                    </div>
                 </div>
             </div>
         </>

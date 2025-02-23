@@ -4,12 +4,12 @@ export function CardElementMarquee(properties: MarqueeCardProperties) {
     return (
         <>
             <div className="row mt-2 justify-content-start">
-                <div className="col-12 px-0">
+                <div className="col-12">
                     {properties.title && (<h3>{properties.title}</h3>)}
                 </div>
             </div>
             <div className="row d-flex justify-content-between">
-                <div className="col-12 col-xxl-6 px-0">
+                <div className="col-12 col-xxl-6">
                     <div className="d-flex flex-column">
                         {properties.description.map(paragraph => {
                             return (
@@ -23,14 +23,14 @@ export function CardElementMarquee(properties: MarqueeCardProperties) {
                     </div>
                 </div>
                 {properties.imgUri && (
-                    <a href={properties.linkUri || ''} className={'col-12 col-xxl-5 px-0'}>
+                    <a href={properties.linkUri || ''} className={'col-12 col-xxl-5'}>
                         <div className="rounded shadow" style={'height: fit-content'}>
                             <img src={properties.imgUri} alt="img" className={'d-flex w-100 rounded'}/>
                         </div>
                     </a>
                 )}
                 {properties.vidUri && (
-                    <a href={properties.linkUri || ''} className={'col-12 col-xxl-5 px-0'}>
+                    <a href={properties.linkUri || ''} className={'col-12 col-xxl-5'}>
                         <div className="rounded shadow" style={'height: fit-content'}>
                             <video controls width="100%">
                                 <source src={properties.vidUri}/>

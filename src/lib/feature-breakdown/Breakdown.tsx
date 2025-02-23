@@ -6,13 +6,15 @@ import {BreakdownPythonRubiks} from "./components/_PythonRubiks/BreakdownPythonR
 import {BreakdownTornado} from "./components/_Tornado/BreakdownTornado.tsx";
 import {BreakdownPointStars} from "./components/_PointStars/BreakdownPointStars.tsx";
 import {Default} from "./components/Default.tsx";
+import {Header} from "../feature-root/components/Header.tsx";
 export function Breakdown({ view }: { view: string }) {
-
     return(
         <>
             <div className="d-flex h-100">
-                <LeftNavigation sections={breakdownNav}></LeftNavigation>
-                <div className="w-100 h-100 p-5 overflow-auto">
+                <div className={'d-none d-md-flex'}>
+                    <LeftNavigation sections={breakdownNav}></LeftNavigation>
+                </div>
+                <div className="w-100 h-100 p-lg-3 p-xxl-5 overflow-auto">
                     <div class="container">
                         {(() => {
                             switch (view) {

@@ -17,7 +17,7 @@ export function InformationCard(properties: InformationCardProperties) {
         <>
             <div class="container-fluid mt-4">
                 <div className="row d-flex justify-content-between">
-                    <div className="col-12 col-xxl-8 px-0">
+                    <div className="col-12 col-xxl-8">
                         {properties.paragraphs.map(paragraph => {
                             return (
                                 <>
@@ -28,7 +28,7 @@ export function InformationCard(properties: InformationCardProperties) {
                             )
                         })}
                     </div>
-                    <div className="col-12 col-xxl-4 px-0 text-center" style={'height: fit-content'}>
+                    <div className="col-12 col-xxl-4 text-center" style={'height: fit-content'}>
                         {properties.imgSrc && (
                             <img src={properties.imgSrc} alt="img" className={'d-flex w-100 rounded shadow-sm'}/>
                         )}

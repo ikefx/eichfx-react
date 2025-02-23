@@ -1,6 +1,6 @@
 import {
     DetailCardProperties,
-    LeftNavigationProperties,
+    NavigationProperties,
 } from "../shared/interfaces/interfaces.ts";
 import d1 from "../../assets/_display_breakdown/terra_img001.jpg";
 import d2 from "../../assets/_display_breakdown/hachi_img001.png";
@@ -8,7 +8,7 @@ import d3 from "../../assets/_display_breakdown/rubik.jpg";
 import d4 from "../../assets/_display_breakdown/tornado_img001.jpg";
 import d5 from "../../assets/_display_breakdown/vortex_img001.jpg";
 
-export const breakdownNav: LeftNavigationProperties[] = [
+export const breakdownNav: NavigationProperties[] = [
     {
         top: {
             title: 'Reel Content',

@@ -1,10 +1,10 @@
-import {LeftNavigationProperties, MarqueeCardProperties} from "../shared/interfaces/interfaces.ts";
+import {NavigationProperties, MarqueeCardProperties} from "../shared/interfaces/interfaces.ts";
 import imgRMAN from './../../assets/_display_research/rman_display.png';
 import imgHOUD from './../../assets/_display_research/hou_display.jpg';
 import imgZBRU from './../../assets/_display_research/zbr_display.jpg';
 import imgEONV from './../../assets/_display_research/vue_display.png';
 
-export const researchNav: LeftNavigationProperties[] = [
+export const researchNav: NavigationProperties[] = [
     {
         top: {
             title: 'Renderman',
