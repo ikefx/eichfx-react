@@ -1,7 +1,35 @@
+import {useState} from 'preact/hooks';
 import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
 export function Header({ sections }: { sections: NavigationProperties[] }) {
+    useState(() => {
+        const onOutsideClick = (e) => {
+            const navbar = document.getElementById('navbarToggleExternalContent');
+            const toggler = document.querySelector('.navbar-toggler');
+            if (!navbar.contains(e.target) && !toggler.contains(e.target)) {
+                // @ts-ignore
+                const collapseInstance = new bootstrap.Collapse(navbar, {
+                    toggle: false,
+                });
+                collapseInstance.hide();
+            }
+        };
+        const onScroll = () => {
+            const navbar = document.getElementById('navbarToggleExternalContent');
+            // @ts-ignore
+            const collapseInstance = new bootstrap.Collapse(navbar, {
+                toggle: false,
+            });
+            collapseInstance.hide();
+        };
+        document.addEventListener('click', onOutsideClick);
+        window.addEventListener('scroll', onScroll, true);
+        // Clean up event listeners on unmount
+        return () => {
+            document.removeEventListener('click', onOutsideClick);
+            window.removeEventListener('scroll', onScroll, true);
+        };
+    });
 
-    console.dir(sections);
     return(
         <>
             <header className="d-block bg-dark">
