@@ -1,12 +1,12 @@
 {
   "routes": [
     {
-      "route": "/*",
-      "methods": [
-        "get"
-      ],
-      "redirect": "/",
-      "statusCode": 301
+      "route": "/**",
+      "rewrite": "/index.html"
     }
-  ]
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*", "/assets/*", "/favicon.ico"]
+  }
 }
