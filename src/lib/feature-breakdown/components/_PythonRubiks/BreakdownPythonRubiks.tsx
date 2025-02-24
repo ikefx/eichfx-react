@@ -4,9 +4,9 @@ export function BreakdownPythonRubiks() {
     return (
         <>
             <div className="d-flex flex-column">
-                <div className="text-center mt-5 mb-2">
-                    <h3 className="text-dark mb-0">Python Scripting Rubik's Cube HDA</h3>
-                    <h4 className="lead text-secondary">Houdini Software Visual Effects</h4>
+                <div className="text-center my-2 mt-xxl-5">
+                    <h4 className="text-dark mb-0">Python Scripting Rubik's Cube HDA</h4>
+                    <span className="fw-light text-secondary">Houdini Software Visual Effects</span>
                 </div>
             </div>
             <div className="mt-5">
