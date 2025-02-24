@@ -11,7 +11,7 @@ export function CardElementDescription(properties: DetailCardProperties) {
                         {properties.paragraphs.map(paragraph => {
                             return (
                                 <>
-                                    <p className={"pe-5 " + (paragraph.format === "secondary" ? "text-secondary fw-light" : "")}>
+                                    <p className={"pe-0 pe-xl-5 " + (paragraph.format === "secondary" ? "text-secondary fw-light" : "")}>
                                         {paragraph.text ? paragraph.text : <br/>}
                                     </p>
                                 </>

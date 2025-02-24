@@ -5,8 +5,9 @@ export function Default() {
     return (
         <>
             <div class="d-flex flex-column">
-                <div className="text-center mt-5 mb-2">
-                    <h4 className="text-dark mb-0">RESEARCH DOCUMENTATION</h4>
+                <div className="text-center my-2 mt-xxl-5">
+                    <h4 className="text-dark mb-0">Research Documentation</h4>
+                    <span className="fw-light text-secondary">Explore by using links in the navigation bar.</span>
                 </div>
             </div>
             <div className="mt-5">
