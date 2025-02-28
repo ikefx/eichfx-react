@@ -53,6 +53,23 @@ export function Content() {
                         </LocationProvider>
                     </div>
                 </div>
+                <footer className="footer mt-auto bg-dark sticky-bottom d-block d-md-none">
+                    <nav className="navbar navbar-dark w-100">
+                        <div className="container-fluid">
+                            <ul className="nav nav-underline col">
+                                <li className={'nav-item col text-center'}>
+                                    <a className={'nav-link'}>Demo Reel</a>
+                                </li>
+                                <li className={'nav-item col text-center'}>
+                                    <a className={'nav-link'}>Breakdown</a>
+                                </li>
+                                <li className={'nav-item col text-center'}>
+                                    <a className={'nav-link'}>Research</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </footer>
             </div>
         </>
     )
