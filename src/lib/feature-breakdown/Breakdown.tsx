@@ -33,6 +33,15 @@ export function Breakdown({ view }: { view: string }) {
                             }
                         })()}
                     </div>
+                    <footer className="footer mt-auto bg-dark sticky-bottom">
+                        <nav className="navbar navbar-dark p-0 w-100">
+                            <div className="container-fluid btn-group p-1">
+                                <button className="btn btn-dark col">Demo Reel</button>
+                                <button className="btn btn-dark col">Breakdown</button>
+                                <button className="btn btn-dark col">Research</button>
+                            </div>
+                        </nav>
+                    </footer>
                 </div>
             </div>
         </>
