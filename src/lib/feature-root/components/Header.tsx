@@ -48,7 +48,7 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
                         {sections.map(section => {
                             return (
                                 <>
-                                    <ul class="nav col justify-content-start">
+                                    <ul className="nav col justify-content-start">
                                         <a className="navbar-brand" href={section.top.path}>{section.top.title}</a>
                                         {section.items.map(item => (
                                             <li className="d-md-inline-block d-none nav-item">
