@@ -12,6 +12,7 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
             const navbar = document.getElementById('navbarToggleContent');
             const toggleButton = document.querySelector('.navbar-toggler');
             if (!navbar.contains(e.target) && !toggleButton.contains(e.target)) {
+                //@ts-ignore
                 const collapseInstance = new bootstrap.Collapse(navbar, {
                     toggle: false,
                 });
@@ -21,6 +22,7 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
         const onScroll = () => {
             const navbar = document.getElementById('navbarToggleContent');
             let scrollElement = document.querySelector('.overflow-auto');
+            //@ts-ignore
             const collapseInstance = new bootstrap.Collapse(navbar, {
                 toggle: false,
             });
