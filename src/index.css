@@ -19,6 +19,9 @@
   button {
     background-color: #f9f9f9;
   }
+  .bg-scheme {
+    background-color: #ffffff;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,6 +43,9 @@
   }
   body {
     color: white!important;
+  }
+  .bg-scheme {
+    background-color: #424242;
   }
 }
 
