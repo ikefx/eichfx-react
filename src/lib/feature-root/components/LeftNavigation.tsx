@@ -2,7 +2,7 @@ import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
 export function LeftNavigation({ sections }: { sections: NavigationProperties[] }) {
     return(
         <>
-            <div className={"d-flex flex-column flex-shrink-0 p-3 text-white bg-dark h-100"} style="width: 280px;">
+            <div className={"d-flex flex-column flex-shrink-0 p-3 text-white bg-dark h-100 overflow-y-auto"} style="width: 280px;">
                 {sections.map((section, i: number) => {
                     return (
                         <>
