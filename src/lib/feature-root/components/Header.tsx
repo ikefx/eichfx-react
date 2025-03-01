@@ -29,9 +29,7 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
             collapseInstance.hide();
             if (scrollElement?.scrollTop > lastScroll) {
                 header.style.maxHeight = '0';
-                //header.style.height = '0';
             } else {
-                //header.style.height = '48px';
                 header.style.maxHeight = '48px';
             }
             lastScroll = scrollElement?.scrollTop || 0;
