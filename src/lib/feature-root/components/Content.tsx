@@ -1,16 +1,19 @@
-import {ErrorBoundary, LocationProvider, Route, Router} from "preact-iso";
-import {Root} from "../../feature-root/components/Root.tsx";
+import {ErrorBoundary, LocationHook, LocationProvider, Route, Router, useLocation,} from "preact-iso";
+import {Root} from "./Root.tsx";
 import {Reel} from "../../feature-reel/Reel.tsx";
 import {Breakdown} from "../../feature-breakdown/Breakdown.tsx";
 import {Research} from "../../feature-research/Research.tsx";
-import {Header} from "../../feature-root/components/Header.tsx";
-import {LeftNavigation} from "../../feature-root/components/LeftNavigation.tsx";
-import {NavigationProperties} from "../interfaces/interfaces.ts";
+import {Header} from "./Header.tsx";
+import {Footer} from "./Footer.tsx";
+import {LeftNavigation} from "./LeftNavigation.tsx";
+import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
 import {useState} from "react";
+
 export function Content() {
+    const location: LocationHook = useLocation();
     const struct: NavigationProperties[] = [{
         top: { title: '3D Studies', path: '/', },
-        items: [ { title: 'Demo Reel', path: '/reel', }, { title: 'Breakdown', path: '/breakdown', }, { title: 'Research', path: '/research', }, ]
+        items: [ { title: 'Demo Reel', path: '/reel', }, { title: 'Breakdown', path: '/breakdown', }, { title: 'Research', path: '/research', }, ],
     }];
     const [ nav ] = useState(struct);
     return (
@@ -53,23 +56,7 @@ export function Content() {
                         </LocationProvider>
                     </div>
                 </div>
-                <footer className="footer mt-auto bg-scheme border-top border-secondary sticky-bottom d-block d-md-none">
-                    <nav className="navbar navbar-dark w-100">
-                        <div className="container-fluid">
-                            <ul className="nav nav-underline w-100">
-                                <li className={'nav-item col text-center'}>
-                                    <a className={'nav-link text-secondary'} href="/demo">Demo Reel</a>
-                                </li>
-                                <li className={'nav-item col text-center'}>
-                                    <a className={'nav-link text-secondary'} href="/breakdown">Breakdown</a>
-                                </li>
-                                <li className={'nav-item col text-center'}>
-                                    <a className={'nav-link text-secondary'} href="/research">Research</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </footer>
+                <Footer sections={nav}></Footer>
             </div>
         </>
     )

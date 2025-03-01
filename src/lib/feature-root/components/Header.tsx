@@ -30,7 +30,7 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
             if (scrollElement?.scrollTop > lastScroll) {
                 header.style.maxHeight = '0';
             } else {
-                header.style.maxHeight = '90px';
+                header.style.maxHeight = '100%';
             }
             lastScroll = scrollElement?.scrollTop || 0;
         };
@@ -44,7 +44,7 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
 
     return(
         <>
-            <header id={'navbar-header'} className="d-block bg-dark overflow-hidden">
+            <header id={'navbar-header'} className="d-block bg-scheme overflow-hidden">
                 <nav className="navbar navbar-expand-md navbar-dark py-1 w-100">
                     <div className="container-fluid px-2">
                         {sections.map(section => {
@@ -74,7 +74,7 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
                         })}
                     </div>
                 </nav>
-                <div className="w-100 collapse navbar-collapse" id="navbarToggleContent">
+                <div className="w-100 collapse navbar-collapse container-fluid" id="navbarToggleContent">
                     {sections.map(section => {
                         return(
                             <>
