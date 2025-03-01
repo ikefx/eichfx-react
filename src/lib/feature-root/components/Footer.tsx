@@ -21,7 +21,6 @@ export function Footer({ sections }: { sections: NavigationProperties[] }) {
             window.removeEventListener('scroll', onScroll, true);
         };
     }, []);
-
     return(
         <>
             <footer id="navbar-footer" className="footer mt-auto bg-scheme sticky-bottom d-block d-md-none">
