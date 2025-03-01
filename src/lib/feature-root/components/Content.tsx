@@ -11,6 +11,7 @@ import {useState} from "react";
 
 export function Content() {
     const location: LocationHook = useLocation();
+    console.dir(location);
     const struct: NavigationProperties[] = [{
         top: { title: '3D Studies', path: '/', },
         items: [ { title: 'Demo Reel', path: '/reel', }, { title: 'Breakdown', path: '/breakdown', }, { title: 'Research', path: '/research', }, ],
