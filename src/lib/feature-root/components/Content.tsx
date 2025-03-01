@@ -23,7 +23,7 @@ export function Content() {
                 <div className={'d-block d-xxl-none'}>
                     <Header sections={nav}></Header>
                 </div>
-                <div className="d-flex h-100 position-relative overflow-hidden">
+                <div className="d-flex flex-grow-1 position-relative overflow-hidden">
                     <div className={'d-none d-xxl-flex'}>
                         <LeftNavigation sections={nav}></LeftNavigation>
                     </div>

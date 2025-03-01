@@ -9,7 +9,7 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
         let lastScroll: number = 0;
 
         const onOutsideClick = (e) => {
-            const navbar = document.getElementById('navbarToggleContent');
+            const navbar = document.getElementById('navbarToggleExternalContent');
             const toggleButton = document.querySelector('.navbar-toggler');
             if (!navbar.contains(e.target) && !toggleButton.contains(e.target)) {
                 //@ts-ignore
@@ -20,7 +20,7 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
             }
         };
         const onScroll = () => {
-            const navbar = document.getElementById('navbarToggleContent');
+            const navbar = document.getElementById('navbarToggleExternalContent');
             let scrollElement = document.querySelector('.overflow-auto');
             //@ts-ignore
             const collapseInstance = new bootstrap.Collapse(navbar, {
@@ -29,8 +29,10 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
             collapseInstance.hide();
             if (scrollElement?.scrollTop > lastScroll) {
                 header.style.maxHeight = '0';
+                //header.style.height = '0';
             } else {
-                header.style.maxHeight = '100%';
+                //header.style.height = '48px';
+                header.style.maxHeight = '48px';
             }
             lastScroll = scrollElement?.scrollTop || 0;
         };
@@ -44,8 +46,8 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
 
     return(
         <>
-            <header id={'navbar-header'} className="d-block bg-scheme overflow-hidden">
-                <nav className="navbar navbar-expand-md navbar-dark py-1 w-100">
+            <header id={'navbar-header'} className="d-block bg-scheme overflow-hidden p-0">
+                <nav id="navbar-header-nav" className="navbar navbar-expand-md navbar-dark py-1 w-100 overflow-hidden">
                     <div className="container-fluid px-2">
                         {sections.map(section => {
                             return (
@@ -63,8 +65,8 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
                                         className="navbar-toggler"
                                         type="button"
                                         data-bs-toggle="collapse"
-                                        data-bs-target="#navbarToggleContent"
-                                        aria-controls="navbarToggleContent"
+                                        data-bs-target="#navbarToggleExternalContent"
+                                        aria-controls="navbarToggleExternalContent"
                                         aria-expanded="false"
                                         aria-label="Toggle navigation">
                                         <span className="navbar-toggler-icon fs-6"></span>
@@ -74,26 +76,26 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
                         })}
                     </div>
                 </nav>
-                <div className="w-100 collapse navbar-collapse container-fluid" id="navbarToggleContent">
-                    {sections.map(section => {
-                        return(
-                            <>
-                                <ul className="nav nav-underline justify-content-center">
-                                    {section.items.map(item => {
-                                        return (
-                                            <>
-                                                <li className={'nav-item col text-center'}>
-                                                    <a className={'nav-link'} href={item.path}>{item.title}</a>
-                                                </li>
-                                            </>
-                                        );
-                                    })}
-                                </ul>
-                            </>
-                        )
-                    })}
-                </div>
             </header>
+            <div className="w-100 collapse navbar-collapse container-fluid bg-scheme" id="navbarToggleExternalContent">
+                {sections.map(section => {
+                    return(
+                        <>
+                            <ul className="nav nav-underline justify-content-center">
+                                {section.items.map(item => {
+                                    return (
+                                        <>
+                                            <li className={'nav-item col text-center'}>
+                                                <a className={'nav-link'} href={item.path}>{item.title}</a>
+                                            </li>
+                                        </>
+                                    );
+                                })}
+                            </ul>
+                        </>
+                    )
+                })}
+            </div>
         </>
     )
 }
