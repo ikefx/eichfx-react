@@ -1,4 +1,4 @@
-import {ErrorBoundary, LocationHook, LocationProvider, Route, Router, useLocation,} from "preact-iso";
+import {ErrorBoundary, LocationProvider, Route, Router,} from "preact-iso";
 import {Root} from "./Root.tsx";
 import {Reel} from "../../feature-reel/Reel.tsx";
 import {Breakdown} from "../../feature-breakdown/Breakdown.tsx";
@@ -10,8 +10,6 @@ import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
 import {useState} from "react";
 
 export function Content() {
-    const location: LocationHook = useLocation();
-    console.dir(location);
     const struct: NavigationProperties[] = [{
         top: { title: '3D Studies', path: '/', },
         items: [ { title: 'Demo Reel', path: '/reel', }, { title: 'Breakdown', path: '/breakdown', }, { title: 'Research', path: '/research', }, ],
@@ -19,7 +17,7 @@ export function Content() {
     const [ nav ] = useState(struct);
     return (
         <>
-            <div className="d-flex flex-column root-pane">
+            <div className="d-flex flex-column root-pane overflow-hidden">
                 <div className={'d-block d-xxl-none'}>
                     <Header sections={nav}></Header>
                 </div>

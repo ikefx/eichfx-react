@@ -16,6 +16,9 @@ import {ResearchUSGSDems} from "./components/_USGSDEMs/ResearchUSGSDems.tsx";
 export function Research({ view }: { view: string }) {
     return (
         <>
+            <div className="w-100 collapse navbar-collapse container-fluid bg-scheme" id="navbarToggleExternalContent">
+                HELLO WORLD
+            </div>
             <div className="d-flex h-100">
                 <div className={'d-none d-md-flex'}>
                     <LeftNavigation sections={researchNav}></LeftNavigation>
