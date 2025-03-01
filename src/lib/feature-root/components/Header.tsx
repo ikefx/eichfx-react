@@ -29,9 +29,7 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
             collapseInstance.hide();
             if (scrollElement?.scrollTop > lastScroll) {
                 header.style.maxHeight = '0';
-                //header.style.height = '0';
             } else {
-                //header.style.height = '48px';
                 header.style.maxHeight = '48px';
             }
             lastScroll = scrollElement?.scrollTop || 0;
@@ -77,25 +75,6 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
                     </div>
                 </nav>
             </header>
-            <div className="w-100 collapse navbar-collapse container-fluid bg-scheme" id="navbarToggleExternalContent">
-                {sections.map(section => {
-                    return(
-                        <>
-                            <ul className="nav nav-underline justify-content-center">
-                                {section.items.map(item => {
-                                    return (
-                                        <>
-                                            <li className={'nav-item col text-center'}>
-                                                <a className={'nav-link'} href={item.path}>{item.title}</a>
-                                            </li>
-                                        </>
-                                    );
-                                })}
-                            </ul>
-                        </>
-                    )
-                })}
-            </div>
         </>
     )
 }
