@@ -1,6 +1,7 @@
 import {useEffect} from "react";
 import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
 export function Footer({ sections }: { sections: NavigationProperties[] }) {
+    console.dir(sections);
     useEffect(() => {
         const footer = document.getElementById('navbar-footer');
         footer.style.transitionProperty = 'all';
