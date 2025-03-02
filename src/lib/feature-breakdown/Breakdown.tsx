@@ -9,18 +9,6 @@ import {Default} from "./components/Default.tsx";
 export function Breakdown({ view }: { view: string }) {
     return(
         <>
-            <div className="w-100 collapse navbar-collapse container-fluid p-0" id="navbarToggleExternalContent">
-                <div className="w-100 mh-100 p-2">
-                    <h5 className="fw-light">Projects</h5>
-                    <div className="list-group list-group-flush">
-                        <button type="button" className="list-group-item list-group-item-action">Terracotta</button>
-                        <button type="button" className="list-group-item list-group-item-action">Hachiman</button>
-                        <button type="button" className="list-group-item list-group-item-action">Python Rubik's Cube</button>
-                        <button type="button" className="list-group-item list-group-item-action">Tornado FX</button>
-                        <button type="button" className="list-group-item list-group-item-action">Point Cluster Stars</button>
-                    </div>
-                </div>
-            </div>
             <div className="d-flex h-100">
                 <div className={'d-none d-md-flex'}>
                     <LeftNavigation sections={breakdownNav}></LeftNavigation>

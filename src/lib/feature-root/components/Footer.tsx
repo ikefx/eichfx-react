@@ -1,7 +1,7 @@
 import {useEffect} from "react";
 import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
-export function Footer({ sections }: { sections: NavigationProperties[] }) {
-    console.dir(sections);
+export function Footer({ section }: { section: NavigationProperties }) {
+    console.dir(section);
     useEffect(() => {
         const footer = document.getElementById('navbar-footer');
         footer.style.transitionProperty = 'all';
@@ -28,15 +28,13 @@ export function Footer({ sections }: { sections: NavigationProperties[] }) {
                 <nav className="navbar navbar-dark border-top border-secondary w-100">
                     <div className="container-fluid">
                         <ul className="nav nav-underline w-100">
-                            <li className={'nav-item col text-center'}>
-                                <a className={'nav-link text-secondary'} href="/reel">Demo Reel</a>
-                            </li>
-                            <li className={'nav-item col text-center'}>
-                                <a className={'nav-link text-secondary'} href="/breakdown">Breakdown</a>
-                            </li>
-                            <li className={'nav-item col text-center'}>
-                                <a className={'nav-link text-secondary'} href="/research">Research</a>
-                            </li>
+                            {section.items.map(item => {
+                                return(
+                                    <li className={'nav-item col text-center'}>
+                                        <a className={'nav-link text-secondary'} href={item.path}>{item.title}</a>
+                                    </li>
+                                );
+                            })}
                         </ul>
                     </div>
                 </nav>
