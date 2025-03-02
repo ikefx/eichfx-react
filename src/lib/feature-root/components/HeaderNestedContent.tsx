@@ -1,7 +1,7 @@
 import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
-import {useEffect} from "preact/hooks";
+//import {useEffect} from "preact/hooks";
 export function HeaderNestedContent({ sections }: { sections: NavigationProperties[] }) {
-    let bottom: boolean = false;
+/*    let bottom: boolean = false;
     function onExpand() {
         bottom = false;
     }
@@ -15,7 +15,7 @@ export function HeaderNestedContent({ sections }: { sections: NavigationProperti
             console.dir("DO SOMETHING DIFFERENT");
         }
     }
-/*    useEffect(() => {
+    useEffect(() => {
         const externalCollapse = document.getElementById('navbarToggleExternalContent')
         externalCollapse.addEventListener('show.bs.collapse', onExpand);
         externalCollapse.addEventListener('scroll', onScroll);
