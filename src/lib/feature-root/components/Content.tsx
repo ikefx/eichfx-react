@@ -11,16 +11,12 @@ import {useState} from "react";
 
 export function Content() {
     const [ nav ] = useState(data);
-
     const definitions = data.items.reduce((acc, val) => {
         if (val.children?.length) {
             acc[val.path] = val.children
         }
         return acc;
     }, {});
-    console.dir(definitions);
-    console.dir('content function');
-
     return (
         <>
             <LocationProvider>
