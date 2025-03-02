@@ -1,5 +1,17 @@
 import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
+import {useEffect} from "preact/hooks";
 export function HeaderNestedContent({ sections }: { sections: NavigationProperties[] }) {
+    useEffect(() => {
+        const element = document.getElementById('navbarNestedContent');
+        element.addEventListener('swipe', () => {
+            //@ts-ignore
+            const collapseInstance = new bootstrap.Collapse(document.getElementById('navbarToggleExternalContent'), {
+                toggle: false,
+            });
+            collapseInstance.hide();
+        });
+
+    }, []);
     return(
         <>
             <div id="navbarToggleExternalContent" className="w-100 collapse navbar-collapse container-fluid p-0 nav-nested-content overflow-y-auto">

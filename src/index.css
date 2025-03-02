@@ -17,7 +17,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     color: #dddddd;
-    background-color: #151515;
+    background-color: #424242;
   }
   a:hover {
     color: #747bff;
@@ -35,7 +35,7 @@
     color: white!important;
   }
   .bg-scheme {
-    background-color: #151515;
+    background-color: #424242;
   }
 }
 
