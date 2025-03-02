@@ -32,7 +32,7 @@ export function Content() {
                         <div className={'d-none d-xxl-flex'}>
                             <LeftNavigation sections={[nav]}></LeftNavigation>
                         </div>
-                        <div className="col h-100">
+                        <div className="col h-100 bg-dark">
                             <ErrorBoundary>
                                 <Router>
                                     <Route default component={Root}></Route>
