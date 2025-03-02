@@ -15,7 +15,7 @@ export const data: NavigationProperties = {
             children: [
                 {
                     top: {
-                        title: 'Projects',
+                        title: '',
                         path: '/breakdown',
                     },
                     items: [
