@@ -6,27 +6,33 @@ import {Research} from "../../feature-research/Research.tsx";
 import {Header} from "./Header.tsx";
 import {Footer} from "./Footer.tsx";
 import {LeftNavigation} from "./LeftNavigation.tsx";
-import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
+import {data} from "../definitions.ts";
 import {useState} from "react";
 
 export function Content() {
-    const struct: NavigationProperties[] = [{
-        top: { title: '3D Studies', path: '/', },
-        items: [ { title: 'Demo Reel', path: '/reel', }, { title: 'Breakdown', path: '/breakdown', }, { title: 'Research', path: '/research', }, ],
-    }];
-    const [ nav ] = useState(struct);
+    const [ nav ] = useState(data);
+
+    const definitions = data.items.reduce((acc, val) => {
+        if (val.children?.length) {
+            acc[val.path] = val.children
+        }
+        return acc;
+    }, {});
+    console.dir(definitions);
+    console.dir('content function');
+
     return (
         <>
-            <div className="d-flex flex-column root-pane overflow-hidden">
-                <div className={'d-block d-xxl-none'}>
-                    <Header sections={nav}></Header>
-                </div>
-                <div className="d-flex flex-grow-1 position-relative overflow-hidden">
-                    <div className={'d-none d-xxl-flex'}>
-                        <LeftNavigation sections={nav}></LeftNavigation>
+            <LocationProvider>
+                <div className="d-flex flex-column root-pane overflow-hidden">
+                    <div className={'d-block d-xxl-none'}>
+                        <Header section={nav} expand={definitions}></Header>
                     </div>
-                    <div className="col h-100">
-                        <LocationProvider>
+                    <div className="d-flex flex-grow-1 position-relative overflow-hidden">
+                        <div className={'d-none d-xxl-flex'}>
+                            <LeftNavigation sections={[nav]}></LeftNavigation>
+                        </div>
+                        <div className="col h-100">
                             <ErrorBoundary>
                                 <Router>
                                     <Route default component={Root}></Route>
@@ -52,11 +58,11 @@ export function Content() {
                                     <Route path="/research/usgs" component={ () => (<Research view="usgs"></Research>) }></Route>
                                 </Router>
                             </ErrorBoundary>
-                        </LocationProvider>
+                        </div>
                     </div>
+                    <Footer section={nav}></Footer>
                 </div>
-                <Footer sections={nav}></Footer>
-            </div>
+            </LocationProvider>
         </>
     )
 }

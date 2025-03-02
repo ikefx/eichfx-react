@@ -1,6 +1,8 @@
-import {useEffect} from "react";
+import {useEffect} from "preact/hooks";
+import {useLocation} from "preact-iso";
 import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
-export function Header({ sections }: { sections: NavigationProperties[] }) {
+export function Header({ section, expand }: { section: NavigationProperties, expand: any }) {
+    const location = useLocation();
     useEffect(() => {
         const header = document.getElementById('navbar-header');
         header.style.transitionProperty = 'all';
@@ -10,6 +12,7 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
 
         const onOutsideClick = (e) => {
             const navbar = document.getElementById('navbarToggleExternalContent');
+            if (!navbar) return;
             const toggleButton = document.querySelector('.navbar-toggler');
             if (!navbar.contains(e.target) && !toggleButton.contains(e.target)) {
                 //@ts-ignore
@@ -21,6 +24,7 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
         };
         const onScroll = () => {
             const navbar = document.getElementById('navbarToggleExternalContent');
+            if (!navbar) return;
             let scrollElement = document.querySelector('.overflow-auto');
             //@ts-ignore
             const collapseInstance = new bootstrap.Collapse(navbar, {
@@ -41,40 +45,81 @@ export function Header({ sections }: { sections: NavigationProperties[] }) {
             window.removeEventListener('scroll', onScroll, true);
         };
     }, []);
-
     return(
         <>
             <header id={'navbar-header'} className="d-block bg-scheme overflow-hidden p-0">
                 <nav id="navbar-header-nav" className="navbar navbar-expand-md navbar-dark py-1 w-100 overflow-hidden">
                     <div className="container-fluid px-2">
-                        {sections.map(section => {
-                            return (
-                                <>
-                                    <ul className="nav col justify-content-start">
-                                        <a className="navbar-brand" href={section.top.path}>{section.top.title}</a>
-                                        {section.items.map(item => (
-                                            <li className="d-md-inline-block d-none nav-item">
-                                                <a className="nav-link" aria-current="page" href={item.path}>{item.title}</a>
-                                            </li>
-                                            )
-                                        )}
-                                    </ul>
-                                    <button
-                                        className="navbar-toggler"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#navbarToggleExternalContent"
-                                        aria-controls="navbarToggleExternalContent"
-                                        aria-expanded="false"
-                                        aria-label="Toggle navigation">
-                                        <span className="navbar-toggler-icon fs-6"></span>
-                                    </button>
-                                </>
-                            );
-                        })}
+                        <ul className="nav col justify-content-start">
+                            <a className="navbar-brand" href={section.top.path}>{section.top.title}</a>
+                            {section.items.map(item => (
+                                    <li className="d-md-inline-block d-none nav-item">
+                                        <a className="nav-link" aria-current="page" href={item.path}>{item.title}</a>
+                                    </li>
+                                )
+                            )}
+                        </ul>
+                        <button
+                            className="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarToggleExternalContent"
+                            aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon fs-6"></span>
+                        </button>
                     </div>
                 </nav>
             </header>
+            {location.path.startsWith('/breakdown') && (
+                <>
+                    <div className="w-100 collapse navbar-collapse container-fluid p-0" id="navbarToggleExternalContent">
+                        <div className="w-100 mh-100 p-2">
+                            <div className="list-group list-group-flush">
+                                {expand['/breakdown'].map(section => {
+                                    return(
+                                        <>
+                                            <h5>{section.top.title}</h5>
+                                            {section.items.map(item => {
+                                                return(
+                                                    <>
+                                                        <a type="button" className="list-group-item list-group-item-action" href={item.path}>{item.title}</a>
+                                                    </>
+                                                )
+                                            })}
+                                        </>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                </>
+            )}
+            {location.path.startsWith('/research') && (
+                <>
+                    <div className="w-100 collapse navbar-collapse container-fluid p-0" id="navbarToggleExternalContent">
+                        <div className="w-100 mh-100 p-2">
+                            <div className="list-group list-group-flush">
+                                {expand['/research'].map(section => {
+                                    return(
+                                        <>
+                                            <h5>{section.top.title}</h5>
+                                            {section.items.map(item => {
+                                                return(
+                                                    <>
+                                                        <a type="button" className="list-group-item list-group-item-action" href={item.path}>{item.title}</a>
+                                                    </>
+                                                )
+                                            })}
+                                        </>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                </>
+            )}
         </>
     )
 }

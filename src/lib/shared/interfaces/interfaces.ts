@@ -5,7 +5,8 @@ export interface NavigationProperties {
     },
     items: {
         title: string,
-        path: string
+        path: string,
+        children?: NavigationProperties[]
     }[]
 }
 
