@@ -35,8 +35,10 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
             });
             collapseInstance.hide();
             if (scrollElement?.scrollTop > lastScroll) {
+                // Scroll down
                 header.style.maxHeight = '0';
             } else {
+                // Scroll up
                 header.style.maxHeight = '48px';
             }
             lastScroll = scrollElement?.scrollTop || 0;
