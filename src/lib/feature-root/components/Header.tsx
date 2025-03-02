@@ -10,7 +10,6 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
         header.style.transitionDuration = '300ms';
         header.style.transitionTimingFunction = 'cubic-bezier(1,1,1,1)';
         let lastScroll: number = 0;
-
         const onOutsideClick = (e) => {
             const navbar = document.getElementById('navbarToggleExternalContent');
             if (!navbar) return;
@@ -64,16 +63,18 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
                                 )
                             )}
                         </ul>
-                        <button
-                            className="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarToggleExternalContent"
-                            aria-controls="navbarToggleExternalContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon fs-6"></span>
-                        </button>
+                        {(location.path.startsWith('/breakdown') || location.path.startsWith('/research')) && (
+                            <button
+                                className="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarToggleExternalContent"
+                                aria-controls="navbarToggleExternalContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span className="navbar-toggler-icon fs-6"></span>
+                            </button>
+                        )}
                     </div>
                 </nav>
             </header>
