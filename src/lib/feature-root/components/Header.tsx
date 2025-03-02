@@ -1,6 +1,7 @@
 import {useEffect} from "preact/hooks";
 import {useLocation} from "preact-iso";
 import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
+import {HeaderNestedContent} from "./HeaderNestedContent.tsx";
 export function Header({ section, expand }: { section: NavigationProperties, expand: any }) {
     const location = useLocation();
     useEffect(() => {
@@ -14,7 +15,7 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
             const navbar = document.getElementById('navbarToggleExternalContent');
             if (!navbar) return;
             const toggleButton = document.querySelector('.navbar-toggler');
-            if (!navbar.contains(e.target) && !toggleButton.contains(e.target)) {
+            if (!toggleButton.contains(e.target)) {
                 //@ts-ignore
                 const collapseInstance = new bootstrap.Collapse(navbar, {
                     toggle: false,
@@ -22,9 +23,11 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
                 collapseInstance.hide();
             }
         };
-        const onScroll = () => {
+        const onScroll = (e) => {
             const navbar = document.getElementById('navbarToggleExternalContent');
+            const navbarNested = document.getElementById('navbarNestedContent');
             if (!navbar) return;
+            if (navbarNested && e.target === navbarNested) return;
             let scrollElement = document.querySelector('.overflow-auto');
             //@ts-ignore
             const collapseInstance = new bootstrap.Collapse(navbar, {
@@ -72,54 +75,8 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
                     </div>
                 </nav>
             </header>
-            {location.path.startsWith('/breakdown') && (
-                <>
-                    <div className="w-100 collapse navbar-collapse container-fluid p-0" id="navbarToggleExternalContent">
-                        <div className="w-100 mh-100 p-2">
-                            <div className="list-group list-group-flush">
-                                {expand['/breakdown'].map(section => {
-                                    return(
-                                        <>
-                                            <h5>{section.top.title}</h5>
-                                            {section.items.map(item => {
-                                                return(
-                                                    <>
-                                                        <a type="button" className="list-group-item list-group-item-action" href={item.path}>{item.title}</a>
-                                                    </>
-                                                )
-                                            })}
-                                        </>
-                                    );
-                                })}
-                            </div>
-                        </div>
-                    </div>
-                </>
-            )}
-            {location.path.startsWith('/research') && (
-                <>
-                    <div className="w-100 collapse navbar-collapse container-fluid p-0" id="navbarToggleExternalContent">
-                        <div className="w-100 mh-100 p-2">
-                            <div className="list-group list-group-flush">
-                                {expand['/research'].map(section => {
-                                    return(
-                                        <>
-                                            <h5>{section.top.title}</h5>
-                                            {section.items.map(item => {
-                                                return(
-                                                    <>
-                                                        <a type="button" className="list-group-item list-group-item-action" href={item.path}>{item.title}</a>
-                                                    </>
-                                                )
-                                            })}
-                                        </>
-                                    );
-                                })}
-                            </div>
-                        </div>
-                    </div>
-                </>
-            )}
+            {location.path.startsWith('/breakdown') && <HeaderNestedContent sections={expand['/breakdown']}></HeaderNestedContent>}
+            {location.path.startsWith('/research') && <HeaderNestedContent sections={expand['/research']}></HeaderNestedContent>}
         </>
     )
 }
