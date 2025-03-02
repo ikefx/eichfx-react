@@ -15,7 +15,7 @@ export function HeaderNestedContent({ sections }: { sections: NavigationProperti
             console.dir("DO SOMETHING DIFFERENT");
         }
     }
-    useEffect(() => {
+/*    useEffect(() => {
         const externalCollapse = document.getElementById('navbarToggleExternalContent')
         externalCollapse.addEventListener('show.bs.collapse', onExpand);
         externalCollapse.addEventListener('scroll', onScroll);
@@ -23,24 +23,25 @@ export function HeaderNestedContent({ sections }: { sections: NavigationProperti
             externalCollapse.removeEventListener('show.bs.collapse', onExpand);
             externalCollapse.removeEventListener('scroll', onScroll);
         };
-    }, []);
+    }, []);*/
     return(
         <>
-            <div id="navbarToggleExternalContent" className="w-100 collapse navbar-collapse container-fluid p-2 nav-nested-content overflow-y-auto">
-                <div id="navbarNestedContent" className="list-group list-group-flush overflow-y-auto">
+            <div id="navbarToggleExternalContent" className="w-100 collapse navbar-collapse container-fluid p-2 nav-nested-content overflow-y-auto border-top border-bottom border-secondary">
+                <div id="navbarNestedContent" className="list-group list-group-flush overflow-y-auto py-2">
+                    <div className="text-center text-secondary fs-italic small w-100">
+                        Select a item from the list below
+                    </div>
                     {sections.map(section => {
-                        return(
+                        return (
                             <>
-                                <div className="my-1 rounded p-3">
+                                <div className=" rounded p-3">
                                     {section.top.title && (<h6 className="mb-1 fw-lighter">{section.top.title}</h6>)}
-                                    {section.items.map(item => <a type="button" className="btn btn-primary mb-1 w-100" href={item.path}>{item.title}</a>)}
+                                    {section.items.map(item => <a type="button" className="btn btn-primary mb-1 w-100"
+                                                                  href={item.path}>{item.title}</a>)}
                                 </div>
                             </>
                         );
                     })}
-                    <div class="text-center text-secondary fs-italic small w-100">
-                        Select a item from the list above to navigate
-                    </div>
                 </div>
             </div>
         </>
