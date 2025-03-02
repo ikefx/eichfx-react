@@ -56,5 +56,5 @@
 }
 
 .nav-nested-content {
-  max-height: calc(100vh - 99px);
+  max-height: calc(100svh - 99px);
 }
