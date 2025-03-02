@@ -26,19 +26,20 @@ export function HeaderNestedContent({ sections }: { sections: NavigationProperti
     }, []);
     return(
         <>
-            <div id="navbarToggleExternalContent" className="w-100 collapse navbar-collapse container-fluid p-0 nav-nested-content overflow-y-auto">
-                <div className="w-100 p-2">
-                    <div id="navbarNestedContent" className="list-group list-group-flush overflow-y-auto">
-                        {sections.map(section => {
-                            return(
-                                <>
-                                    <div className="mb-3">
-                                        <h5 className="mb-1 fw-lighter">{section.top.title}</h5>
-                                        {section.items.map(item => <a type="button" className="list-group-item list-group-item-action" href={item.path}>{item.title}</a>)}
-                                    </div>
-                                </>
-                            );
-                        })}
+            <div id="navbarToggleExternalContent" className="w-100 collapse navbar-collapse container-fluid p-2 nav-nested-content overflow-y-auto">
+                <div id="navbarNestedContent" className="list-group list-group-flush overflow-y-auto">
+                    {sections.map(section => {
+                        return(
+                            <>
+                                <div className="my-1 rounded p-3">
+                                    {section.top.title && (<h6 className="mb-1 fw-lighter">{section.top.title}</h6>)}
+                                    {section.items.map(item => <a type="button" className="btn btn-primary mb-1 w-100" href={item.path}>{item.title}</a>)}
+                                </div>
+                            </>
+                        );
+                    })}
+                    <div class="text-center text-secondary fs-italic small w-100">
+                        Select a item from the list above to navigate
                     </div>
                 </div>
             </div>
