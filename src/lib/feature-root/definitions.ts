@@ -1,7 +1,7 @@
 import {NavigationProperties} from "../shared/interfaces/interfaces.ts";
 export const data: NavigationProperties = {
     top: {
-        title: '3D Studies',
+        title: '3D Studies Site',
         path: '/',
     },
     items: [

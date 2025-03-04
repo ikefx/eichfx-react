@@ -4,13 +4,17 @@ export function Root() {
             <div className="container-sm h-100 overflow-auto p-2 p-xl-5">
                 <h3 className={'text-dark'}>Welcome</h3>
                 <p>
-                    Use the navigation bar buttons on left to browse contents. The Demo Reel link provides
+                    This site is written in preact with bootstrap5 UI for demonstration of mobile-first design.
+                    The content of the site is research and projects related to 3D development.
+                </p>
+                <p>
+                    Navigate the site to browse 3D technology research and projects. The Demo Reel link provides
                     additional resolutions and methods for reel playback. The Breakdown page provides
                     explanation of tools and workflows utilized in reel contents. Research provides in-depth
                     documentation and analysis on a variety of technical FX endeavors.
                 </p>
                 <p>
-                    A Quicktime compliant browser will be necessary for .mov format video sequences.
+                    A Quicktime compliant browser will be necessary for .mp4 format video sequences.
                 </p>
                 <p className="text-secondary small mb-0">
                     [ Demo Reel Updated February 2014 ]

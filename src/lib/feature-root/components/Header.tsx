@@ -25,8 +25,10 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
         const onScroll = (e) => {
             const navbar = document.getElementById('navbarToggleExternalContent');
             const navbarNested = document.getElementById('navbarNestedContent');
+            const navBarVertical = document.getElementById('navbarVertical');
             if (!navbar) return;
             if (navbarNested && e.target === navbar) return;
+            if (navBarVertical && e.target === navBarVertical) return;
             let scrollElement = document.querySelector('.overflow-auto');
             //@ts-ignore
             const collapseInstance = new bootstrap.Collapse(navbar, {
