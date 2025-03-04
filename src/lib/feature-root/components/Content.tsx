@@ -1,5 +1,5 @@
 import {ErrorBoundary, LocationProvider, Route, Router,} from "preact-iso";
-import {Root} from "./Root.tsx";
+import {Root} from "../Root.tsx";
 import {Reel} from "../../feature-reel/Reel.tsx";
 import {Breakdown} from "../../feature-breakdown/Breakdown.tsx";
 import {Research} from "../../feature-research/Research.tsx";
