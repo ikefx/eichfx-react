@@ -13,7 +13,7 @@ export function Reel() {
                         <li className="btn btn-link col">Direct Download 640x360</li>
                     </div>
                     <p className="mb-0">
-                        A Quicktime compliant browser will be necessary for .mov format video sequences.
+                        A Quicktime compliant browser will be necessary for .mp4 format video sequences.
                     </p>
                     <p className="fw-light text-secondary small mb-0">
                         Embedded Vimeo Player
