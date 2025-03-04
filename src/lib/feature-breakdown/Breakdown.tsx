@@ -1,4 +1,4 @@
-import {LeftNavigation} from "../feature-root/components/LeftNavigation.tsx";
+import {LeftNavigation} from "../shared/components/LeftNavigation.tsx";
 import {breakdownNav} from "./definitions.ts";
 import {BreakdownTerracotta} from "./components/_Terracotta/BreakdownTerracotta.tsx";
 import {BreakdownHachiman} from "./components/_Hachiman/BreakdownHachiman.tsx";
