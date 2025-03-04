@@ -9,7 +9,6 @@ import {CardElementMarquee} from "./CardElementMarquee.tsx";
 import {CardElementDescription} from "./CardElementDescription.tsx";
 import {CardElementGraphic} from "./CardElementGraphic.tsx";
 import {CardElementGraphicDuo} from "./CardElementGraphicDuo.tsx";
-
 export function CardElement(properties: Card) {
     const component = () => {
         switch (properties.type) {

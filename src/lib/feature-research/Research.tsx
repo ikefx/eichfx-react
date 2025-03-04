@@ -1,4 +1,4 @@
-import {LeftNavigation} from "../feature-root/components/LeftNavigation.tsx";
+import {LeftNavigation} from "../shared/components/LeftNavigation.tsx";
 import {researchNav} from "./definitions.ts"
 import {Default} from "./components/Default.tsx";
 import {ResearchPointClouds} from "./components/_PointClouds/ResearchPointClouds.tsx";

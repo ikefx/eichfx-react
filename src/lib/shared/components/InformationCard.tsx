@@ -1,17 +1,13 @@
-
-
 export interface InformationParagraph {
     text: string,
     format: string
 }
-
 export interface InformationCardProperties {
     paragraphs: InformationParagraph[],
     imgSrc?: string,
     vidSrc?: string,
     imgFooter: string,
 }
-
 export function InformationCard(properties: InformationCardProperties) {
     return (
         <>

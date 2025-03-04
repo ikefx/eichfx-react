@@ -5,10 +5,9 @@ import {Breakdown} from "../../feature-breakdown/Breakdown.tsx";
 import {Research} from "../../feature-research/Research.tsx";
 import {Header} from "./Header.tsx";
 import {Footer} from "./Footer.tsx";
-import {LeftNavigation} from "./LeftNavigation.tsx";
+import {LeftNavigation} from "../../shared/components/LeftNavigation.tsx";
 import {data} from "../definitions.ts";
 import {useState} from "react";
-
 export function Content() {
     const [ nav ] = useState(data);
     const definitions = data.items.reduce((acc, val) => {

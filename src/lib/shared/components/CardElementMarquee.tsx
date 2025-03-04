@@ -1,5 +1,4 @@
 import {MarqueeCardProperties} from "../interfaces/interfaces.ts";
-
 export function CardElementMarquee(properties: MarqueeCardProperties) {
     return (
         <>

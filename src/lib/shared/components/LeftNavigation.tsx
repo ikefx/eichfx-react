@@ -1,8 +1,8 @@
-import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
+import {NavigationProperties} from "../interfaces/interfaces.ts";
 export function LeftNavigation({ sections }: { sections: NavigationProperties[] }) {
     return(
         <>
-            <div id={'navbarVertical'} className={"d-flex flex-column flex-shrink-0 p-3 mh-100 overflow-y-auto"} style="width: 280px;">
+            <div id={'navbarVertical'} className={"d-flex flex-column flex-shrink-0 bg-dark p-3 mh-100 overflow-y-auto"} style="width: 280px;">
                 {sections.map((section, i: number) => {
                     return (
                         <>
