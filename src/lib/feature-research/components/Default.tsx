@@ -11,7 +11,7 @@ export function Default() {
                 </div>
             </div>
             <div className="mt-5">
-                {data.map(card => (<><CardElement {...card}></CardElement><br/></>))}
+                {data.map(card => (<CardElement {...card}></CardElement>))}
             </div>
         </>
     )
