@@ -26,15 +26,17 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
             const navbar = document.getElementById('navbarToggleExternalContent');
             const navbarNested = document.getElementById('navbarNestedContent');
             const navBarVertical = document.getElementById('navbarVertical');
-            if (!navbar) return;
             if (navbarNested && e.target === navbar) return;
             if (navBarVertical && e.target === navBarVertical) return;
             let scrollElement = document.querySelector('.overflow-auto');
-            //@ts-ignore
-            const collapseInstance = new bootstrap.Collapse(navbar, {
-                toggle: false,
-            });
-            collapseInstance.hide();
+            if (navbar) {
+                //@ts-ignore
+                const collapseInstance = new bootstrap.Collapse(navbar, {
+                    toggle: false,
+                });
+                collapseInstance.hide();
+            }
+
             if (scrollElement?.scrollTop > lastScroll) {
                 // Scroll down
                 header.style.maxHeight = '0';
