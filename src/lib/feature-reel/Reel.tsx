@@ -7,9 +7,6 @@ export function Reel() {
             <div className="d-flex h-100">
                 <div className={'w-100 h-100 p-lg-3 p-xxl-5 overflow-auto'}>
                     <div className="container">
-                        <CardElementDescription {...data}></CardElementDescription>
-                        <InformationCard {...data2}></InformationCard>
-                        <div className="my-4"></div>
                         <div className="text-center my-2 mt-xxl-5">
                             <span className="fs-5 fw-light">Demo Reel Updated 02.2014</span>
                         </div>
@@ -35,6 +32,8 @@ export function Reel() {
                             </div>
                             <script src="https://player.vimeo.com/api/player.js"></script>
                         </div>
+                        <div class="mt-4"></div>
+                        <InformationCard {...data2}></InformationCard>
                     </div>
                 </div>
 

@@ -2,7 +2,7 @@ import {DetailCardProperties} from "../shared/interfaces/interfaces.ts";
 import dis01 from "../../assets/_display_demo/display_demo01.jpg";
 import {InformationCardProperties} from "../shared/components/InformationCard.tsx";
 const slot01: DetailCardProperties = {
-    title: 'Mobile First UI & Site Objective',
+    title: 'Mobile First Design',
     paragraphs: [],
     vidUri: null,
     imgUri: null,
