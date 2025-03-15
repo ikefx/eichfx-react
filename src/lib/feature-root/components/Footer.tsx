@@ -1,6 +1,8 @@
 import {useEffect} from "react";
 import {NavigationProperties} from "../../shared/interfaces/interfaces.ts";
+import {useLocation} from "preact-iso";
 export function Footer({ section }: { section: NavigationProperties }) {
+    let location = useLocation();
     useEffect(() => {
         const footer = document.getElementById('navbar-footer');
         footer.style.transitionProperty = 'all';
@@ -30,7 +32,7 @@ export function Footer({ section }: { section: NavigationProperties }) {
                             {section.items.map(item => {
                                 return(
                                     <li className={'nav-item col text-center'}>
-                                        <a className={'nav-link text-secondary'} href={item.path}>{item.title}</a>
+                                        <a className={location.path.startsWith(item.path) ? 'nav-link active text-secondary' : 'nav-link text-secondary'} href={item.path}>{item.title}</a>
                                     </li>
                                 );
                             })}
