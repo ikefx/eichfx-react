@@ -10,13 +10,13 @@ button {
   background-color: #5f5f5f;
 }
 .text-secondary {
-  color: #c5c5c5 !important;
+  color: #d9d9d9 !important;
 }
 .text-dark {
   color: #ededed !important;
 }
 body {
-  color: white!important;
+  color: white;
 }
 .bg-scheme {
   background-color: #424242;
@@ -28,7 +28,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-
   color-scheme: dark;
 }
 

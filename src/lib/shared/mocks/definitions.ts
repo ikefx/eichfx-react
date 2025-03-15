@@ -1,4 +1,4 @@
-import {InformationCardProperties} from "./components/InformationCard.tsx";
+import {InformationCardProperties} from "../components/InformationCard.tsx";
 const slot01: InformationCardProperties = {
     paragraphs: [
         {

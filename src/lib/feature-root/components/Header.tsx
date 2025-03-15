@@ -56,11 +56,11 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
             <header id={'navbar-header'} className="d-block bg-scheme overflow-hidden p-0">
                 <nav id="navbar-header-nav" className="navbar navbar-expand-md navbar-dark py-1 w-100 overflow-hidden">
                     <div className="container-fluid px-2">
-                        <ul className="nav col justify-content-start">
+                        <ul className="navbar-nav col justify-content-start">
                             <a className="navbar-brand" href={section.top.path}>{section.top.title}</a>
                             {section.items.map(item => (
                                     <li className="d-md-inline-block d-none nav-item">
-                                        <a className="nav-link" aria-current="page" href={item.path}>{item.title}</a>
+                                        <a className={'nav-link ' + (location.path.startsWith(item.path) && 'active')} aria-current="page" href={item.path}>{item.title}</a>
                                     </li>
                                 )
                             )}
