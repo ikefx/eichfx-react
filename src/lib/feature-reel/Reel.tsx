@@ -9,12 +9,6 @@ export function Reel() {
                         <div className="text-center my-2 mt-xxl-5">
                             <span className="fs-5 fw-light">Demo Reel Updated 02.2014</span>
                         </div>
-                        <p className="fs-5 fw-light mb-0">Reel Playback Options</p>
-                        <span className="small text-secondary fw-light">Right click and Save 'Direct Download' links to download video file to your hard drive.</span>
-                        <div className="d-flex justify-content-center mb-0">
-                            <li className="btn btn-link col">Direct Download 1280x720</li>
-                            <li className="btn btn-link col">Direct Download 640x360</li>
-                        </div>
                         <p className="mb-0">
                             A Quicktime compliant browser will be necessary for .mp4 format video sequences.
                         </p>
