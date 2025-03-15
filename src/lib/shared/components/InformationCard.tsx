@@ -11,7 +11,7 @@ export interface InformationCardProperties {
 export function InformationCard(properties: InformationCardProperties) {
     return (
         <>
-            <div className="row d-flex justify-content-between">
+            <div className="row d-flex justify-content-between mt-4">
                 <div className="col-12 col-xxl-8">
                     {properties.paragraphs.map(paragraph => {
                         return (
