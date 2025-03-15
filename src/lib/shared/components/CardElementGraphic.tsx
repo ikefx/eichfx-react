@@ -5,7 +5,7 @@ export function CardElementGraphic(properties: BreakdownGraphicProperties) {
             <div className="row mt-4">
                 {properties.imgUri && (
                     <div className={'col-12'} style={'height: fit-content'}>
-                        <img src={properties.imgUri} alt="img" className={'d-flex w-100 rounded shadow'}/>
+                        <img src={properties.imgUri} alt="img" loading="lazy" className={'d-flex w-100 rounded shadow'}/>
                     </div>
                 )}
                 {properties.vidUri && (

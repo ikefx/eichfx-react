@@ -24,7 +24,7 @@ export function CardElementMarquee(properties: MarqueeCardProperties) {
                 {properties.imgUri && (
                     <a href={properties.linkUri || ''} className={'col-12 col-xxl-5'}>
                         <div className="rounded shadow" style={'height: fit-content'}>
-                            <img src={properties.imgUri} alt="img" className={'d-flex w-100 rounded'}/>
+                            <img src={properties.imgUri} alt="img" loading="lazy" className={'d-flex w-100 rounded'}/>
                         </div>
                     </a>
                 )}
