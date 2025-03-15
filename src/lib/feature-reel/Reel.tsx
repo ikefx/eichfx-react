@@ -1,5 +1,4 @@
-import {data, data2} from './definitions.ts';
-import {CardElementDescription} from "../shared/components/CardElementDescription.tsx";
+import {data2} from './definitions.ts';
 import {InformationCard} from "../shared/components/InformationCard.tsx";
 export function Reel() {
     return (
