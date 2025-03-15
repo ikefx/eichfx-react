@@ -21,13 +21,13 @@ export function CardElementDescription(properties: DetailCardProperties) {
                 </div>
                 {properties.imgUri && !properties.linkUri && (
                     <div className="col-12 col-xxl-5 rounded" style={'height: fit-content'}>
-                        <img src={properties.imgUri} alt="img" className={'d-flex w-100 rounded shadow'}/>
+                        <img loading="lazy" src={properties.imgUri} alt="img" className={'d-flex w-100 rounded shadow'}/>
                     </div>
                 )}
                 {properties.imgUri && properties.linkUri && (
                     <a href={properties.linkUri || ''} className={'col-12 col-xxl-5'} style={'height: fit-content'}>
                         <div className="rounded shadow" style={'height: fit-content'}>
-                            <img src={properties.imgUri} alt="img" className={'d-flex w-100 rounded'}/>
+                            <img loading="lazy" src={properties.imgUri} alt="img" className={'d-flex w-100 rounded'}/>
                         </div>
                     </a>
                 )}
