@@ -8,7 +8,7 @@ export function Root() {
                     The content of the site is research and projects related to 3D development.
                 </p>
                 <p>
-                    Navigate the site to browse 3D technology research and projects. The Demo Reel link provides
+                    Navigate the site to browse 3D technology research and projects. The Demo Video link provides
                     additional resolutions and methods for reel playback. The Breakdown page provides
                     explanation of tools and workflows utilized in reel contents. Research provides in-depth
                     documentation and analysis on a variety of technical FX endeavors.

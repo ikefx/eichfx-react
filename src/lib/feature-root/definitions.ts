@@ -1,16 +1,16 @@
 import {NavigationProperties} from "../shared/interfaces/interfaces.ts";
 export const data: NavigationProperties = {
     top: {
-        title: '3D Studies Site',
+        title: '3D Project Site',
         path: '/',
     },
     items: [
         {
-            title: 'Demo Reel',
+            title: 'Demo Video',
             path: '/reel',
         },
         {
-            title: 'Breakdown',
+            title: 'Breakdowns',
             path: '/breakdown',
             children: [
                 {

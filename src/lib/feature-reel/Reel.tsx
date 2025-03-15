@@ -1,4 +1,4 @@
-import {data2} from './definitions.ts';
+import {data} from './definitions.ts';
 import {InformationCard} from "../shared/components/InformationCard.tsx";
 export function Reel() {
     return (
@@ -32,7 +32,8 @@ export function Reel() {
                             <script src="https://player.vimeo.com/api/player.js"></script>
                         </div>
                         <div class="mt-4"></div>
-                        <InformationCard {...data2}></InformationCard>
+                        <h3>Mobile First Single Page Application</h3>
+                        <InformationCard {...data}></InformationCard>
                     </div>
                 </div>
 
