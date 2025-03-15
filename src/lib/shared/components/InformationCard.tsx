@@ -25,7 +25,7 @@ export function InformationCard(properties: InformationCardProperties) {
                 </div>
                 <div className="col-12 col-xxl-4 text-center" style={'height: fit-content'}>
                     {properties.imgSrc && (
-                        <img src={properties.imgSrc} alt="img" className={'d-flex w-100 rounded shadow-sm'}/>
+                        <img src={properties.imgSrc} alt="img" loading="lazy" className={'d-flex w-100 rounded shadow-sm'}/>
                     )}
                     {properties.vidSrc && (
                         <div className={'video-wrapper shadow-sm'}>
