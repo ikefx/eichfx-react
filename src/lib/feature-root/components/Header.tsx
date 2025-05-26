@@ -8,10 +8,12 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
         const header = document.getElementById('navbar-header');
         if (!header) return;
 
+        // Set header transition
         header.style.transition = 'all 300ms cubic-bezier(1,1,1,1)';
 
         let lastScroll = 0;
         let collapseInstance: any = null;
+        const SCROLL_THRESHOLD = 5;
 
         const getScrollElement = () => {
             return (
@@ -54,11 +56,17 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
             }
             collapseInstance?.hide();
 
-            const scrollTop = scrollElement?.scrollTop || 0;
+            if (!scrollElement) return;
 
-            if (scrollTop > lastScroll + 5) {
+            const maxScrollTop = scrollElement.scrollHeight - scrollElement.clientHeight;
+            const scrollTop = Math.min(scrollElement.scrollTop, maxScrollTop);
+            const scrollDelta = scrollTop - lastScroll;
+
+            if (scrollDelta > SCROLL_THRESHOLD) {
+                // Scroll down
                 header.style.maxHeight = '0';
-            } else if (scrollTop < lastScroll - 5) {
+            } else if (scrollDelta < -SCROLL_THRESHOLD) {
+                // Scroll up
                 header.style.maxHeight = '48px';
             }
 
@@ -66,11 +74,11 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
         };
 
         document.addEventListener('click', onOutsideClick);
-        window.addEventListener('scroll', onScroll, true);
+        window.addEventListener('scroll', onScroll, { capture: true, passive: true });
 
         return () => {
             document.removeEventListener('click', onOutsideClick);
-            window.removeEventListener('scroll', onScroll, true);
+            window.removeEventListener('scroll', onScroll, { capture: true });
         };
     }, []);
     return(
