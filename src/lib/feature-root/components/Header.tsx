@@ -13,7 +13,7 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
 
         let lastScroll = 0;
         let collapseInstance: any = null;
-        const SCROLL_THRESHOLD = 5;
+        const SCROLL_THRESHOLD = 10;
 
         const getScrollElement = () => {
             return (
@@ -63,10 +63,8 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
             const scrollDelta = scrollTop - lastScroll;
 
             if (scrollDelta > SCROLL_THRESHOLD) {
-                // Scroll down
                 header.style.maxHeight = '0';
             } else if (scrollDelta < -SCROLL_THRESHOLD) {
-                // Scroll up
                 header.style.maxHeight = '48px';
             }
 
@@ -74,11 +72,11 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
         };
 
         document.addEventListener('click', onOutsideClick);
-        window.addEventListener('scroll', onScroll, { capture: true, passive: true });
+        window.addEventListener('scroll', onScroll, true);
 
         return () => {
             document.removeEventListener('click', onOutsideClick);
-            window.removeEventListener('scroll', onScroll, { capture: true });
+            window.removeEventListener('scroll', onScroll, true);
         };
     }, []);
     return(
