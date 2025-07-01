@@ -6,74 +6,48 @@ export function Header({ section, expand }: { section: NavigationProperties, exp
     const location = useLocation();
     useEffect(() => {
         const header = document.getElementById('navbar-header');
-        if (!header) return;
-
-        // Set header transition
-        header.style.transition = 'all 300ms cubic-bezier(1,1,1,1)';
-
-        let lastScroll = 0;
-        let collapseInstance: any = null;
-        const SCROLL_THRESHOLD = 10;
-
-        const getScrollElement = () => {
-            return (
-                document.querySelector('.overflow-auto') ||
-                document.scrollingElement ||
-                document.documentElement
-            );
-        };
-
+        header.style.transitionProperty = 'all';
+        header.style.transitionDuration = '300ms';
+        header.style.transitionTimingFunction = 'cubic-bezier(1,1,1,1)';
+        let lastScroll: number = 0;
         const onOutsideClick = (e) => {
             const navbar = document.getElementById('navbarToggleExternalContent');
+            if (!navbar) return;
             const toggleButton = document.querySelector('.navbar-toggler');
-            if (!navbar || !toggleButton) return;
-
             if (!toggleButton.contains(e.target)) {
-                if (!collapseInstance) {
-                    //@ts-ignore
-                    collapseInstance = new bootstrap.Collapse(navbar, { toggle: false });
-                }
+                //@ts-ignore
+                const collapseInstance = new bootstrap.Collapse(navbar, {
+                    toggle: false,
+                });
                 collapseInstance.hide();
             }
         };
-
         const onScroll = (e) => {
             const navbar = document.getElementById('navbarToggleExternalContent');
             const navbarNested = document.getElementById('navbarNestedContent');
             const navBarVertical = document.getElementById('navbarVertical');
-            const scrollElement = getScrollElement();
-
-            if (
-                (navbarNested && e.target === navbar) ||
-                (navBarVertical && e.target === navBarVertical)
-            ) {
-                return;
-            }
-
-            if (navbar && !collapseInstance) {
+            if (navbarNested && e.target === navbar) return;
+            if (navBarVertical && e.target === navBarVertical) return;
+            let scrollElement = document.querySelector('.overflow-auto');
+            if (navbar) {
                 //@ts-ignore
-                collapseInstance = new bootstrap.Collapse(navbar, { toggle: false });
+                const collapseInstance = new bootstrap.Collapse(navbar, {
+                    toggle: false,
+                });
+                collapseInstance.hide();
             }
-            collapseInstance?.hide();
 
-            if (!scrollElement) return;
-
-            const maxScrollTop = scrollElement.scrollHeight - scrollElement.clientHeight;
-            const scrollTop = Math.min(scrollElement.scrollTop, maxScrollTop);
-            const scrollDelta = scrollTop - lastScroll;
-
-            if (scrollDelta > SCROLL_THRESHOLD) {
+            if (scrollElement?.scrollTop > lastScroll) {
+                // Scroll down
                 header.style.maxHeight = '0';
-            } else if (scrollDelta < -SCROLL_THRESHOLD) {
+            } else {
+                // Scroll up
                 header.style.maxHeight = '48px';
             }
-
-            lastScroll = scrollTop;
+            lastScroll = scrollElement?.scrollTop || 0;
         };
-
         document.addEventListener('click', onOutsideClick);
         window.addEventListener('scroll', onScroll, true);
-
         return () => {
             document.removeEventListener('click', onOutsideClick);
             window.removeEventListener('scroll', onScroll, true);
