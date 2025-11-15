@@ -4,10 +4,10 @@ export function Reel() {
     return (
         <>
             <div className="d-flex h-100">
-                <div className={'w-100 h-100 p-lg-3 p-xxl-5 overflow-auto'}>
+                <div className={'w-100 h-100 m-lg-3 m-xxl-5 overflow-auto'}>
                     <div className="container">
-                        <div className="text-center my-2 mt-xxl-5">
-                            <span className="fs-5 fw-light">Demo Reel Updated 02.2014</span>
+                        <div className="bg-scheme sticky-top text-center pt-xxl-5">
+                            <h3 className="text-dark py-2">3D Animation Demo Video (1:41 minute)</h3>
                         </div>
                         <p className="mb-0">
                             A Quicktime compliant browser will be necessary for .mp4 format video sequences.
@@ -26,7 +26,9 @@ export function Reel() {
                             <script src="https://player.vimeo.com/api/player.js"></script>
                         </div>
                         <div class="mt-4"></div>
-                        <h3>Mobile First Single Page Application</h3>
+                        <div className="bg-scheme sticky-top text-center pt-xxl-5">
+                            <h3 className="text-dark py-2">Mobile First Single Page Application</h3>
+                        </div>
                         <InformationCard {...data}></InformationCard>
                     </div>
                 </div>
