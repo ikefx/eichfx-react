@@ -22,5 +22,6 @@ const slot01: InformationCardProperties = {
     vidSrc: null,
     imgSrc: dis01,
     imgFooter: 'Screen-size driven navbar placement',
-}
+};
+
 export const data = slot01;
